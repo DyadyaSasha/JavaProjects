@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="professiom">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="Dev"/>
+                <xsd:enumeration value="QA"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="birthday">
+        <xsd:complexType>
+            <xsd:attribute name="year" use="required" type="xsd:short"/>
+            <xsd:attribute name="month" type="xsd:byte"/>
+            <xsd:attribute name="day" type="xsd:byte"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

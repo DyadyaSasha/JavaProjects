@@ -1,0 +1,27 @@
+<?xml version="1.0" ?> <!--объявляется. что это xml-документ, указывается его версия-->
+<people> <!--корневой элемент, который всегда один-->
+    <person> <!--дочерний элемент-->
+        <name> <!--дочерний элемент для person-->
+            <first-name>Vasya</first-name> <!--дочерний элемент для name с текстовым значением Vasya-->
+            <last-name>Pupkin</last-name> <!--дочерний элемент для name с текстовым значением Pupkin-->
+        </name>
+        <profession>Dev&lt;</profession> <!--дочерний элемент для person с текстовым значением Dev и специальный символ-ссылка на сущность: &lt; - обозначает < -->
+        <birthday year="1987"/> <!--дочерний элемент для с атрибутом year и значением 1987-->
+    </person>
+    <person> <!--дочерний элемент-->
+        <name>
+            <first-name>Masha</first-name>
+        </name>
+        <profession>QA</profession>
+        <birthday year="1985"/>
+    </person>
+    <person> <!--дочерний элемент-->
+        <name>
+            <first-name>Grisha</first-name>
+            <last-name>Yablokov</last-name>
+        </name>
+        <profession>Dev</profession>
+        <birthday year="1980"/>
+    </person>
+
+</people>
