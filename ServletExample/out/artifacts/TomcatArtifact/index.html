@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<h1><a href="/hello">To hello</a></h1>
+
+<form action="form" method="POST">
+    First Name: <input type="text" name="first_name">
+    <br>
+    Last Name: <input type="text" name="last_name">
+    <input type="submit" value="SUBMIT">
+</form>
+
+<br>
+
+<h3>File Upload:</h3>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" size="50"/>
+    <br>
+    <input type="submit" value="Upload File"/>
+</form>
+</body>
+</html>

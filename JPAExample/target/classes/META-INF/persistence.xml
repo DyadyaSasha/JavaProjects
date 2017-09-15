@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <persistence-unit name="Eclipse_JPA" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+
+
+
+        <!--раскомментирован может быть только один набор классов
+        так как EclipseLink похоже загружает классы в ClassLoader
+        по неполному имени-->
+
+        <class>data.Employee</class>
+
+        <!--для стратегии SINGLE TABLE-->
+        <!--<class>inheritance.singletable.Staff</class>-->
+        <!--<class>inheritance.singletable.NonTeachingStaff</class>-->
+        <!--<class>inheritance.singletable.TeachingStaff</class>-->
+
+        <!--для стратегии JOINED-->
+        <!--<class>inheritance.joined.Staff</class>-->
+        <!--<class>inheritance.joined.NonTeachingStaff</class>-->
+        <!--<class>inheritance.joined.TeachingStaff</class>-->
+
+        <!--для стратегии TABLE PER CLASS-->
+        <!--<class>inheritance.tableperclass.Staff</class>-->
+        <!--<class>inheritance.tableperclass.NonTeachingStaff</class>-->
+        <!--<class>inheritance.tableperclass.TeachingStaff</class>-->
+
+        <!--между таблицами связь Many To One -->
+        <!--<class>relation.data.manytoone.Department</class>-->
+        <!--<class>relation.data.manytoone.DepEmployee</class>-->
+
+        <!--между таблицами связь One To Many-->
+        <!--<class>relation.data.onetomany.Department</class>-->
+        <!--<class>relation.data.onetomany.DepEmployee</class>-->
+
+        <!--между таблицами связь One to One-->
+        <!--<class>relation.data.onetoone.Department</class>-->
+        <!--<class>relation.data.onetoone.DepEmployee</class>-->
+
+        <!--между таблицами связь Many To Many-->
+        <!--<class>relation.data.manytomany.Clas</class>-->
+        <!--<class>relation.data.manytomany.Teacher</class>-->
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb?useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="English1996"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>

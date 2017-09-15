@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="entities.Employee" table="HiberEmployee">
+
+
+        <!--optional element-->
+        <meta attribute="class-description">
+            This class contains information about employee.
+        </meta>
+
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+
+        <!--колонка employee_id создастся в таблице
+        Licenseempl и будет содержать id из таблицы
+        HiberEmployee-->
+
+        <set name="certificates" cascade="all">
+            <key column="employee_id"/>
+            <one-to-many class="entities.Licenseempl"/>
+        </set>
+
+
+        <property name="firstName" column="first_name" type="string"/>
+        <property name="lastName" column="last_name" type="string"/>
+        <property name="salary" column="salary" type="int"/>
+
+    </class>
+
+    <class name="entities.Licenseempl" table="EmplСertificate">
+
+        <meta attribute="class-description">
+            This class describes employee's certificate.
+        </meta>
+
+        <id name="id" type="int" column="id">
+             <generator class="native"/>
+        </id>
+
+        <property name="name" type="string" column="name"/>
+
+    </class>
+
+</hibernate-mapping>

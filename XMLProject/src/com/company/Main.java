@@ -38,7 +38,7 @@ public class Main {
         }
         Document doc1 = null; //парсим входной файл
         try {
-            doc1 = documentBuilder.parse(new File("/home/user/IdeaProjects/XMLProject/src/com/company/example.xml"));
+            doc1 = documentBuilder.parse(new File("/home/user/ForGitHub/JAVA/XMLProject/src/com/company/example.xml"));
         } catch (SAXException e) {
             e.printStackTrace();
         } catch (IOException e) {

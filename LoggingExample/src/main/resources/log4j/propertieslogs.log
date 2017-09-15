@@ -1,0 +1,30 @@
+[DEBUG] 2017-08-31 21:12:09.436 [main] Main - debug debug
+[INFO ] 2017-08-31 21:12:09.442 [main] Main - info info
+[DEBUG] 2017-08-31 21:22:31.429 [main] Main - debug debug
+[INFO ] 2017-08-31 21:22:31.434 [main] Main - info info
+[DEBUG] 2017-08-31 21:22:45.616 [main] Main - debug debug
+[INFO ] 2017-08-31 21:22:45.632 [main] Main - info info
+[DEBUG] 2017-08-31 21:22:51.030 [main] Main - debug debug
+[INFO ] 2017-08-31 21:22:51.037 [main] Main - info info
+[DEBUG] 2017-08-31 21:25:04.783 [main] Main - debug debug
+[INFO ] 2017-08-31 21:25:04.788 [main] Main - info info
+[DEBUG] 2017-08-31 21:29:56.392 [main] Main - Debug Message!
+[INFO ] 2017-08-31 21:29:56.396 [main] Main - Info Message!
+[WARN ] 2017-08-31 21:29:56.397 [main] Main - Warn Message!
+[ERROR] 2017-08-31 21:29:56.403 [main] Main - Error Message!
+[FATAL] 2017-08-31 21:29:56.404 [main] Main - Fatal Message!
+[WARN ] 2017-08-31 21:44:13.115 [main] Main - Warn Message!
+[ERROR] 2017-08-31 21:44:13.119 [main] Main - Error Message!
+[FATAL] 2017-08-31 21:44:13.120 [main] Main - Fatal Message!
+[DEBUG] 2017-08-31 22:15:26.573 [main] Main - Debug Message!
+[INFO ] 2017-08-31 22:15:26.580 [main] Main - Info Message!
+[WARN ] 2017-08-31 22:15:26.580 [main] Main - Warn Message!
+[ERROR] 2017-08-31 22:15:26.581 [main] Main - Error Message!
+[FATAL] 2017-08-31 22:15:26.581 [main] Main - Fatal Message!
+[INFO ] 2017-08-31 22:15:26.723 [Thread-1] Main - Thread info
+[DEBUG] 2017-08-31 22:18:49.259 [main] Main - Debug Message!
+[INFO ] 2017-08-31 22:18:49.281 [main] Main - Info Message!
+[WARN ] 2017-08-31 22:18:49.282 [main] Main - Warn Message!
+[ERROR] 2017-08-31 22:18:49.282 [main] Main - Error Message!
+[FATAL] 2017-08-31 22:18:49.282 [main] Main - Fatal Message!
+[INFO ] 2017-08-31 22:18:49.484 [Thread-1] Main - Thread info
