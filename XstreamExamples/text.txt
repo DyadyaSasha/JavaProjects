@@ -1,0 +1,1 @@
+<?xml version="1.0" ?><object-stream><student><firstName>Mahesh</firstName><lastName>Parashar</lastName></student><student><firstName>Suresh</firstName><lastName>Kalra</lastName></student><student><firstName>Ramesh</firstName><lastName>Kumar</lastName></student><student><firstName>Naresh</firstName><lastName>Sharma</lastName></student><string>Hello World!</string></object-stream>
