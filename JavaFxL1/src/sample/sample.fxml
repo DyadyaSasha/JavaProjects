@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="700.0">
+            <children>
+                <Button fx:id="loadBt" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadImg" text="Загрузить изображение" />
+                <Button fx:id="okBt" layoutX="438.0" layoutY="14.0" mnemonicParsing="false" onAction="#ok" text="Ок" />
+                <Separator layoutY="57.0" prefHeight="3.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="57.0" />
+                <ComboBox fx:id="combo" layoutX="213.0" layoutY="14.0" prefHeight="31.0" prefWidth="209.0" promptText="-Выберите действие-" >
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Ч/Б быстрый" />
+                        <String fx:value="Ч/Б человеческий глаз" />
+                        <String fx:value="Ч/Б десатурация" />
+                        <String fx:value="Ч/Б градация минимум" />
+                        <String fx:value="Ч/Б градация максимум" />
+                        <String fx:value="Показать гистограмму" />
+                        <String fx:value="Эквализировать" />
+                    </FXCollections>
+                </items>
+                </ComboBox>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
