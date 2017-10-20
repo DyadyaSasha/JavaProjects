@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project name="AntExample" basedir="." default="build">
+	<property name="src.dir" value="src"/>
+	<property name="web.dir" value="war"/>
+	<property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
+	
+	<path id="master-classpath">
+		<fileset dir="${web.dir}/WEB-INF/lib">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement path="${build.dir}"/>
+	</path>
+	
+	<target name="build" description="Compile sources" depends="clean">
+	
+		<mkdir dir="${build.dir}"/>
+			
+		<javac destdir="${build.dir}" source="1.8" target="1.8"
+			deprecation="false" optimize="false" failonerror="true">
+			<src path="${src.dir}"/>
+			<classpath refid="master-classpath"/>
+		</javac>
+	</target>
+	
+	<target name="clean" description="Clean compiled classes">
+		<delete>
+			<fileset dir="${build.dir}">
+				<include name="**/*.class"/>
+			</fileset>
+		</delete>
+	</target>
+</project>

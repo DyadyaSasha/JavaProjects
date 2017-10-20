@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+	<project name="AntExmple" default="antex">
+		<property name="sitename" value="tutorial.com"/>
+		<property file="build.properties"/>
+		<target name="antex">
+			<echo>Ant version - ${ant.version}</echo>
+			<echo>User value of site property - ${sitename}</echo>
+			<echo>${propertyInFile}</echo>
+			<echo>${basedir}</echo>
+		</target>
+		
+	</project>
