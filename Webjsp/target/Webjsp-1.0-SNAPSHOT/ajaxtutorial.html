@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AJAXTutorial</title>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <script language="JavaScript" type="text/javascript">
+            <!--создаём объект XMLHttpRequest-->
+            function ajaxFunction() {
+
+                var ajaxRequest;
+
+                try {
+//                  для Opera 8.0+, Firefox, Safari
+                    ajaxRequest = new XMLHttpRequest();
+                } catch(e){
+                    try {
+//                     для Internet Explorer
+                       ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP")
+                    } catch (e){
+                        try {
+                            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                        } catch (e){
+                            alert("Browser broke!");
+                            return false;
+                        }
+                    }
+                }
+
+            }
+        </script>
+
+        <script language="JavaScript" type="text/javascript">
+            function validateUserId(){
+                ajaxFunction();
+                ajaxRequest.onreadystatechange = processRequest;
+                req.read
+            }
+        </script>
+
+        <form name="USER FORM">
+            Name: <input type="text" size="20" id="userid" name="id" onkeyup="validateUserId()"/> <br/>
+            Time: <input type="text" name="time">
+        </form>
+    </body>
+</html>

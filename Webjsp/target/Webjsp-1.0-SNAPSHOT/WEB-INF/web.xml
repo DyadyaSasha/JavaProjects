@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+
+    <!--для jsp нужно, чтобы была папка webapp на одном
+    уровне с resources, то есть в папке main; в папке webapp будет паппка WEB-INF,
+    в которой будет десккриптор развёртования web.xml(необходимый для контейнеров сервлетов и jsp),
+    и файлы jsp страниц-->
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <jsp-file>/hello.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>jstlcore</servlet-name>
+        <url-pattern>/jstlcore</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jstlcore</servlet-name>
+        <jsp-file>/jstlCoreTags.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>bean</servlet-name>
+        <jsp-file>/javaBean.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bean</servlet-name>
+        <url-pattern>/bean</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>jstlformat</servlet-name>
+        <jsp-file>/jstlFormattingTags.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jstlformat</servlet-name>
+        <url-pattern>/jstlformat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sql</servlet-name>
+        <jsp-file>/SQL.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>sql</servlet-name>
+        <url-pattern>/sql</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>xml</servlet-name>
+        <jsp-file>/XML.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>xml</servlet-name>
+        <url-pattern>/xml</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>functions</servlet-name>
+        <jsp-file>/jstlFunctions.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>functions</servlet-name>
+        <url-pattern>/functions</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>include</servlet-name>
+        <jsp-file>/includeDirective.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>include</servlet-name>
+        <url-pattern>/include</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>actions</servlet-name>
+        <jsp-file>/jspActions.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>actions</servlet-name>
+        <url-pattern>/actions</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>objects</servlet-name>
+        <jsp-file>/implicitObjects.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>objects</servlet-name>
+        <url-pattern>/objects</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getform</servlet-name>
+        <jsp-file>/GETform.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getform</servlet-name>
+        <url-pattern>/getform</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>postform</servlet-name>
+        <jsp-file>/POSTform.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>postform</servlet-name>
+        <url-pattern>/postform</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>controlflow</servlet-name>
+        <jsp-file>/controlFlowStatements.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>controlflow</servlet-name>
+        <url-pattern>/controlflow</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>myTag</taglib-uri>
+            <taglib-location>/WEB-INF/custom.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <!--данный параметр можно взять из config, котрый берётся из pageContext -->
+    <context-param>
+        <description>Location for downloaded files</description>
+        <param-name>file-upload</param-name>
+        <param-value>D:\Projects\Webjsp\data\</param-value>
+    </context-param>
+
+    <!-- параметры сессии
+     timeout в минутах(его можно получить, но в секундах, если вызвать
+     getMaxInactiveInterval() в jsp-странице) -->
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+
+    <!--определяем фильтр и его параметры инициализации-->
+    <filter>
+        <filter-name>logFilter</filter-name>
+        <filter-class>filters.LogFilter</filter-class>
+
+        <init-param>
+            <param-name>test-param</param-name>
+            <param-value>Initialization Paramter</param-value>
+        </init-param>
+    </filter>
+
+    <!-- связываем фильтр с определённым урлом-->
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <!-- в данном случае фильтр будет отрабатывать при любом урле-->
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!--<error-page>-->
+        <!--<exception-type>java.lang.Throwable</exception-type>-->
+        <!--<location>/errorPage.jsp</location>-->
+    <!--</error-page>-->
+
+</web-app>
