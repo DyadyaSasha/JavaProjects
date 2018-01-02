@@ -1,0 +1,7 @@
+excel\OpenWorkBook.class
+pdf\CreateDoc.class
+word\CreateDocument.class
+powerpoint\CreatePresentation.class
+word\WordExtractor.class
+excel\CreateWorkBook.class
+excel\OpenWorkBook$1.class
