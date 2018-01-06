@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- файл конфигурации -->
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+    <settings enhancementEnabled="true" useStatementNamespaces="true"/>
+    <transactionManager type="JDBC">
+        <dataSource type="SIMPLE">
+            <!-- основные настройки -->
+            <property name="JDBC.Driver" value="org.postgresql.Driver"/>
+            <property name="JDBC.ConnectionURL" value="jdbc:postgresql://localhost:5432/postgres"/>
+            <property name="JDBC.Username" value="postgres"/>
+            <property name="JDBC.Password" value="user"/>
+
+            <!-- дополнительные настройки -->
+            <property name="JDBC.AutoCommit" value="true"/>
+            <property name="Pool.MaximumActiveConnections" value="10"/>
+            <property name="Pool.MaximumIdleConnections" value="5"/>
+            <property name="Pool.MaximumCheckoutTime" value="150000"/>
+            <property name="Pool.MaximumTimeToWait" value="500"/>
+            <property name="Pool.PingQuery" value="select 1 from models.Employee"/>
+            <property name="Pool.PingEnabled" value="false"/>
+
+        </dataSource>
+    </transactionManager>
+    <!-- указываем файл, в котором описывается маппинг с полями класса -->
+    <sqlMap resource="Employee.xml"/>
+</sqlMapConfig>

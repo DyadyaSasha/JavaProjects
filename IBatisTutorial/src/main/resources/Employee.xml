@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Employee">
+    <!-- описываем операцию insert, которая будет вызываться из java-класса по namespace и id
+         в #...# указаны вставляемые из java-кода параметры
+         в parameterClass указан тип параметра, который будет вставлен в метод в java-коде-->
+    <insert id="insert" parameterClass="models.Employee">
+        INSERT INTO ibatisemployee(first_name, last_name, salary)
+        VALUES (#first_name#, #last_name#, #salary#)
+
+--      в качестве возвращаемого значения операции insert используем номер id    
+        <selectKey resultClass="int" keyProperty="id">
+          SELECT currval('ibatisemployee_id_seq') AS id
+        </selectKey>
+    </insert>
+
+    <!-- каждая строка будет мапиться с классом, указанным в атрибуте resultClass-->
+    <select id="getAll" resultClass="models.Employee">
+        SELECT * FROM ibatisemployee
+    </select>
+
+    <!-- фреймворк берёт сам соответствующие поля из класса, указанного в parameterClass -->
+    <update id="update" parameterClass="models.Employee">
+        UPDATE ibatisemployee
+        SET first_name = #first_name#
+        WHERE id = #id#
+    </update>
+
+    <delete id="delete" parameterClass="int">
+        DELETE FROM ibatisemployee
+        WHERE id = #id#
+    </delete>
+
+    <delete id="deleteAll">
+        DELETE FROM ibatisemployee
+    </delete>
+
+    <resultMap id="result" class="models.Employee">
+        <result property="id" column="id"/>
+        <result property="first_name" column="first_name"/>
+        <result property="last_name" column="last_name"/>
+        <result property="salary" column="salary"/>
+    </resultMap>
+
+    <select id="useResultMap" resultMap="result">
+        SELECT * FROM ibatisemployee
+        WHERE first_name = #first_name#
+    </select>
+<!--TODO: dynamical SQL and OGNL-->
+    <!--<select id="findById" parameterClass="int" resultClass="models.Employee">-->
+            <!--SELECT * FROM ibatisemployee-->
+
+<!--&#45;&#45;      в WHERE будет использоваться разные значения в зависимости от параметра id-->
+<!--&#45;&#45;      в данном случае - если id указан, то выведутся все строки с соответствующим полем, иначе-->
+<!--&#45;&#45;      выведутся все поля с id == NULL-->
+        <!--<dynamic prepend="WHERE">-->
+
+<!--&#45;&#45;         проверка, не пустое ли поле-->
+            <!--&lt;!&ndash;<isNotEmpty property="id">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<isNull prepend="AND" property="id">&ndash;&gt;-->
+                    <!--&lt;!&ndash;id IS NULL&ndash;&gt;-->
+                 <!--&lt;!&ndash;</isNull>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<isNotNull prepend="AND" property="id">&ndash;&gt;-->
+                    <!--&lt;!&ndash;id = #id#&ndash;&gt;-->
+                <!--&lt;!&ndash;</isNotNull>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<isNotNull prepend="OR" property="first_name">&ndash;&gt;-->
+                    <!--&lt;!&ndash;first_name = #first_name#&ndash;&gt;-->
+                <!--&lt;!&ndash;</isNotNull>&ndash;&gt;-->
+
+             <!--&lt;!&ndash;</isNotEmpty>&ndash;&gt;-->
+
+            <!--<isNotNull property="id">-->
+                <!--id = #id#-->
+            <!--</isNotNull>-->
+
+        <!--</dynamic>-->
+
+    <!--</select>-->
+
+</sqlMap>
