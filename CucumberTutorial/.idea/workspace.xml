@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79bc7987-c993-4a31-8d03-7a070b461edf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JAXWSExample/src/main/java/ws/PublishService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JAXWSExample/src/main/java/ws/ServiceEndpoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JAXWSExample/src/main/java/ws/ServiceEndpointImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JAXWSExample/src/main/webapp/WEB-INF/sun-jaxws.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JAXWSExample/src/main/webapp/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/remotecontrol/RC.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/testing/PogeObjectModelPattern.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/testing/TestNGTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/CheckBoxInteraction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/DragAndDrop.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/DropDownInteraction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/MultiSelect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/RadioButtonInteraction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/java/webdriver/WebDriverDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/resources/log4j.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SeleniumTutorial/src/main/resources/testing.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/advanced/ParamTestWithDataProvider1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/advanced/ParameterizedTest1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/advanced/PrimeNumberChecker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/advanced/TestJunit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/basic/TestNGSimpleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/employee/EmpBusinessLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/employee/EmployeeDetails.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/employee/TestEmployeeDetails.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/group/GroupTestExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/group/MessageUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/results/CustomListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/results/CustomReporter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/java/results/SampleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TestNGTutorial/src/main/resources/testing6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Webjsp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Webjsp/.idea/workspace.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="Annotation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="annotation.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/base/annotation.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/base/Base.java" />
+        <option value="$PROJECT_DIR$/src/main/java/base/Amnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/base/RunCucumberTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/base/annotation.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/base/Annotation.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CucumberTutorial" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="841" />
+    <option name="y" value="69" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CucumberTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CucumberTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/base" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RunCucumberTests">
+    <configuration name="RunCucumberTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CucumberTutorial" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.RunCucumberTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RunCucumberTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79bc7987-c993-4a31-8d03-7a070b461edf" name="Default" comment="" />
+      <created>1516568649011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516568649011</updated>
+      <workItem from="1516568651837" duration="1058000" />
+      <workItem from="1516569730429" duration="1265000" />
+      <workItem from="1516573678048" duration="1206000" />
+      <workItem from="1516577881617" duration="14000" />
+      <workItem from="1516625027999" duration="1238000" />
+      <workItem from="1516639024115" duration="10151000" />
+      <workItem from="1516665637048" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 04m 05s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 04m 58s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 05m 39s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 06m 24s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 08m 09s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 09m 16s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 11m 38s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 13m 20s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.22 at 21h 29m 57s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCucumberTests - 2018.01.23 at 00h 54m 42s.xml">
+      <configuration name="RunCucumberTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15012000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18799546" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21510416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997735" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/annotation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/annotation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar!/cucumber/api/java/en/When.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/api/java/en/When.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/cucumber/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/ru.serebryakov:CucumberTutorial:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>ru.serebryakov:CucumberTutorial:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">ru.serebryakov:CucumberTutorial:1.0-SNAPSHOT</node>
+            <node x="" y="">info.cukes:cucumber-java:jar:1.2.5</node>
+            <node x="" y="">info.cukes:cucumber-java:jar:1.2.5/info.cukes:cucumber-core:jar:1.2.5</node>
+            <node x="" y="">info.cukes:cucumber-java:jar:1.2.5/info.cukes:cucumber-core:jar:1.2.5/info.cukes:cucumber-html:jar:0.2.3</node>
+            <node x="" y="">info.cukes:cucumber-java:jar:1.2.5/info.cukes:cucumber-core:jar:1.2.5/info.cukes:cucumber-jvm-deps:jar:1.0.5</node>
+            <node x="" y="">info.cukes:gherkin:jar:2.12.2</node>
+            <node x="" y="">info.cukes:cucumber-junit:jar:1.2.5</node>
+            <node x="" y="">junit:junit:jar:4.12</node>
+            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-api:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-chrome-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-edge-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-firefox-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-ie-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-opera-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-remote-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-safari-driver:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.seleniumhq.selenium:selenium-support:jar:3.8.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/net.bytebuddy:byte-buddy:jar:1.7.5</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.apache.commons:commons-exec:jar:1.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/commons-codec:commons-codec:jar:1.10</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.code.gson:gson:jar:2.8.2</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.guava:guava:jar:23.0</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.guava:guava:jar:23.0/com.google.code.findbugs:jsr305:jar:1.3.9</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.guava:guava:jar:23.0/com.google.errorprone:error_prone_annotations:jar:2.0.18</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.guava:guava:jar:23.0/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/com.google.guava:guava:jar:23.0/org.codehaus.mojo:animal-sniffer-annotations:jar:1.14</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.apache.httpcomponents:httpclient:jar:4.5.3</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.apache.httpcomponents:httpclient:jar:4.5.3/commons-codec:commons-codec:jar:1.9</node>
+            <node x="" y="">org.seleniumhq.selenium:selenium-java:jar:3.8.1/org.apache.httpcomponents:httpcore:jar:4.4.6</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.957262103505843" x="828.0" y="1129.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/RunCucumberTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/After.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar!/cucumber/api/java/After.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/annotation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/base/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

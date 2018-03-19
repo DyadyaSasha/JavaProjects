@@ -1,0 +1,1 @@
+Remote Control was deprecated since version 3.0, use Web Driver

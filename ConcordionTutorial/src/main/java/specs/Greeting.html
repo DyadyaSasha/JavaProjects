@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- используем namespace concordion -->
+<html xmlns:concordion = "http://www.concordion.org/2007/concordion">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href = "../../resources/concordion.css" rel = "stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Greeting Specifications</h1>
+<p>We are building specifications for our online order tracking application.</p>
+<p>Following is the requirement to show greeting to logged in user:</p>
+<div class = "example">
+    <h3>Example</h3>
+    <!-- устанавливаем значение параметра name и вызываем нужный метод -->
+    <p>When <span concordion:set = "#name">Robert</span>
+        logs in the system, a greeting "<span concordion:assertEquals = "getGreeting(#name)">
+            Hello Robert!</span>" is displayed.</p>
+</div>
+</body>
+
+</html>

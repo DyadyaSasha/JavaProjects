@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.opennlp:opennlp-morfologik-addon:1.8.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-morfologik-addon/1.8.4/d883cbeb323f07c82b3193ac658ec7577930875a/opennlp-morfologik-addon-1.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-morfologik-addon/1.8.4/9c06a2a00e0be4b454d34e66fd6e66256e343215/opennlp-morfologik-addon-1.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

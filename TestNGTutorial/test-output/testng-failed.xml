@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite7]">
+  <listeners>
+    <listener class-name="results.CustomReporter"/>
+  </listeners>
+  <test name="test1(failed)">
+    <classes>
+      <class name="results.SampleTest">
+        <methods>
+          <include name="testMethodThree"/>
+          <include name="testMethodTwo"/>
+        </methods>
+      </class> <!-- results.SampleTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite7] -->

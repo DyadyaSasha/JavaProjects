@@ -1,0 +1,22 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN"
+        "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<!-- имя приложения -->
+<module rename-to="MySampleApplication">
+
+    <!-- Inherit the core Web Toolkit stuff. Основной инструментарий  -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!-- стили -->
+    <inherits name="com.google.gwt.user.theme.clean.Clean"/>
+    <!--<inherits name="com.google.gwt.user.theme.chrome.Chrome"/>-->
+    <!--<inherits name="com.google.gwt.user.theme.dark.Dark"/>-->
+
+    <!-- Specify the app entry point class.  Точка входа в приложение. С этого класса стартует приложение,
+     можно добавить несколько точек входа - они будут запускаться последовательно методом onModuleLoad() в классе-->
+    <entry-point class='com.mySampleApplication.client.MySampleApplication'/>
+
+
+    <!-- Specify the app servlets.                   -->
+    <!--<servlet path='/MySampleApplicationService' class='com.mySampleApplication.server.MySampleApplicationServiceImpl'/>-->
+
+</module>

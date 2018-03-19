@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- тест-suit(набор нескольких тестов) можно определять только в xml файле -->
+<suite name="Suite1">
+
+    <test name="test1">
+        <classes>
+            <class name="basic.TestNGSimpleTest"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="employee.TestEmployeeDetails"/>
+        </classes>
+    </test>
+
+</suite>
+
+

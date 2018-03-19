@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite2" duration-ms="35" started-at="2018-01-19T09:05:27Z" finished-at="2018-01-19T09:05:27Z">
+    <groups>
+      <group name="checkintest">
+        <method signature="GroupTestExample.testPrintMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testPrintMessage" class="group.GroupTestExample"/>
+        <method signature="GroupTestExample.testSalutationMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testSalutationMessage" class="group.GroupTestExample"/>
+      </group> <!-- checkintest -->
+      <group name="functest">
+        <method signature="GroupTestExample.testPrintMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testPrintMessage" class="group.GroupTestExample"/>
+        <method signature="GroupTestExample.testExitMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testExitMessage" class="group.GroupTestExample"/>
+      </group> <!-- functest -->
+    </groups>
+    <test name="test1" duration-ms="35" started-at="2018-01-19T09:05:27Z" finished-at="2018-01-19T09:05:27Z">
+      <class name="group.GroupTestExample">
+        <test-method status="PASS" signature="testPrintMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testPrintMessage" duration-ms="11" started-at="2018-01-19T12:05:27Z" finished-at="2018-01-19T12:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrintMessage -->
+        <test-method status="PASS" signature="testSalutationMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testSalutationMessage" duration-ms="0" started-at="2018-01-19T12:05:27Z" depends-on-methods="group.GroupTestExample.testPrintMessage" finished-at="2018-01-19T12:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSalutationMessage -->
+        <test-method status="PASS" signature="testExitMessage()[pri:0, instance:group.GroupTestExample@7006c658]" name="testExitMessage" duration-ms="0" started-at="2018-01-19T12:05:27Z" depends-on-methods="group.GroupTestExample.testSalutationMessage" finished-at="2018-01-19T12:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExitMessage -->
+      </class> <!-- group.GroupTestExample -->
+    </test> <!-- test1 -->
+  </suite> <!-- Suite2 -->
+</testng-results>

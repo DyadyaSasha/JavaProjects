@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.opennlp:opennlp-uima:1.8.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-uima/1.8.4/d6f4286af628774355fa72833f3baa08f829a45f/opennlp-uima-1.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-uima/1.8.4/527d2f6f06e8191dad9661f20f1ccad6ec3f0e9b/opennlp-uima-1.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

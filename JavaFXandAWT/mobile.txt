@@ -1,0 +1,4 @@
+Iphone 5S,20,
+Samsung Grand,20,
+MOTO G,40,
+Nokia Lumia,10

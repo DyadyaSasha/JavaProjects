@@ -1,4 +1,4 @@
-package basic;
+package employee;
 
 public class EmployeeDetails {
 

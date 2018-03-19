@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- данный файл(обязателен) описывает реализацию web-сервисов и связывает их с соответствующим URL-ом  -->
 <endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
 
+    <!-- указывается имя web-сервиса, его реализация(программистом) и URL, по которому можно достучаться до данного web-сервиса -->
     <endpoint
             name="HelloWorld"
             implementation="ws.ServiceEndpointImpl"

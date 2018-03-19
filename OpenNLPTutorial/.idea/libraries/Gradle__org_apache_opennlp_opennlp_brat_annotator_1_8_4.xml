@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.opennlp:opennlp-brat-annotator:1.8.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-brat-annotator/1.8.4/98382051315538906f651b0bc91a0e29e1e555c2/opennlp-brat-annotator-1.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.opennlp/opennlp-brat-annotator/1.8.4/b2c21ae1a7a8c70c53cb72b1d8424ac206fc377/opennlp-brat-annotator-1.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

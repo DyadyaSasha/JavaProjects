@@ -1,4 +1,4 @@
-package basic;
+package employee;
 
 public class EmpBusinessLogic {
 
@@ -11,7 +11,7 @@ public class EmpBusinessLogic {
 //      при всех возможных случаях i инициализируется до использования
         double i;
 
-        if(employeeDetails.getMonthlySalary() < 1000){
+        if(employeeDetails.getMonthlySalary() < 10000){
             i = 500;
         } else {
             i = 1000;
