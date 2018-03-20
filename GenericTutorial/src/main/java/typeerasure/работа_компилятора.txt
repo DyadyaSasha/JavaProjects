@@ -1,0 +1,191 @@
+Пример 1:
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box<Integer> integerBox = new Box<Integer>();
+      Box<Double> doubleBox = new Box<Double>();
+
+      integerBox.add(new Integer(10));
+      doubleBox.add(new Double(10.0));
+
+      System.out.printf("Integer Value :%d\n", integerBox.get());
+      System.out.printf("Double Value :%s\n", doubleBox.get());
+   }
+}
+
+class Box<T extends Number> {
+   private T t;
+
+   public void add(T t) {
+      this.t = t;
+   }
+
+   public T get() {
+      return t;
+   }
+}
+
+**********
+после того как компилятор сделает свою работу, он представит
+данный код в следующем виде:
+**********
+
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box integerBox = new Box();
+      Box doubleBox = new Box();
+
+      integerBox.add(new Integer(10));
+      doubleBox.add(new Double(10.0));
+
+      System.out.printf("Integer Value :%d\n", integerBox.get());
+      System.out.printf("Double Value :%s\n", doubleBox.get());
+   }
+}
+
+class Box {
+   private Number t;
+
+   public void add(Number t) {
+      this.t = t;
+   }
+
+   public Number get() {
+      return t;
+   }
+}
+
+
+Пример 2:
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box<Integer> integerBox = new Box<Integer>();
+      Box<String> stringBox = new Box<String>();
+
+      integerBox.add(new Integer(10));
+      stringBox.add(new String("Hello World"));
+
+      System.out.printf("Integer Value :%d\n", integerBox.get());
+      System.out.printf("String Value :%s\n", stringBox.get());
+   }
+}
+
+class Box<T> {
+   private T t;
+
+   public void add(T t) {
+      this.t = t;
+   }
+
+   public T get() {
+      return t;
+   }
+}
+
+
+**********
+после того как компилятор сделает свою работу, он представит
+данный код в следующем виде:
+поэтому в данном случае прежде чем делать какие-то действия, связанные с конкретным типом данных,
+над переданным generic объектом нужно привести его к нужному типу
+**********
+
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box integerBox = new Box();
+      Box stringBox = new Box();
+
+      integerBox.add(new Integer(10));
+      stringBox.add(new String("Hello World"));
+
+      System.out.printf("Integer Value :%d\n", integerBox.get());
+      System.out.printf("String Value :%s\n", stringBox.get());
+   }
+}
+
+class Box {
+   private Object t;
+
+   public void add(Object t) {
+      this.t = t;
+   }
+
+   public Object get() {
+      return t;
+   }
+}
+
+Пример 3:
+
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box<Integer> integerBox = new Box<Integer>();
+      Box<String> stringBox = new Box<String>();
+
+      integerBox.add(new Integer(10));
+      stringBox.add(new String("Hello World"));
+
+      printBox(integerBox);
+      printBox1(stringBox);
+   }
+
+   private static <T extends Box> void printBox(T box){
+      System.out.println("Value: " + box.get());
+   }
+
+   private static <T> void printBox1(T box){
+      System.out.println("Value: " + ((Box)box).get());
+   }
+}
+
+
+class Box<T> {
+   private T t;
+
+   public void add(T t) {
+      this.t = t;
+   }
+
+   public T get() {
+      return t;
+   }
+}
+
+**********
+после того как компилятор сделает свою работу, он представит
+данный код в следующем виде:
+**********
+
+public class GenericsTester {
+   public static void main(String[] args) {
+      Box integerBox = new Box();
+      Box stringBox = new Box();
+
+      integerBox.add(new Integer(10));
+      stringBox.add(new String("Hello World"));
+
+      printBox(integerBox);
+      printBox1(stringBox);
+   }
+
+   //Bounded Types Erasure
+   private static void printBox(Box box){
+      System.out.println("Value: " + box.get());
+   }
+
+   //Unbounded Types Erasure
+   private static void printBox1(Object box){
+      System.out.println("Value: " + ((Box)box).get());
+   }
+}
+
+class Box {
+   private Object t;
+
+   public void add(Object t) {
+      this.t = t;
+   }
+
+   public Object get() {
+      return t;
+   }
+}
