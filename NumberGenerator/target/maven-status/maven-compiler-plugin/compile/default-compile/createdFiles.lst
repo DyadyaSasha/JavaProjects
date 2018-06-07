@@ -1,0 +1,13 @@
+models\Data.class
+mainApp\Main.class
+gen\GeneratorApp.class
+gen\processor\IGenerator.class
+gen\configure\OperationType.class
+gen\configure\LinkType.class
+gen\processor\Generator$1.class
+utils\EditCell$2.class
+gen\configure\TableType.class
+utils\EditCell$1.class
+utils\EditCell.class
+gen\processor\Generator.class
+mainApp\Controller.class

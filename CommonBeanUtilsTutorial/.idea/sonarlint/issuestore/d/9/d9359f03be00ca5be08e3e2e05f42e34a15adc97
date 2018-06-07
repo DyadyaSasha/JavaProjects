@@ -1,0 +1,16 @@
+
+psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ää•ƒ
+Ysquid:S1197"8Move the array designator from the variable to the type.(¿ö‡Úüÿÿÿÿ8›±¾·,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¥­ê½·,
+Tsquid:S1197"8Move the array designator from the variable to the type.(£”‰ß8„üµ¾·,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢•Â›øÿÿÿÿ8ßéë½·,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ä¡°‡ÿÿÿÿÿ8´Üê½·,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¥­ê½·,
+vsquid:S2068"U'password' detected in this expression, review this potentially hardcoded credential.(¦èöúÿÿÿÿ8‚©ú½·,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(àª¤ƒûÿÿÿÿ8ßéë½·,
+`squid:S2147"DCombine this catch with the one at line 27, which has the same body.(åşáÿ8¥­ê½·,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(çÁ©ùÿÿÿÿ8î£Ï¾·,

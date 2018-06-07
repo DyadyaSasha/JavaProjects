@@ -1,0 +1,20 @@
+
+Usquid:UnusedPrivateMethod"-Remove this unused private "runTest1" method.(ö•´æÿÿÿÿÿ
+Vsquid:UnusedPrivateMethod".Remove this unused private "mixTables" method.(¹öúşÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£ÃëŠ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ã”øûÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(»¸Šúÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ß”™Á
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÑÔ¦Z
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(›•§ûÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÈŸ²¶ûÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(†³¦ÿÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥‡¯
+lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉŒ…°úÿÿÿÿ
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í×©¸

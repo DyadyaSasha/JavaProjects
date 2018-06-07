@@ -1,0 +1,108 @@
+
+<squid:S1659"(Declare "modCounter" on a separate line.(·³Ðo
+Bsquid:S1659"(Declare "hOperation" on a separate line.(Ê¾Ýúÿÿÿÿ
+=squid:S1659"#Declare "hType" on a separate line.(Ê¾Ýúÿÿÿÿ
+:squid:S1659"%Declare "message" on a separate line.(÷÷‹÷
+>squid:S1659")Declare "statusLabel" on a separate line.(÷÷‹÷
+>squid:S1659")Declare "periodLabel" on a separate line.(÷÷‹÷
+?squid:S1659"%Declare "rg2Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg3Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg4Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg5Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg6Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg7Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "rg8Text" on a separate line.(Øòšìÿÿÿÿÿ
+?squid:S1659"%Declare "addrBox" on a separate line.(”êÕÉþÿÿÿÿ
+<squid:S1659""Declare "hBox" on a separate line.(”êÕÉþÿÿÿÿ
+:squid:S1659" Declare "r3" on a separate line.(Åùÿÿÿÿÿ
+:squid:S1659" Declare "r4" on a separate line.(Åùÿÿÿÿÿ
+:squid:S1659" Declare "r5" on a separate line.(Åùÿÿÿÿÿ
+:squid:S1659" Declare "r6" on a separate line.(Åùÿÿÿÿÿ
+:squid:S1659" Declare "r7" on a separate line.(Åùÿÿÿÿÿ
+:squid:S1659" Declare "r8" on a separate line.(Åùÿÿÿÿÿ
+@squid:S1659"&Declare "capacity" on a separate line.(­½ç®þÿÿÿÿ
+Rsquid:S1197"8Move the array designator from the variable to the type.(öÑôÑþÿÿÿÿ
+Rsquid:S1197"8Move the array designator from the variable to the type.(Ð©ü˜þÿÿÿÿ
+`squid:S1192"FDefine a constant instead of duplicating this literal "value" 6 times.(ò›ôíùÿÿÿÿ
+msquid:S1192"SDefine a constant instead of duplicating this literal "-fx-text-fill: red" 4 times.(È‘ªÉÿÿÿÿÿ
+`squid:S1192"FDefine a constant instead of duplicating this literal "index" 6 times.(ÏŠ üÿÿÿÿ
+_squid:S1192"JDefine a constant instead of duplicating this literal "#capacity" 6 times.(¥°¼Ø
+bsquid:S1192"MDefine a constant instead of duplicating this literal "ÐžÑˆÐ¸Ð±ÐºÐ°" 4 times.(ÄËÿö
+ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æö€Ñøÿÿÿÿ
+ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æö€Ñøÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜å–
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ùó†
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦Í¾©
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£Õ·î
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ž¾ó¾
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“×Å×ùÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚóÆ°
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÑõÇ¾øÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼»¢…ÿÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚóÆ°
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“×Å×ùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(êá…±ûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(·’ÔÅ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬éþÎüÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñÏ¹ðøÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(€ù¬¶ýÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(úÑ¥€ùÿÿÿÿ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ù§’ 
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(°ú¬¾
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(êá…±ûÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(·’ÔÅ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¬éþÎüÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñÏ¹ðøÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(€ù¬¶ýÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(úÑ¥€ùÿÿÿÿ
+L
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ù§’ 
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(°ú¬¾
+Csquid:S1125")Remove the literal "false" boolean value.(Ž—¯Óÿÿÿÿÿ
+Csquid:S1125")Remove the literal "false" boolean value.(Ž—¯Óÿÿÿÿÿ
+asquid:HiddenFieldCheck"<Rename "fileFlag" which hides the field declared at line 47.(ÉÁÐ´üÿÿÿÿ
+Fsquid:S1481",Remove this unused "toggles" local variable.(æö€Ñøÿÿÿÿ
+Fsquid:S1481",Remove this unused "toggles" local variable.(æö€Ñøÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(·žòþÿÿÿÿ
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÄŠŸë
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(Ê»½
+gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 39 to the 15 allowed.(¬´Ò½
+Dsquid:S00108")Either remove or fill this block of code.(Ñˆ¿‘úÿÿÿÿ
+Fsquid:S1612",Replace this lambda with a method reference.(Ñ¹Ðëúÿÿÿÿ
+Usquid:S1854";Remove this useless assignment to local variable "toggles".(æö€Ñøÿÿÿÿ
+Usquid:S1854";Remove this useless assignment to local variable "toggles".(æö€Ñøÿÿÿÿ
+psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£¸ƒ†
+asquid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+4squid:S2131"Use "Integer.toString" instead.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+“squid:S1158"~Call the static method Integer.toString(...) instead of instantiating a temporary object to perform this to string conversion.(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ
+6squid:S2129"!Remove this "Integer" constructor(–šàÎ

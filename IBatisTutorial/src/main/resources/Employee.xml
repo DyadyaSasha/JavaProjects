@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!--<!DOCTYPE mapper-->
+        <!--PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"-->
+        <!--"http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
 <sqlMap namespace="Employee">
+
+    <!-- создаём таблицу если она не существует -->
+    <insert id="createTableIfNotExist">
+        CREATE TABLE IF NOT EXISTS ibatisemployee
+        (
+            id SERIAL,
+            first_name VARCHAR(20) DEFAULT NULL,
+            last_name VARCHAR(20) DEFAULT NULL,
+            salary INTEGER DEFAULT NULL,
+            PRIMARY KEY (id)
+        )
+    </insert>
+
     <!-- описываем операцию insert, которая будет вызываться из java-класса по namespace и id
          в #...# указаны вставляемые из java-кода параметры
          в parameterClass указан тип параметра, который будет вставлен в метод в java-коде-->
@@ -47,37 +63,19 @@
         WHERE first_name = #first_name#
     </select>
 <!--TODO: dynamical SQL and OGNL-->
-    <!--<select id="findById" parameterClass="int" resultClass="models.Employee">-->
-            <!--SELECT * FROM ibatisemployee-->
+    <select id="findByID" resultClass="models.Employee">
+            SELECT * FROM ibatisemployee
 
-<!--&#45;&#45;      в WHERE будет использоваться разные значения в зависимости от параметра id-->
-<!--&#45;&#45;      в данном случае - если id указан, то выведутся все строки с соответствующим полем, иначе-->
-<!--&#45;&#45;      выведутся все поля с id == NULL-->
-        <!--<dynamic prepend="WHERE">-->
+        <dynamic prepend="WHERE ">
 
-<!--&#45;&#45;         проверка, не пустое ли поле-->
-            <!--&lt;!&ndash;<isNotEmpty property="id">&ndash;&gt;-->
+            <isNotEmpty property="id">
+                id = #id#
+            </isNotEmpty>
 
-                <!--&lt;!&ndash;<isNull prepend="AND" property="id">&ndash;&gt;-->
-                    <!--&lt;!&ndash;id IS NULL&ndash;&gt;-->
-                 <!--&lt;!&ndash;</isNull>&ndash;&gt;-->
+        </dynamic>
 
-                <!--&lt;!&ndash;<isNotNull prepend="AND" property="id">&ndash;&gt;-->
-                    <!--&lt;!&ndash;id = #id#&ndash;&gt;-->
-                <!--&lt;!&ndash;</isNotNull>&ndash;&gt;-->
+    </select>
 
-                <!--&lt;!&ndash;<isNotNull prepend="OR" property="first_name">&ndash;&gt;-->
-                    <!--&lt;!&ndash;first_name = #first_name#&ndash;&gt;-->
-                <!--&lt;!&ndash;</isNotNull>&ndash;&gt;-->
-
-             <!--&lt;!&ndash;</isNotEmpty>&ndash;&gt;-->
-
-            <!--<isNotNull property="id">-->
-                <!--id = #id#-->
-            <!--</isNotNull>-->
-
-        <!--</dynamic>-->
-
-    <!--</select>-->
+    <!-- выражения if; choose-when-otherwise; trim; bind; where; foreach и другие доступны с MyBatis -->
 
 </sqlMap>

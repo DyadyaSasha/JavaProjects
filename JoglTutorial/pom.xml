@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.serebryakov</groupId>
+    <artifactId>JoglTutorial</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+        <dependency>
+            <artifactId>gluegen-rt</artifactId>
+            <groupId>gluegen-rt</groupId>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/gluegen-rt.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <artifactId>gluegen-rt-natives-windows-amd64</artifactId>
+            <groupId>gluegen-rt-natives-windows-amd64</groupId>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/gluegen-rt-natives-windows-amd64.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <artifactId>jogl-all</artifactId>
+            <groupId>jogl-all</groupId>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/jogl-all.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <artifactId>jogl-all-natives-windows-amd64</artifactId>
+            <groupId>jogl-all-natives-windows-amd64</groupId>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/jogl-all-natives-windows-amd64.jar</systemPath>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

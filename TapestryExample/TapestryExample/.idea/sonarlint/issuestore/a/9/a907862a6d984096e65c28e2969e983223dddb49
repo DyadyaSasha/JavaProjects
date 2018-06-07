@@ -1,0 +1,7 @@
+
+psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜äªš
+psquid:UselessImportCheck"IRemove this unused import 'org.apache.tapestry5.corelib.components.Zone'.(Ã½ó…ÿÿÿÿÿ
+psquid:UselessImportCheck"IRemove this unused import 'org.apache.tapestry5.corelib.components.Form'.(Ø‹öşÿÿÿÿ
+ysquid:UselessImportCheck"RRemove this unused import 'org.apache.tapestry5.corelib.components.PasswordField'.(÷¢Ï„şÿÿÿÿ
+lsquid:UselessImportCheck"ERemove this unused import 'org.apache.tapestry5.alerts.AlertManager'.(†¥ì‡ùÿÿÿÿ
+usquid:UselessImportCheck"NRemove this unused import 'org.apache.tapestry5.corelib.components.TextField'.(“ù·€ıÿÿÿÿ

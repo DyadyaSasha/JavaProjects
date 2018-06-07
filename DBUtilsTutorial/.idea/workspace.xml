@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="419c0821-e85b-4b80-a4bc-5935ad5326d3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/lib/opencv_java341.dll" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/collections/BeanComparatorExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/collections/Car.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dataTypeConversions/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dataTypeConversions/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dynabean/DynaBeanExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/BeanUtilsPropertyDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/MyBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/SubBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/cliexamples/CLITester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/ArgumentOption.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/BooleanOption.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/PropertiesOption.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/firstapp/CliTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/BagTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/BidiMapTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/MapIteratorTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/OrderedMapTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/examples/CollectionUtilsTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/LastModifiedFileComparatorTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/NameFileComparatorTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/SizeFileComparatorTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/AndFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/NameFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/OrFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/PrefixFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/SuffixFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/WildcardFileFilterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/monitorclasses/FileAlterationObserverTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/monitorclasses/FileEntryTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/streamclasses/TeeInputStreamTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FileSystemUtilsTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FileUtilsTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FilenameUtilsTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/IOCaseTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/IOUtilsTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/LineIteratorTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DBUtilsTutorial.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/firstapp/Employee.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/firstapp/MainApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/aop/AopTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ConstructorBinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/CustomAnnotatedBinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ImplementatedByAnnotation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/InbuiltBinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/NamedBinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProvidedByAnnotation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProviderInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProvidesBinding.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/main/GuiceTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/more/MethodInjection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/more/OnDemandInjection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/scopes/GuiceTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/newdateandtime/NewDateTimeTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/optionalclass/OptionalTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/streams/StreamTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/FadeTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/FillTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/ParallelTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/PauseTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/RotateTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/ScaleTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/SequentialTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/StrokeTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/TranslateTransitionExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/AreaChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/BarChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/BubbleChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/LineChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/PieChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/ScatterChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/StackedAreaChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/StackedBarChartExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/BloomEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/BoxBlurEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/DistantLightingExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/DropShadowEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/GaussianBlurEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/GlowEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/LightingEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/MotionBlurEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/PointLightExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/ReflectionEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/SepiaToneEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/ShadowEffectExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/SpotLightExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/TestEffects.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/ConvinienceMethodsExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/EventFiltersExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/EventHandlersExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/firstApp/JavafxSample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/AnchorPaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/BorderPaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/FlowPaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/GridPaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/HBoxExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/StackPaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/TextFlowExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/TilePaneExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/VBoxExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/text/TextExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/BoxExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/CylinderExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/SphereExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/transformation/TransformationExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/twoDshapes/TwoDimShapes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/uicontrols/LoginPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/uicontrols/Registration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/basictemplate/BasicFrameAWT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/graphicalshapes/Line.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/graphicalshapes/Triangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/GeneratorApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/LinkType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/OperationType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/TableType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/processor/Generator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/processor/IGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/models/Data.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/utils/EditCell.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/DisplayingImagesJavaFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/LoadingImage_JSE_library.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/ReadImageViaOpenCV.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/typesofimages/ReadingAsGrayscale.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/src/main/java/restclient/Requests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/src/main/resources/view.fxml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/description.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/project-template.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata.values.at" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericTutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GenericTutorial/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericTutorial/src/main/java/genericclasses/GenericClass.java" afterPath="$PROJECT_DIR$/../GenericTutorial/src/main/java/genericclasses/GenericClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/java/ibatis/IBatisInsert.java" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/java/ibatis/IBatisInsert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/Employee.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/Employee.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/SqlMapConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/target/classes/Employee.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/target/classes/Employee.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/target/classes/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/target/classes/SqlMapConfig.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="postgres" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="postgres" type="e3449647:DbNodeDescriptor" />
+        <item name="public" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="postgres" type="e3449647:DbNodeDescriptor" />
+        <item name="public" type="e3449647:DbNodeDescriptor" />
+        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="postgres@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="postgres" type="e3449647:DbNodeDescriptor" />
+        <item name="public" type="e3449647:DbNodeDescriptor" />
+        <item name="" type="fce03ad6:DatabaseStructure$GroupNode" />
+        <item name="employees" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="CustomRowProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomRowProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncQueryRunnerInterface.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/examples/AsyncQueryRunnerInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>execute</find>
+      <find>query</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/1e68ee25-e7c5-4d14-9064-2bd5ebec3cee/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/AsyncQueryRunnerInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/firstapp/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/MapListHandlerClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/firstapp/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/CustomHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/ArrayListHandlerClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/ResultSetHandlerInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/CustomRowProcessor.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBUtilsTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBUtilsTutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="firstapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CustomRowProcessor">
+    <configuration name="ArrayListHandlerClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.ArrayListHandlerClass" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBUtilsTutorial" />
+      <envs />
+    </configuration>
+    <configuration name="AsyncQueryRunnerInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.AsyncQueryRunnerInterface" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBUtilsTutorial" />
+      <envs />
+    </configuration>
+    <configuration name="CustomHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.CustomHandler" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBUtilsTutorial" />
+      <envs />
+    </configuration>
+    <configuration name="CustomRowProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.CustomRowProcessor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBUtilsTutorial" />
+      <envs />
+    </configuration>
+    <configuration name="ResultSetHandlerInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.ResultSetHandlerInterface" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DBUtilsTutorial" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.ArrayListHandlerClass" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AsyncQueryRunnerInterface" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CustomHandler" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ResultSetHandlerInterface" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CustomRowProcessor" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.CustomRowProcessor" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ResultSetHandlerInterface" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ArrayListHandlerClass" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CustomHandler" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AsyncQueryRunnerInterface" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="419c0821-e85b-4b80-a4bc-5935ad5326d3" name="Default" comment="" />
+      <created>1525268577301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525268577301</updated>
+      <workItem from="1525268581787" duration="3892000" />
+      <workItem from="1525350583203" duration="1819000" />
+      <workItem from="1525787900061" duration="5391000" />
+      <workItem from="1525799877224" duration="3371000" />
+      <workItem from="1525845995316" duration="2886000" />
+      <workItem from="1527152752353" duration="1497000" />
+      <workItem from="1527164387599" duration="85000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18941000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="952" y="0" width="976" height="1038" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08648649" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17570755" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1300716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomRowProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/AsyncQueryRunnerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomRowProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/firstapp/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/firstapp/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/ru.serebryakov:DBUtilsTutorial:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>ru.serebryakov:DBUtilsTutorial:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">ru.serebryakov:DBUtilsTutorial:1.0-SNAPSHOT</node>
+            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.2.0</node>
+            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.2.0/org.apache.commons:commons-pool2:jar:2.5.0</node>
+            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.2.0/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">commons-dbutils:commons-dbutils:jar:1.7</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="491.0" y="93.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1e68ee25-e7c5-4d14-9064-2bd5ebec3cee/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.1.4/postgresql-42.1.4-sources.jar!/org/postgresql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7.jar!/org/apache/commons/dbutils/QueryRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/ResultSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/handlers/ScalarHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="47" column="11" lean-forward="false" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/DbUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="214" column="34" lean-forward="false" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/TimeoutException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="166" column="6" lean-forward="false" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/firstapp/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="58" column="121" lean-forward="false" selection-start-line="58" selection-start-column="121" selection-end-line="58" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/handlers/ArrayListHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/MapListHandlerClass.java" />
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="128" column="17" lean-forward="false" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/handlers/BeanHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/firstapp/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.2.0/commons-dbcp2-2.2.0.jar!/org/apache/commons/dbcp2/BasicDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.2.0/commons-dbcp2-2.2.0-sources.jar!/org/apache/commons/dbcp2/BasicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/AbstractQueryRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="92" column="11" lean-forward="false" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/ArrayListHandlerClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/QueryRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1808">
+          <caret line="39" column="11" lean-forward="false" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/sql/ResultSetMetaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/ResultSetHandlerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/CustomRowProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="50" lean-forward="false" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbutils/commons-dbutils/1.7/commons-dbutils-1.7-sources.jar!/org/apache/commons/dbutils/AsyncQueryRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="475" column="27" lean-forward="false" selection-start-line="475" selection-start-column="27" selection-end-line="475" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/examples/AsyncQueryRunnerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
