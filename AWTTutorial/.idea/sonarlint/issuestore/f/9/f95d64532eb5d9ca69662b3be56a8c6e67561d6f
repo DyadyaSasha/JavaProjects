@@ -1,0 +1,15 @@
+
+[squid:S1161":Add the "@Override" annotation above this method signature(Ú„ÎÕşÿÿÿÿ8ˆŒµ¾,
+Hsquid:S1948"'Make "image" transient or serializable.(¢Õ´¯şÿÿÿÿ8ˆŒµ¾,
+|squid:CallToDeprecatedMethod"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ş½ûôÿÿÿÿÿ8áÊ’³¾,
+6squid:S1643"Use a StringBuilder instead.(ğ¼Ç†ûÿÿÿÿ
+\squid:S1192"HDefine a constant instead of duplicating this literal "checked" 3 times.(‡Õ(
+Bsquid:S1604"(Make this anonymous inner class a lambda(¹×û¬ıÿÿÿÿ
+[squid:S1192"FDefine a constant instead of duplicating this literal "Mango" 3 times.(ä²Ô›
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(½Ş¡8áÊ’³¾,
+Asquid:S1602",Remove useless curly braces around statement(½Œ÷Û
+Csquid:S1604"(Make this anonymous inner class a lambda(Û© f8ùÍı²¾,
+[squid:S1192"FDefine a constant instead of duplicating this literal "Apple" 3 times.(«½‰Š
+Bsquid:S1604"(Make this anonymous inner class a lambda(â„Œ„şÿÿÿÿ
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ˆŒµ¾,
+^squid:S1192"JDefine a constant instead of duplicating this literal "unchecked" 3 times.(‡Õ(
