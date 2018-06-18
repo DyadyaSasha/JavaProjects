@@ -3,3 +3,5 @@
 *.war
 
 TikaTutorial/\.idea/
+
+*.7z

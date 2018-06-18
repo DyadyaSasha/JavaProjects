@@ -1,5 +1,7 @@
 restclient\Requests.class
+dbutils\Data.class
 dbutils\Dao.class
+view\Controller$SelectChoice.class
 dbutils\Dao$1.class
 view\Main.class
 dbutils\Dao$DaoHolder.class

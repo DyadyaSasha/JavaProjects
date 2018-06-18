@@ -58,8 +58,9 @@ public class Dao {
 
     /**
      * Метод очищающий таблицы из БД, которые(таблицы) есть в JSON объекте
+     *
      * @param connectionFromPool - коннект к БД из пула коннектов
-     * @param tableNames - имена таблиц, получаемые из JSON объекта
+     * @param tableNames         - имена таблиц, получаемые из JSON объекта
      * @throws SQLException
      */
     public static void clearDB(Connection connectionFromPool, Set<String> tableNames) throws SQLException {
@@ -70,7 +71,8 @@ public class Dao {
                 try (Statement statement = connection.createStatement()) {
                     String deleteQuery = "DROP TABLE " + tableName;
                     statement.executeUpdate(deleteQuery);
-                } catch (SQLSyntaxErrorException e) {}
+                } catch (SQLSyntaxErrorException e) {
+                }
             }
         }
 
@@ -78,10 +80,11 @@ public class Dao {
 
     /**
      * создание таблицы
+     *
      * @param connectionFromPool - коннект к БД из пула коннектов
-     * @param tableName - имя таблицы, получаемое из JSON объекта
-     * @param columns - массив столбцов в таблице
-     * @param metadata - метаданные таблицы(тип данных столбцов)
+     * @param tableName          - имя таблицы, получаемое из JSON объекта
+     * @param columns            - массив столбцов в таблице
+     * @param metadata           - метаданные таблицы(тип данных столбцов)
      * @throws SQLException
      */
     public static void createTable(Connection connectionFromPool, String tableName, List<String> columns, Map<String, Map<String, String>> metadata) throws SQLException {
@@ -107,11 +110,12 @@ public class Dao {
 
     /**
      * вставлеям строки в таблицу
+     *
      * @param connectionFromPool - коннект к БД из пула коннектов
-     * @param tableName - имя таблицы, получаемое из JSON объекта
-     * @param columns - массив столбцов в таблице
-     * @param metadata - метаданные таблицы(тип данных столбцов)
-     * @param data - массив данных(строк) для сохранения в таблицу
+     * @param tableName          - имя таблицы, получаемое из JSON объекта
+     * @param columns            - массив столбцов в таблице
+     * @param metadata           - метаданные таблицы(тип данных столбцов)
+     * @param data               - массив данных(строк) для сохранения в таблицу
      * @throws SQLException
      */
     public static void insertData(Connection connectionFromPool, String tableName, List<String> columns, Map<String, Map<String, String>> metadata, List<List<Object>> data) throws SQLException {
@@ -151,4 +155,77 @@ public class Dao {
 
     }
 
+    public List<String> getNamesOfTables() throws SQLException {
+
+        List<String> defaultTableNames = new ArrayList<>(Arrays.asList(
+                "DEPT", "EMP", "DEMO_USERS", "DEMO_CUSTOMERS",
+                "DEMO_ORDERS", "DEMO_PRODUCT_INFO", "DEMO_ORDER_ITEMS", "DEMO_STATES",
+                "APEX$_ACL", "APEX$_WS_WEBPG_SECTIONS", "APEX$_WS_ROWS", "APEX$_WS_HISTORY",
+                "APEX$_WS_NOTES", "APEX$_WS_LINKS", "APEX$_WS_TAGS", "APEX$_WS_FILES",
+                "APEX$_WS_WEBPG_SECTION_HISTORY", "HTMLDB_PLAN_TABLE"
+        ));
+
+        List<String> namesOfTables = new ArrayList<>();
+
+        try (Connection connection = getBasicDataSource().getConnection()) {
+
+            DatabaseMetaData metaData = connection.getMetaData();
+            ResultSet resultSet = metaData.getTables(null, "MOSCOWEXCHANGE", null, null);
+            while (resultSet.next()) {
+                namesOfTables.add(resultSet.getString(3));
+            }
+        }
+
+        namesOfTables.removeAll(defaultTableNames);
+
+        return namesOfTables;
+    }
+
+    public List<Data> getTablesData() throws SQLException {
+
+        List<Data> tablesData = new ArrayList<>();
+        List<String> namesOfTables = getNamesOfTables();
+
+        try (Connection connection = getBasicDataSource().getConnection()) {
+
+            if (namesOfTables == null || namesOfTables.isEmpty()) {
+                connection.close();
+                return null;
+            } else {
+
+                for (String tableName : namesOfTables) {
+
+                    Data tableData = new Data(tableName);
+
+                    try (Statement statement = connection.createStatement()) {
+                        try (ResultSet resultSet = statement.executeQuery("SELECT * FROM MOSCOWEXCHANGE." + tableName.trim())) {
+
+                            ResultSetMetaData metaData = resultSet.getMetaData();
+                            int columnCount = metaData.getColumnCount();
+                            List<String> columnNames = tableData.getColumnNames();
+                            for (int i = 1; i <= columnCount; i++) {
+                                columnNames.add(metaData.getColumnName(i));
+                            }
+
+                            List<LinkedList<String>> dataRows = tableData.getDataRows();
+                            while (resultSet.next()) {
+                                LinkedList<String> row = new LinkedList<>();
+                                for (int i = 1; i <= columnCount; i++) {
+                                    row.add(resultSet.getString(i));
+                                }
+                                dataRows.add(row);
+                            }
+                        }
+                    }
+
+                    tablesData.add(tableData);
+                }
+            }
+        }
+        if (tablesData == null || tablesData.isEmpty()) {
+            return null;
+        } else {
+            return tablesData;
+        }
+    }
 }

@@ -1,0 +1,13 @@
+В /src/main/java - Java классы.
+В данной папке находятся следующие пакеты:
+    components - компоненты
+    pages - в данном пакете находятся java-классы, описывающие веб-страницу
+    services - сервисы
+
+В /src/main/resources - дополнительные ресурсы
+В /src/main/webapp - веб страницы, картинки, файлы css, js,
+    папка WEB-INF, в которой содержится web.xml и app.properties(Глобальные свойства проекта, такие как, заголовки, сообщения)
+
+В \src\main\resources\ в пакете pages(который находится в пакете ru.serebryakov.TapestryQuickStart - пакет, в котором находятся все элементы для Tapestry приложения)
+находятся шаблоны для java-классов, находящихся в \src\main\java\ в пакете pages(который находится в пакете ru.serebryakov.TapestryQuickStart - пакет, в котором находятся все классы для Tapestry приложения)
+Для каждого java-класса компонент(components) и для каждого java-класса страниц(pages) в \src\main\resources\ должны быть определены .tml шаблоны с теми же именами

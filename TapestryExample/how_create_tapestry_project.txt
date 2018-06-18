@@ -1,0 +1,5 @@
+В коммандной строке ввести:
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=http://tapestry.apache.org
+Выбрать:
+1: http://tapestry.apache.org -> org.apache.tapestry:quickstart (Tapestry 5 Quickstart Project)
+Дальше - по инструкции

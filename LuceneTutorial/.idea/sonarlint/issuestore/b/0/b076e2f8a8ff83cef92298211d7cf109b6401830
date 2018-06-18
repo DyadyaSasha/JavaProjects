@@ -1,0 +1,7 @@
+
+Ssquid:UnusedPrivateMethod"0Remove this unused private "getDocument" method.(‘¹û²
+Bsquid:S1481"-Remove this unused "document" local variable.(Œ¾œÉ
+Fsquid:S1481"1Remove this unused "contentField" local variable.(Û‹»
+Usquid:S1854"@Remove this useless assignment to local variable "contentField".(Û‹»
+Qsquid:S1854"<Remove this useless assignment to local variable "document".(Œ¾œÉ
+bsquid:UselessImportCheck";Remove this unused import 'org.apache.lucene.util.Version'.(ö‚á…øÿÿÿÿ

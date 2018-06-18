@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!-- autowire позволяет внедрять зависимости автоматически,
+    т.е. не надо явно указывать в property и в constructor-arg бин, который нужно дополнительно внедрить в данный объект класс
+    autowire="constructor" позволяет автоматически внедрять зависимости в аргументы конструктора по по совпадающему имени аргумента в конструкторе и id бина в XML конфиге
+    Если совпадений не найдено на место внедряемой зависимости ставится ссылка на null
+
+    по умолчанию autowire="no"(не использовать автоматическое внедрение зависимостей)
+    также есть autowire="autodetect"(сначала фреймворк пытается внедрить зависимость по конструктору(autowire="constructor"), затем по типу(autowire="byType")), autowire="byName", autowire="byType"
+    -->
+
+    <bean id="textEditor" class="autowireByConstructor.TextEditor" autowire="constructor">
+        <constructor-arg value="Generic Text Editor"/>
+    </bean>
+
+    <bean id="spellChecker" class="autowireByConstructor.SpellChecker"/>
+</beans>

@@ -1,181 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6ca4dc5-0694-4e31-bf56-aa78230a504e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/lib/opencv_java341.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/src/main/resources/images.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/collections/BeanComparatorExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/collections/Car.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dataTypeConversions/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dataTypeConversions/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/dynabean/DynaBeanExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/BeanUtilsPropertyDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/MyBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonBeanUtilsTutorial/src/main/java/properties/SubBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/cliexamples/CLITester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/ArgumentOption.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/BooleanOption.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/clioptions/PropertiesOption.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCLI/src/main/java/firstapp/CliTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/BagTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/BidiMapTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/MapIteratorTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/classes/OrderedMapTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsCollections/src/main/java/examples/CollectionUtilsTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/input.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/LastModifiedFileComparatorTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/NameFileComparatorTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/comparatorclasses/SizeFileComparatorTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/AndFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/NameFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/OrFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/PrefixFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/SuffixFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/filterclasses/WildcardFileFilterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/monitorclasses/FileAlterationObserverTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/monitorclasses/FileEntryTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/streamclasses/TeeInputStreamTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FileSystemUtilsTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FileUtilsTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/FilenameUtilsTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/IOCaseTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/IOUtilsTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CommonsIO/src/main/java/utilityclasses/LineIteratorTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/libraries/Maven__org_postgresql_postgresql_42_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/DBUtilsTutorial.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/src/main/java/firstapp/Employee.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DBUtilsTutorial/src/main/java/firstapp/MainApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/aop/AopTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ConstructorBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/CustomAnnotatedBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ImplementatedByAnnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/InbuiltBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/NamedBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProvidedByAnnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProviderInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/binding/ProvidesBinding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/main/GuiceTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/more/MethodInjection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/more/OnDemandInjection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DITutorial/src/main/java/scopes/GuiceTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/newdateandtime/NewDateTimeTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/optionalclass/OptionalTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Java8Tutorial/src/main/java/streams/StreamTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/FadeTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/FillTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/ParallelTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/PauseTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/RotateTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/ScaleTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/SequentialTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/StrokeTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/animation/TranslateTransitionExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/AreaChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/BarChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/BubbleChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/LineChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/PieChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/ScatterChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/StackedAreaChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/charts/StackedBarChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/BloomEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/BoxBlurEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/DistantLightingExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/DropShadowEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/GaussianBlurEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/GlowEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/LightingEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/MotionBlurEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/PointLightExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/ReflectionEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/SepiaToneEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/ShadowEffectExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/SpotLightExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/effects/TestEffects.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/ConvinienceMethodsExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/EventFiltersExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/eventhandling/EventHandlersExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/firstApp/JavafxSample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/AnchorPaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/BorderPaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/FlowPaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/GridPaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/HBoxExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/StackPaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/TextFlowExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/TilePaneExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/layout/VBoxExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/text/TextExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/BoxExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/CylinderExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/threeDShapes/SphereExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/transformation/TransformationExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/twoDshapes/TwoDimShapes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/uicontrols/LoginPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JavaFxTutorial/src/main/java/uicontrols/Registration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/basictemplate/BasicFrameAWT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/graphicalshapes/Line.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JoglTutorial/src/main/java/graphicalshapes/Triangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/GeneratorApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/LinkType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/OperationType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/configure/TableType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/processor/Generator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/gen/processor/IGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/models/Data.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NumberGenerator/src/main/java/utils/EditCell.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/classifier/lbpcascade_frontalface.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/blur/BlurTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/cameraAndFaceDetection/CameraSnapshotJavaFX.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/cameraAndFaceDetection/FaceDetectionImage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/drawingfunctions/DrawingCircle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/drawingfunctions/DrawingLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/drawingfunctions/DrawingRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/filtering/Filters.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/imageconversion/ColorToBinary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/imageconversion/ColorToGrayscale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/DisplayingImagesJavaFX.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/LoadingImage_JSE_library.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/main/ReadImageViaOpenCV.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../OpenCVTutorial/src/main/java/typesofimages/ReadingAsGrayscale.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/src/main/java/restclient/Requests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RestClientToMoscowExchange/src/main/resources/view.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericTutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GenericTutorial/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GenericTutorial/src/main/java/genericclasses/GenericClass.java" afterPath="$PROJECT_DIR$/../GenericTutorial/src/main/java/genericclasses/GenericClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/dataSources/f3b1b599-9373-489a-b1e8-dca6ffe5a780.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/java/ibatis/IBatisInsert.java" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/java/ibatis/IBatisInsert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/Employee.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/Employee.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/src/main/resources/SqlMapConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/target/classes/Employee.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/target/classes/Employee.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IBatisTutorial/target/classes/SqlMapConfig.xml" afterPath="$PROJECT_DIR$/../IBatisTutorial/target/classes/SqlMapConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/firstapp/Indexer.java" afterPath="$PROJECT_DIR$/src/main/java/firstapp/Indexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/firstapp/TextFileFilter.java" afterPath="$PROJECT_DIR$/src/main/java/firstapp/TextFileFilter.java" />
-    </list>
+    <list default="true" id="b6ca4dc5-0694-4e31-bf56-aa78230a504e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -205,8 +31,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+            <state relative-caret-position="567">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -454,16 +280,15 @@
       <workItem from="1516965257593" duration="70000" />
       <workItem from="1527668562994" duration="482000" />
       <workItem from="1527675888799" duration="1625000" />
-      <workItem from="1528358058683" duration="54000" />
+      <workItem from="1528358058683" duration="1595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7936000" />
+    <option name="totallyTimeSpent" value="9477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -749,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="21" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        <state relative-caret-position="567">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding />
         </state>
       </provider>

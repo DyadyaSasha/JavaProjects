@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="TapestryExample:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="TapestryExample.war">
-      <element id="artifact" artifact-name="TapestryExample:war exploded" />
-    </root>
-  </artifact>
-</component>

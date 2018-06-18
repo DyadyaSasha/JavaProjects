@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- данный файл используется, чтобы указать бины(классы), которые будут использоваться фреймворком
+     бины, определённые здесь, будут зарегистрированы Inversion of Control контейнером для дальнейшего использования
+     Spring контейнер управляет жизненным циклом бина
+-->
+
+<!-- в теге beans есть атрибуты, которые затем применяются к каждому определённому в данной конфигурации бину
+  это атрибуты: default-destroy-method, default-init-method, default-lazy-init и другие
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+<!--
+    в теге bean определяется конкретный класс, который будет инжектиться IoC контейнером(с помощью Dependency Injection) по указанному ID при необходимости
+    атрибуты тега bean:
+        id - id бина, по которому его можно заинжектить
+        class - полное имя класса бина(нужно чтобы DI создал нужный класс)
+        lazy-init(true/false) - указывает контейнеру, в какой момент нужно создать новый объект бина(если true - то при первом обращении к бину(вызов метода бина), если false - то объект бина создаётся в памяти сразу
+        init-method - метод, который вызовется когда у вновь созданного бина проинициализируются все поля
+        destroy-method - метод, который вызывается перед удалением бина из контейнера
+        scope - указывает, как создавать бин
+            например при значении prototype каждый раз создаётся новый бин при взятии бина из контекста
+            при singleton(бин по умолчанию имеет singleton scope) - бин создаётся единожды, при дальнейших вызовах бина бин берётся из кэша
+            request(доступно только для веб ApplicationContext) - определяет бин для HTTP request
+            session(доступно только для веб ApplicationContext) - определяет бин для HTTP session
+            global-session(доступно только для веб ApplicationContext) - определяет бин для глобальной HTTP session
+
+        Рекомендуется определять singleton бины, когда требуется бины без сохранения состояния
+        и определять prototype бины, когда требуются бины с сохранением состояния
+-->
+    <bean id="helloWorld" class="firstapp.HelloWorld" scope="singleton" init-method="init" destroy-method="destroy">
+        <!--
+        в property можно определить начальное значение конкретного поля бина при создании бина
+         -->
+        <property name="message" value="Hello Spring!"/>
+    </bean>
+
+    <bean id="prototypeBean" class="firstapp.PrototypeBean" scope="prototype">
+        <property name="name" value="Hello Prototype!"/>
+    </bean>
+
+    <!-- указываем класс PostProcessor-а при этом не нужно дополнительно указывать, что это класс PostProcessor-а, контекст сам определит это, увидев у данного класса интерфейс BeanPostProcessor  -->
+    <bean class="firstapp.MyBeanPostProcessor"/>
+
+</beans>

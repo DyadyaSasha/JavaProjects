@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="spellChecker" class="constructorDi.SpellChecker"/>
+
+    <bean id="textEditor" class="constructorDi.TextEditor">
+        <!-- указываем бин, который нужно внедрить в качестве аргумента в конструкторе
+        аргументы в конструктор вставляются согласно порядку их следования либо явно указывая индекс аргумента в атрибуте index
+        -->
+        <constructor-arg ref="spellChecker"/>
+        <constructor-arg type="int" value="5"/>
+    </bean>
+
+</beans>

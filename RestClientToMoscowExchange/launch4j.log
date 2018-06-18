@@ -1,0 +1,27 @@
+
+
+Version:	3.12
+CmdLine:	D:\Projects\Projects for github\JavaProjects\RestClientToMoscowExchange\MoscowExchange.exe --l4j-debug
+WOW64:		yes
+Create mutex:	MoscowExchange
+Working dir:	D:\Projects\Projects for github\JavaProjects\RestClientToMoscowExchange\.
+Java min ver:	1.008.000_152
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_152
+Check launcher:	C:\Java\jre1.8.0_152\bin\javaw.exe (OK)
+Match:		1.008.000_152
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_152
+Ignore:		1.008.000_152
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Runtime used:	1.008.000_152 (64-bit)
+Launcher:	C:\Java\jre1.8.0_152\bin\javaw.exe
+Launcher args:	-jar "D:\Projects\Projects for github\JavaProjects\RestClientToMoscowExchange\MoscowExchange.exe"
+Args length:	97/32768 chars
+Exit code:	0

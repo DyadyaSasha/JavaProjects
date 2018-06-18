@@ -1,0 +1,12 @@
+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬‡ÔíÀ,
+Vsquid:S2209"5Change this instance-reference to a static reference.(Š•ó¹úÿÿÿÿ8¬á»ñÀ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ó£ãïÀ,
+Usquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(ã£äüÿÿÿÿÿ8ßìîÀ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ê•êñÀ,
+fsquid:UselessImportCheck"8Remove this unused import 'javafx.application.Platform'.(§“óùÿÿÿÿ8¾ƒ¨òÀ,
+Usquid:S2864"4Iterate over the "entrySet" instead of the "keySet".(¶½¸Úıÿÿÿÿ8ßìîÀ,
+Vsquid:S2209"5Change this instance-reference to a static reference.(îÀ•ÿÿÿÿÿÿ8¬á»ñÀ,
+Qsquid:S2209"5Change this instance-reference to a static reference.(©ºş©8¬á»ñÀ,
+]squid:S2133"ARemove this object instantiation and use "HashMap.class" instead.(Å«”è8ßìîÀ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8şÌ¤îÀ,
