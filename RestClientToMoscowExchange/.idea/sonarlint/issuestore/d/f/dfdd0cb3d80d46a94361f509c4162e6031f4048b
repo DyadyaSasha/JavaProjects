@@ -1,2 +1,0 @@
-
-�%squid:RedundantThrowsDeclarationCheck"jRemove the declaration of thrown exception 'javax.ws.rs.BadRequestException' which is a runtime exception.(ıЎ

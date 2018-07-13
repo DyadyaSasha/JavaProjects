@@ -1,10 +1,0 @@
-
-isquid:S1192"MUse already-defined constant 'DB_USER' instead of duplicating its value here.(ËäìŒ8ã¢òÈÀ,
-Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8Œ ÖïÀ,
-Msquid:S1197"8Move the array designator from the variable to the type.(©¢Õ†
-Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8üÙÙïÀ,
-Tsquid:S2589"8Remove this expression which always evaluates to "false"(í‡è8üÙÙïÀ,
-?squid:S00108")Either remove or fill this block of code.(†¦á
-gsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(À±Ÿ
-~squid:S4087"bRemove this "close" call; closing the resource is handled automatically by the try-with-resources.(ôêÂœ8Œ ÖïÀ,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Úï²Šüÿÿÿÿ8üÙÙïÀ,

@@ -1,0 +1,91 @@
+/* https://docs.oracle.com/javafx/2/charts/css-styles.htm */
+
+.crossLabels{
+    -fx-background-color: whitesmoke;
+}
+
+.zoomRectangle{
+
+}
+
+.stockChartPane{
+}
+
+
+.stockChart{
+    -fx-border-color: green;
+    -fx-legend-visible: false;
+    -fx-create-symbols: true;
+
+}
+
+
+
+
+.stockChart .chart-plot-background{
+}
+
+.stockChart .axis{
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+}
+
+.stockChart .chart-series-line{
+    -fx-stroke: blue;
+    -fx-stroke-width: 1px;
+    -fx-effect: null;
+
+}
+
+
+.default-color1.chart-series-line { -fx-stroke:transparent;}
+.default-color0.chart-series-line { -fx-stroke: red; }
+
+.default-color1.chart-line-symbol {
+    -fx-background-color:  green;
+}
+.default-color0.chart-line-symbol {
+    -fx-background-color: transparent;
+}
+
+.default-color1.chart-legend-item-symbol{
+    -fx-background-color: green;
+}
+.default-color0.chart-legend-item-symbol{
+    -fx-background-color: red;
+}
+
+
+.crossMarker{
+    -fx-stroke: rgba(255,0,0,0.7);
+    -fx-stroke-width: 0.7px;
+}
+
+.areaChartsBox{
+
+}
+
+
+.area1{
+    -fx-legend-visible: false;
+    -fx-horizontal-grid-lines-visible: false;
+    -fx-vertical-grid-lines-visible: false;
+}
+
+.area1 .axis{
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+    -fx-tick-labels-visible: false;
+}
+
+.area2{
+    -fx-legend-visible: false;
+    -fx-horizontal-grid-lines-visible: false;
+    -fx-vertical-grid-lines-visible: false;
+}
+
+.area2 .axis{
+    -fx-tick-mark-visible: false;
+    -fx-minor-tick-visible: false;
+    -fx-tick-labels-visible: false;
+}
