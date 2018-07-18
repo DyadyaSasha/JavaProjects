@@ -24,6 +24,7 @@ import org.gillius.jfxutils.EventHandlerManager;
 import org.gillius.jfxutils.chart.*;
 
 public class MyChartZoomManager {
+
     public static final EventHandler<MouseEvent> DEFAULT_FILTER = new EventHandler<MouseEvent>() {
         @Override
         public void handle(MouseEvent mouseEvent) {
@@ -32,6 +33,7 @@ public class MyChartZoomManager {
                 mouseEvent.consume();
         }
     };
+
 
     private final SimpleDoubleProperty rectX = new SimpleDoubleProperty();
     private final SimpleDoubleProperty rectY = new SimpleDoubleProperty();
@@ -295,6 +297,8 @@ public class MyChartZoomManager {
             selecting.set(true);
     }
 
+
+//  TODO: здесь можно прописать движение креста
     private void onMouseDragged(MouseEvent mouseEvent) {
         if (!selecting.get())
             return;
@@ -375,6 +379,7 @@ public class MyChartZoomManager {
         return (val - min) / (max - min);
     }
 
+    //TODO: сделать ограничения по зумированию с помощью колёсика мыши
     private class MouseWheelZoomHandler implements EventHandler<ScrollEvent> {
         private boolean ignoring = false;
 
@@ -448,17 +453,17 @@ public class MyChartZoomManager {
                     }
                 }
 
-                if (zoomMode == AxisConstraint.Both || zoomMode == AxisConstraint.Vertical) {
-                    double yZoomDelta = (yAxis.getUpperBound() - yAxis.getLowerBound()) * zoomAmount;
-                    yAxis.setAutoRanging(false);
-                    double newYLowerBound = yAxis.getLowerBound() - yZoomDelta * yZoomBalance;
-                    double newYUpperBound = yAxis.getUpperBound() + yZoomDelta * (1 - yZoomBalance);
-                    if(newYLowerBound >= 0){
-                        yAxis.setLowerBound(newYLowerBound);
-                        yAxis.setUpperBound(newYUpperBound);
-                    }
-
-                }
+//                if (zoomMode == AxisConstraint.Both || zoomMode == AxisConstraint.Vertical) {
+//                    double yZoomDelta = (yAxis.getUpperBound() - yAxis.getLowerBound()) * zoomAmount;
+//                    yAxis.setAutoRanging(false);
+//                    double newYLowerBound = yAxis.getLowerBound() - yZoomDelta * yZoomBalance;
+//                    double newYUpperBound = yAxis.getUpperBound() + yZoomDelta * (1 - yZoomBalance);
+//                    if(newYLowerBound >= 0){
+//                        yAxis.setLowerBound(newYLowerBound);
+//                        yAxis.setUpperBound(newYUpperBound);
+//                    }
+//
+//                }
             }
         }
     }

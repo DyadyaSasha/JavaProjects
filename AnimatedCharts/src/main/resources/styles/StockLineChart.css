@@ -16,7 +16,8 @@
     -fx-border-color: green;
     -fx-legend-visible: false;
     -fx-create-symbols: true;
-
+    /*-fx-horizontal-grid-lines-visible: false;*/
+    /*-fx-vertical-grid-lines-visible: false;*/
 }
 
 
@@ -30,16 +31,17 @@
     -fx-minor-tick-visible: false;
 }
 
-.stockChart .chart-series-line{
-    -fx-stroke: blue;
-    -fx-stroke-width: 1px;
-    -fx-effect: null;
 
+
+
+.default-color1.chart-series-line {
+    -fx-stroke:transparent;
 }
 
-
-.default-color1.chart-series-line { -fx-stroke:transparent;}
-.default-color0.chart-series-line { -fx-stroke: red; }
+.default-color0.chart-series-line {
+    -fx-stroke: red;
+    -fx-stroke-width: 1px;
+}
 
 .default-color1.chart-line-symbol {
     -fx-background-color:  green;
@@ -54,6 +56,12 @@
 .default-color0.chart-legend-item-symbol{
     -fx-background-color: red;
 }
+
+/*.stockChart .chart-series-line{*/
+    /*-fx-stroke: blue;*/
+    /*-fx-stroke-width: 1px;*/
+    /*-fx-effect: null;*/
+/*}*/
 
 
 .crossMarker{

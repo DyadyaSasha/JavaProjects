@@ -32,6 +32,7 @@ public class Controller {
 
     @FXML
     public void setMaxBounds(ActionEvent actionEvent) {
+
 //        ((ToggleButton)actionEvent.getSource()).setSelected(true);
 
 
@@ -41,7 +42,13 @@ public class Controller {
             LineChart<Number, Number> lineChart = stockLineChart.getChart();
 
             ValueAxis<?> xAxis = ((ValueAxis<?>) lineChart.getXAxis());
-            xAxis.setLowerBound(xAxis.getUpperBound() - stockLineChart.getInitialTimeUpperBound());
+            final double newXLowerBound = xAxis.getUpperBound() - stockLineChart.getInitialTimeUpperBound();
+            if(newXLowerBound < 0){
+                xAxis.setLowerBound(stockLineChart.getInitialTimeLowerBound());
+            } else {
+                xAxis.setLowerBound(newXLowerBound);
+            }
+
 
             ValueAxis<?> yAxis = ((ValueAxis<?>) lineChart.getYAxis());
             yAxis.setLowerBound(stockLineChart.getInitialPriceLowerBound());

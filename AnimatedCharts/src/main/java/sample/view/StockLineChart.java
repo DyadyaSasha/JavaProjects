@@ -43,11 +43,11 @@ public class StockLineChart extends HBox {
     private Timeline chartStockAnimation;
     private double prevX = 0;
     private double lastY = 0;
-    private double minVal = 10;
-    private double maxVal = 100;
+    private double minVal = 40;
+    private double maxVal = 50;
     private double initialTimeUpperBound = 60;
     private double initialTimeLowerBound = 0;
-    private double initialPriceUpperBound = 100;
+    private double initialPriceUpperBound = 60;
     private double initialPriceLowerBound = 0;
 
     public StockLineChart() {
@@ -71,7 +71,7 @@ public class StockLineChart extends HBox {
         /**
          * описываем оси графика и сам график
          */
-        xAxis = new NumberAxis(initialTimeLowerBound, initialTimeUpperBound, 0.3);
+        xAxis = new NumberAxis(initialTimeLowerBound, initialTimeUpperBound, 10);
         yAxis = new NumberAxis(initialPriceLowerBound, initialPriceUpperBound, 10);
 
 //        xAxis.setForceZeroInRange(false);
@@ -89,22 +89,33 @@ public class StockLineChart extends HBox {
 
         chart.setAnimated(false);
 
-        chart.setOnMouseClicked(event -> {
-            if(event.getButton() != MouseButton.PRIMARY) return;
-            Point2D pointInScene = new Point2D(event.getSceneX(), event.getSceneY());
-            double yPosInAxis = yAxis.sceneToLocal(new Point2D(0, pointInScene.getY())).getY();
-            double xPosInAxis = xAxis.sceneToLocal(new Point2D(pointInScene.getX(), 0)).getX();
-            dotSeries.getData().add(new XYChart.Data<>(xAxis.getValueForDisplay(xPosInAxis),yAxis.getValueForDisplay(yPosInAxis)));
-        });
+//        TODO: реализовать метод для покупки и продажи(ниже прелставлен пример реализации рисования индикатора-точки покупки/продажи)
+//        chart.setOnMouseClicked(event -> {
+//            if(event.getButton() != MouseButton.PRIMARY) {
+//                return;
+//            }
+//            Point2D pointInScene = new Point2D(event.getSceneX(), event.getSceneY());
+//            double yPosInAxis = yAxis.sceneToLocal(new Point2D(0, pointInScene.getY())).getY();
+//            double xPosInAxis = xAxis.sceneToLocal(new Point2D(pointInScene.getX(), 0)).getX();
+//            dotSeries.getData().add(new XYChart.Data<>(xAxis.getValueForDisplay(xPosInAxis),yAxis.getValueForDisplay(yPosInAxis)));
+//        });
+
 
         chart.setOnMouseMoved(this::mouseActionInChartPlot);
 
         chart.setOnMouseDragged(event -> {
-            if (event.getButton() == MouseButton.SECONDARY) {
-                ((Node) event.getSource()).setCursor(Cursor.CLOSED_HAND);
+            if (event.getButton() == MouseButton.PRIMARY) {
                 mouseActionInChartPlot(event);
+
+            } else {
+                if (event.getButton() == MouseButton.SECONDARY) {
+                    mouseActionInChartPlot(event);
+                    ((Node) event.getSource()).setCursor(Cursor.CLOSED_HAND);
+                    updateLines(event);
+                }
             }
         });
+
 
         chart.setOnMouseExited(event -> {
             horizontalLabel.setVisible(false);
@@ -114,7 +125,7 @@ public class StockLineChart extends HBox {
         });
 
         chart.setOnMouseReleased(event -> {
-            if (event.getButton() == MouseButton.SECONDARY) {
+            if (event.getButton() == MouseButton.SECONDARY && ((Node) event.getSource()).getCursor() == Cursor.CLOSED_HAND) {
                 ((Node) event.getSource()).setCursor(Cursor.DEFAULT);
             }
         });
@@ -122,7 +133,7 @@ public class StockLineChart extends HBox {
         MyChartPanManager chartPanManager = new MyChartPanManager(chart);
         chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         chartPanManager.setMouseFilter(mouseEvent -> {
-            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
+            if (mouseEvent.getButton() != MouseButton.PRIMARY) mouseEvent.consume();
         });
         chartPanManager.start();
 
@@ -137,6 +148,9 @@ public class StockLineChart extends HBox {
         MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
         zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+        zoomManager.setMouseFilter(mouseEvent -> {
+            if(mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
+        });
         zoomManager.start();
 
 
@@ -169,17 +183,17 @@ public class StockLineChart extends HBox {
          * холст графика
          */
         chartBackground = chart.lookup(".chart-plot-background");
+        chartBackground.setOnMouseEntered(event -> ((Node) event.getSource()).setCursor(Cursor.CROSSHAIR));
+        chartBackground.setOnMouseExited(event -> ((Node) event.getSource()).setCursor(Cursor.DEFAULT));
 
         VBox boxForAreaCharts = new VBox();
         boxForAreaCharts.getStyleClass().add(CSSStylesNames.AREA_CHARTS_BOX.getStyleName());
 
         NumberAxis xAxisArea1 = new NumberAxis();
-
         NumberAxis yAxisArea1 = new NumberAxis();
 
 
         NumberAxis xAxisArea2 = new NumberAxis();
-
         NumberAxis yAxisArea2 = new NumberAxis();
 
 
@@ -234,18 +248,18 @@ public class StockLineChart extends HBox {
         prevX += 0.3;
         lastY = y;
         if (prevX > xAxis.getUpperBound()) {
-            xAxis.setUpperBound(xAxis.getUpperBound() + 20);
-            xAxis.setLowerBound(xAxis.getLowerBound() + 20);
+            xAxis.setUpperBound(xAxis.getUpperBound() + 0.3);
+            xAxis.setLowerBound(xAxis.getLowerBound() + 0.3);
         }
 
-        dataSeries.getNode().setOnMouseEntered(event -> {
-            updateLines(event);
-            horizontalLine.setVisible(true);
-            verticalLine.setVisible(true);
-
-            ((Node) event.getSource()).setCursor(Cursor.HAND);
-        });
-        dataSeries.getNode().setOnMouseExited(event -> ((Node) event.getSource()).setCursor(Cursor.DEFAULT));
+//        dataSeries.getNode().setOnMouseEntered(event -> {
+//            updateLines(event);
+//            horizontalLine.setVisible(true);
+//            verticalLine.setVisible(true);
+//
+//            ((Node) event.getSource()).setCursor(Cursor.HAND);
+//        });
+//        dataSeries.getNode().setOnMouseExited(event -> ((Node) event.getSource()).setCursor(Cursor.DEFAULT));
     }
 
     private void updateLines(MouseEvent event) {
