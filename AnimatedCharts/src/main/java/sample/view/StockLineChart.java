@@ -23,6 +23,7 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 import org.gillius.jfxutils.chart.AxisConstraintStrategies;
+import org.gillius.jfxutils.chart.XYChartInfo;
 import sample.utils.MyChartPanManager;
 import sample.utils.MyChartZoomManager;
 
@@ -40,6 +41,7 @@ public class StockLineChart extends HBox {
     private Label verticalLabel;
     private XYChart.Series<Number, Number> dataSeries;
     private XYChart.Series<Number, Number> dotSeries;
+    private XYChartInfo chartInfo;
     private Timeline chartStockAnimation;
     private double prevX = 0;
     private double lastY = 0;
@@ -78,6 +80,29 @@ public class StockLineChart extends HBox {
 
         //TODO: сделать форматирование данных на осях
         yAxis.setTickLabelFormatter(new NumberAxis.DefaultFormatter(yAxis, "$", null));
+//        yAxis.setTickLabelFormatter(new StringConverter<Number>() {
+//            @Override
+//            public String toString(Number object) {
+//                return String.format("$%.0f", object.doubleValue());
+//            }
+//
+//            @Override
+//            public Number fromString(String string) {
+//                return Double.parseDouble(string);
+//            }
+//        });
+//
+//        xAxis.setTickLabelFormatter(new StringConverter<Number>() {
+//            @Override
+//            public String toString(Number object) {
+//                return String.format("%.0f", object.doubleValue());
+//            }
+//
+//            @Override
+//            public Number fromString(String string) {
+//                return Double.parseDouble(string);
+//            }
+//        });
 
         dataSeries = new XYChart.Series<>();
         dotSeries = new XYChart.Series<>();
@@ -149,8 +174,9 @@ public class StockLineChart extends HBox {
         zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         zoomManager.setMouseFilter(mouseEvent -> {
-            if(mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
+            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
         });
+        chartInfo = zoomManager.getChartInfo();
         zoomManager.start();
 
 
@@ -217,6 +243,7 @@ public class StockLineChart extends HBox {
 
         pane.prefHeightProperty().bind(this.prefHeightProperty());
         pane.prefWidthProperty().bind(this.prefWidthProperty().multiply(1.5));
+//        pane.setMinSize(500,200);
 
         boxForAreaCharts.prefWidthProperty().bind(this.prefWidthProperty().divide(1.5));
         boxForAreaCharts.prefHeightProperty().bind(this.prefHeightProperty());
@@ -269,30 +296,47 @@ public class StockLineChart extends HBox {
         Bounds chartAreaBounds = chartBackground.localToScene(chartBackground.getLayoutBounds());
 //        Bounds chartAreaBounds = chartBackground.getLayoutBounds();
 
-//        System.out.println(event.getX() + " " + chartAreaBounds.getMaxX() + " " + chartBounds.getMaxX());
-//        System.out.println(event.getX() + " " + chartAreaBounds.getMinX() + " " + chartBounds.getMinX());
 
         horizontalLine.setStartY(event.getY());
-        horizontalLine.setStartX(chartAreaBounds.getMinX());
+//        horizontalLine.setStartX(chartAreaBounds.getMinX());
+//        horizontalLine.setStartX(chart.localToParent(chartBackground.localToParent(chartBackground.getLayoutBounds())).getMinX());
+        horizontalLine.setStartX(chartInfo.getPlotArea().getMinX());
+        horizontalLine.setEndX(chartInfo.getPlotArea().getMaxX());
         horizontalLine.setEndY(event.getY());
-        horizontalLine.setEndX(chartAreaBounds.getMaxX());
+//        horizontalLine.setEndX(chart.localToParent(chartBackground.localToParent(chartBackground.getLayoutBounds())).getMaxX());
+//        horizontalLine.setEndX(chartAreaBounds.getMaxX());
 
         Point2D pointInScene = new Point2D(event.getSceneX(), event.getSceneY());
 
 
-        horizontalLabel.setLayoutX(chartAreaBounds.getMinX() - horizontalLabel.getWidth());
+//        horizontalLabel.setLayoutX(chartAreaBounds.getMinX() - horizontalLabel.getWidth());
+        horizontalLabel.setLayoutX(chartInfo.getPlotArea().getMinX() - horizontalLabel.getWidth());
         horizontalLabel.setLayoutY(event.getY() - horizontalLabel.getHeight() / 2);
         double yPosInAxis = yAxis.sceneToLocal(new Point2D(0, pointInScene.getY())).getY();
         horizontalLabel.setText(String.format("%.2f", (double) yAxis.getValueForDisplay(yPosInAxis)));
 
 
-        verticalLine.setStartY(chartAreaBounds.getMaxY() - (chartBounds.getMaxY() - chartAreaBounds.getMaxY()));
+//        verticalLine.setStartY(chartAreaBounds.getMaxY() - (chartBounds.getMaxY() - chartAreaBounds.getMaxY()));
+//        verticalLine.setStartY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMaxY()-3);
+        verticalLine.setStartY(chartInfo.getPlotArea().getMinY());
         verticalLine.setStartX(event.getX());
-        verticalLine.setEndY(chartAreaBounds.getMinY() - chartBounds.getMinY());
+//        verticalLine.setEndY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMinY()-3);
+        verticalLine.setEndY(chartInfo.getPlotArea().getMaxY());
+//        verticalLine.setEndY(chartAreaBounds.getMinY() - chartBounds.getMinY());
         verticalLine.setEndX(event.getX());
 
+
         verticalLabel.setLayoutX(event.getSceneX() - verticalLabel.getWidth() / 2);
-        verticalLabel.setLayoutY(chartAreaBounds.getMaxY() - (chartBounds.getMaxY() - chartAreaBounds.getMaxY()));
+
+//        verticalLabel.setLayoutY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMaxY());
+        verticalLabel.setLayoutY(chartInfo.getPlotArea().getMaxY()+0.9);
+
+
+//        System.out.println(pane.localToParent(pane.getBoundsInLocal()));
+//        System.out.println(pane.localToParent(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInLocal()))));
+
+
+//        verticalLabel.setLayoutY(chartAreaBounds.getMaxY() - (chartBounds.getMaxY() - chartAreaBounds.getMaxY()));
         double xPosInAxis = xAxis.sceneToLocal(new Point2D(pointInScene.getX(), 0)).getX();
         verticalLabel.setText(String.format("%.2f", (double) xAxis.getValueForDisplay(xPosInAxis)));
     }
@@ -329,7 +373,7 @@ public class StockLineChart extends HBox {
         return prevX;
     }
 
-    public double getLastY(){
+    public double getLastY() {
         return lastY;
     }
 }

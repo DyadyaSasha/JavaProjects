@@ -467,4 +467,8 @@ public class MyChartZoomManager {
             }
         }
     }
+
+    public XYChartInfo getChartInfo() {
+        return chartInfo;
+    }
 }
