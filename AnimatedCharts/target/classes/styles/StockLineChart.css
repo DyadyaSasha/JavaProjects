@@ -2,6 +2,7 @@
 
 .crossLabels{
     -fx-background-color: whitesmoke;
+    -fx-font: bold;
 }
 
 .zoomRectangle{
@@ -86,14 +87,3 @@
     -fx-tick-labels-visible: false;
 }
 
-.area2{
-    -fx-legend-visible: false;
-    -fx-horizontal-grid-lines-visible: false;
-    -fx-vertical-grid-lines-visible: false;
-}
-
-.area2 .axis{
-    -fx-tick-mark-visible: false;
-    -fx-minor-tick-visible: false;
-    -fx-tick-labels-visible: false;
-}

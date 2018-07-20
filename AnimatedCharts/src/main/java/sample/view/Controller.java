@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.ValueAxis;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -13,6 +14,7 @@ import java.util.List;
 public class Controller {
 
     public List<HBox> stockLineCharts;
+//    public List<GridPane> stockLineCharts;
 
     @FXML
     private VBox chartsFlow;
@@ -25,6 +27,7 @@ public class Controller {
     @FXML
     private void addNewChart() {
         StockLineChart stockLineChart = new StockLineChart();
+//        StockLineChartGrid stockLineChart = new StockLineChartGrid();
         stockLineCharts.add(stockLineChart);
         chartsFlow.getChildren().add(stockLineChart);
         stockLineChart.play();
@@ -39,6 +42,7 @@ public class Controller {
         stockLineCharts.forEach(chart -> {
 
             StockLineChart stockLineChart = (StockLineChart) chart;
+//            StockLineChartGrid stockLineChart = (StockLineChartGrid) chart;
             LineChart<Number, Number> lineChart = stockLineChart.getChart();
 
             ValueAxis<?> xAxis = ((ValueAxis<?>) lineChart.getXAxis());
@@ -64,9 +68,11 @@ public class Controller {
         stockLineCharts.forEach(chart -> {
 
             StockLineChart stockLineChart = (StockLineChart) chart;
+//            StockLineChartGrid stockLineChart = (StockLineChartGrid) chart;
             LineChart<Number, Number> lineChart = stockLineChart.getChart();
 
             final double lastY = ((StockLineChart) chart).getLastY();
+//            final double lastY = ((StockLineChartGrid) chart).getLastY();
 
 
             ValueAxis<?> yAxis = ((ValueAxis<?>) lineChart.getYAxis());
@@ -89,9 +95,11 @@ public class Controller {
         stockLineCharts.forEach(chart -> {
 
             StockLineChart stockLineChart = (StockLineChart) chart;
+//            StockLineChartGrid stockLineChart = (StockLineChartGrid) chart;
             LineChart<Number, Number> lineChart = stockLineChart.getChart();
 
             final double lastY = ((StockLineChart) chart).getLastY();
+//            final double lastY = ((StockLineChartGrid) chart).getLastY();
 
 
             ValueAxis<?> yAxis = ((ValueAxis<?>) lineChart.getYAxis());
@@ -114,10 +122,11 @@ public class Controller {
         stockLineCharts.forEach(chart -> {
 
             StockLineChart stockLineChart = (StockLineChart) chart;
+//            StockLineChartGrid stockLineChart = (StockLineChartGrid) chart;
             LineChart<Number, Number> lineChart = stockLineChart.getChart();
 
             final double lastY = ((StockLineChart) chart).getLastY();
-
+//            final double lastY = ((StockLineChartGrid) chart).getLastY();
 
             ValueAxis<?> yAxis = ((ValueAxis<?>) lineChart.getYAxis());
 

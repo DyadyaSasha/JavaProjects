@@ -9,9 +9,7 @@ public enum CSSStylesNames {
     CROSS_LABELS("crossLabels"),
     STOCK_CHART_PANE("stockChartPane"),
     AREA_CHARTS_BOX("areaChartsBox"),
-    AREA1("area1"),
-    AREA2("area2");
-
+    AREA1("area1");
 
     private String styleName;
 

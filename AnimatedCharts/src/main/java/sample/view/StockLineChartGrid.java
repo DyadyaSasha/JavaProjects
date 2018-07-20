@@ -14,24 +14,17 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Font;
 import javafx.util.Duration;
-import javafx.util.StringConverter;
 import org.gillius.jfxutils.chart.AxisConstraintStrategies;
 import org.gillius.jfxutils.chart.XYChartInfo;
 import sample.utils.MyChartPanManager;
 import sample.utils.MyChartZoomManager;
 
-
-public class StockLineChart extends HBox {
-
+public class StockLineChartGrid  extends GridPane{
     private LineChart<Number, Number> chart;
     private Pane pane;
     private NumberAxis xAxis;
@@ -54,7 +47,7 @@ public class StockLineChart extends HBox {
     private double initialPriceUpperBound = 60;
     private double initialPriceLowerBound = 0;
 
-    public StockLineChart() {
+    public StockLineChartGrid() {
 
         /**
          * файл с стилями
@@ -80,32 +73,31 @@ public class StockLineChart extends HBox {
 
 //        xAxis.setForceZeroInRange(false);
 
+        //TODO: сделать форматирование данных на осях
         yAxis.setTickLabelFormatter(new NumberAxis.DefaultFormatter(yAxis, "$", null));
-        yAxis.setTickLabelFormatter(new StringConverter<Number>() {
-            @Override
-            public String toString(Number object) {
-                return String.format("$%.0f", object.doubleValue());
-            }
-
-            @Override
-            public Number fromString(String string) {
+//        yAxis.setTickLabelFormatter(new StringConverter<Number>() {
+//            @Override
+//            public String toString(Number object) {
+//                return String.format("$%.0f", object.doubleValue());
+//            }
+//
+//            @Override
+//            public Number fromString(String string) {
 //                return Double.parseDouble(string);
-                return 0;
-            }
-        });
-
-        xAxis.setTickLabelFormatter(new StringConverter<Number>() {
-            @Override
-            public String toString(Number object) {
-                return String.format("%.0f", object.doubleValue());
-            }
-
-            @Override
-            public Number fromString(String string) {
+//            }
+//        });
+//
+//        xAxis.setTickLabelFormatter(new StringConverter<Number>() {
+//            @Override
+//            public String toString(Number object) {
+//                return String.format("%.0f", object.doubleValue());
+//            }
+//
+//            @Override
+//            public Number fromString(String string) {
 //                return Double.parseDouble(string);
-                return 0;
-            }
-        });
+//            }
+//        });
 
         dataSeries = new XYChart.Series<>();
         dotSeries = new XYChart.Series<>();
@@ -191,9 +183,7 @@ public class StockLineChart extends HBox {
         horizontalLine.getStyleClass().add(CSSStylesNames.CROSS_VALUE_MARKER.getStyleName());
         verticalLine.getStyleClass().add(CSSStylesNames.CROSS_VALUE_MARKER.getStyleName());
         horizontalLabel = new Label();
-        horizontalLabel.setStyle(CSSStylesNames.CROSS_LABELS.getStyleName());
         verticalLabel = new Label();
-        verticalLabel.setStyle(CSSStylesNames.CROSS_LABELS.getStyleName());
         horizontalLabel.getStyleClass().addAll(CSSStylesNames.CROSS_VALUE_MARKER.getStyleName(),
                 CSSStylesNames.CROSS_LABELS.getStyleName());
         verticalLabel.getStyleClass().addAll(CSSStylesNames.CROSS_VALUE_MARKER.getStyleName(),
@@ -233,25 +223,35 @@ public class StockLineChart extends HBox {
 //        boxForAreaCharts.getChildren().addAll(area1);
 
 
-        VBox.setVgrow(chart, Priority.ALWAYS);
-        HBox.setHgrow(chart, Priority.ALWAYS);
-        VBox.setVgrow(pane, Priority.ALWAYS);
-        HBox.setHgrow(pane, Priority.ALWAYS);
-        HBox.setHgrow(area1, Priority.ALWAYS);
-        VBox.setVgrow(area1, Priority.ALWAYS);
+//        VBox.setVgrow(chart, Priority.ALWAYS);
+//        HBox.setHgrow(chart, Priority.ALWAYS);
+//        VBox.setVgrow(pane, Priority.ALWAYS);
+//        HBox.setHgrow(pane, Priority.ALWAYS);
+//        HBox.setHgrow(area1, Priority.ALWAYS);
+//        VBox.setVgrow(area1, Priority.ALWAYS);
 
 
-        pane.prefHeightProperty().bind(this.prefHeightProperty());
-        pane.prefWidthProperty().bind(this.prefWidthProperty().multiply(1));
+//        pane.prefHeightProperty().bind(this.prefHeightProperty());
+//        pane.prefWidthProperty().bind(this.prefWidthProperty().multiply(1.5));
 //        pane.setMinSize(500,200);
 
 //        boxForAreaCharts.prefWidthProperty().bind(this.prefWidthProperty().divide(1.5));
 //        boxForAreaCharts.prefHeightProperty().bind(this.prefHeightProperty());
 
-        area1.prefWidthProperty().bind(this.prefWidthProperty().divide(1));
-        area1.prefHeightProperty().bind(this.prefHeightProperty());
-
+//        area1.prefWidthProperty().bind(this.prefWidthProperty().divide(1.5));
+//        area1.prefHeightProperty().bind(this.prefHeightProperty());
+        HBox.setHgrow(this, Priority.ALWAYS);
+        VBox.setVgrow(this, Priority.ALWAYS);
+        this.setStyle("-fx-border-color: red");
         this.getChildren().addAll(pane, area1);
+        GridPane.setColumnIndex(pane, 0);
+        GridPane.setRowIndex(pane, 0);
+        GridPane.setColumnIndex(area1, 1);
+        GridPane.setRowIndex(area1, 0);
+        GridPane.setHgrow(area1, Priority.ALWAYS);
+        GridPane.setHgrow(pane, Priority.ALWAYS);
+        GridPane.setVgrow(area1, Priority.ALWAYS);
+        GridPane.setVgrow(pane, Priority.ALWAYS);
 
     }
 
@@ -379,6 +379,5 @@ public class StockLineChart extends HBox {
     public double getLastY() {
         return lastY;
     }
+
 }
-
-
