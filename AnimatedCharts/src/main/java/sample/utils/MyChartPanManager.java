@@ -164,12 +164,16 @@ public class MyChartPanManager {
             xAxis.setAutoRanging(false);
             double xLowerBound = xAxis.getLowerBound();
             double xUpperBound = xAxis.getUpperBound();
-            if (xLowerBound + dX >= 0 && xUpperBound + dX <= chartImpl.getPrevX() + 6 * chartImpl.getXTick()) {
+            System.out.println("1");
+            if (xLowerBound + dX >= 0 && (xUpperBound + dX <= chartImpl.getPrevX() + 6 * chartImpl.getXTick() || xUpperBound > chartImpl.getPrevX() + 6 * chartImpl.getXTick() && dX < 0)) {
+                System.out.println("2");
                 if (xUpperBound + dX >= chartImpl.getPrevX() + 3 * chartImpl.getXTick()) {
+                    System.out.println("3");
                     isPanning = false;
                     xAxis.setUpperBound(chartImpl.getPrevX() + 6 * chartImpl.getXTick());
 //                } else if (xUpperBound + dX < chartImpl.getPrevX() + 3 * chartImpl.getXTick()) {
                 } else {
+                    System.out.println("4");
                     isPanning = true;
                     xAxis.setLowerBound(xLowerBound + dX);
                     xAxis.setUpperBound(xUpperBound + dX);

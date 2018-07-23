@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/newWindow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/BarChartFXDemo1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/LineChartExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/Tmp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/sample/view/ChartInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/TimeSeriesChart.jpeg" afterPath="$PROJECT_DIR$/../JavaFXandAWT/TimeSeriesChart.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnimatedCharts.iml" afterPath="$PROJECT_DIR$/AnimatedCharts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/examples/StockLineChartApp.java" afterPath="$PROJECT_DIR$/src/main/java/examples/StockLineChartApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterPath="$PROJECT_DIR$/src/main/java/sample/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" afterPath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartZoomManager.java" afterPath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartZoomManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/view/AppConstants.java" afterPath="$PROJECT_DIR$/src/main/java/sample/view/AppConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/view/CSSStylesNames.java" afterPath="$PROJECT_DIR$/src/main/java/sample/view/CSSStylesNames.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" afterPath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChartGrid.java" afterPath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChartGrid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/styles/StockLineChart.css" afterPath="$PROJECT_DIR$/src/main/resources/styles/StockLineChart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" afterPath="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/styles/StockLineChart.css" afterPath="$PROJECT_DIR$/target/classes/styles/StockLineChart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/sample.fxml" afterPath="$PROJECT_DIR$/target/classes/templates/sample.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaFXandAWT/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,8 +78,8 @@
       <file leaf-file-name="MyChartPanManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="166" column="6" lean-forward="true" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+            <state relative-caret-position="123">
+              <caret line="161" column="67" lean-forward="true" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -231,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/styles/StockLineChart.css" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/StockLineChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/LineChartExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/aa.java" />
@@ -243,6 +221,7 @@
         <option value="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/view/ChartInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/utils/MyChartZoomManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" />
       </list>
     </option>
   </component>
@@ -707,7 +686,7 @@
       <workItem from="1532336038139" duration="3351000" />
       <workItem from="1532341927328" duration="5069000" />
       <workItem from="1532355007450" duration="5357000" />
-      <workItem from="1532362048280" duration="2052000" />
+      <workItem from="1532362048280" duration="4156000" />
     </task>
     <task id="LOCAL-00001" summary="add Application Preloader">
       <created>1531897170921</created>
@@ -730,11 +709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532070045704</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update panning and zooming">
+      <created>1532364640234</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532364640234</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274835000" />
+    <option name="totallyTimeSpent" value="276939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1229,8 +1215,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="166" column="6" lean-forward="true" selection-start-line="166" selection-start-column="6" selection-end-line="166" selection-end-column="6" />
+        <state relative-caret-position="123">
+          <caret line="161" column="67" lean-forward="true" selection-start-line="161" selection-start-column="67" selection-end-line="161" selection-end-column="67" />
           <folding />
         </state>
       </provider>
