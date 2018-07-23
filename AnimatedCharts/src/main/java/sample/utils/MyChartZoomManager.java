@@ -12,6 +12,7 @@ import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.geometry.Point2D;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.ValueAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.input.MouseButton;
@@ -22,6 +23,8 @@ import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 import org.gillius.jfxutils.EventHandlerManager;
 import org.gillius.jfxutils.chart.*;
+import sample.view.AppConstants;
+import sample.view.ChartInterface;
 
 public class MyChartZoomManager {
 
@@ -54,21 +57,27 @@ public class MyChartZoomManager {
     private final Rectangle selectRect;
     private final ValueAxis<?> xAxis;
     private final ValueAxis<?> yAxis;
+    private final ChartInterface chartImpl;
     private final XYChartInfo chartInfo;
 
     private final Timeline zoomAnimation = new Timeline();
+
+    // хранит текущий уровень зумирования zoomLevel = [0;6]
+    private byte zoomLevel = 0;
 
     /**
      * Construct a new ChartZoomManager. See {@link ChartZoomManager} documentation for normal usage.
      *
      * @param chartPane  A Pane which is the ancestor of all arguments
      * @param selectRect A Rectangle whose layoutX/Y makes it line up with the chart
-     * @param chart      Chart to manage, where both X and Y axis are a {@link ValueAxis}.
+     * @param chartImpl      Chart to manage, where both X and Y axis are a {@link ValueAxis}.
      */
-    public MyChartZoomManager(Pane chartPane, Rectangle selectRect, XYChart<?, ?> chart) {
+    public MyChartZoomManager(Pane chartPane, Rectangle selectRect, ChartInterface chartImpl) {
         this.selectRect = selectRect;
+        XYChart<?,?> chart = chartImpl.getChart();
         this.xAxis = (ValueAxis<?>) chart.getXAxis();
         this.yAxis = (ValueAxis<?>) chart.getYAxis();
+        this.chartImpl = chartImpl;
         chartInfo = new XYChartInfo(chart, chartPane);
 
         handlerManager = new EventHandlerManager(chartPane);
@@ -298,7 +307,6 @@ public class MyChartZoomManager {
     }
 
 
-//  TODO: здесь можно прописать движение креста
     private void onMouseDragged(MouseEvent mouseEvent) {
         if (!selecting.get())
             return;
@@ -436,23 +444,112 @@ public class MyChartZoomManager {
                         yAxis.getLowerBound(), yAxis.getUpperBound());
 
                 //Are we zooming in or out, based on the direction of the roll
-                double direction = -Math.signum(event.getDeltaY());
+                // если "-" - приближение, "+" - удаление
+                byte direction = (byte)-Math.signum(event.getDeltaY());
+
+//                System.out.println(direction);
+//                System.out.println(direction > 0 ? "out" : "in");
 
                 //TODO: Do we need to handle "continuous" scroll wheels that don't work based on ticks?
                 //If so, the 0.2 needs to be modified
-                double zoomAmount = 0.2 * direction;
-
+                /**
+                *double zoomAmount = 0.2 * direction;
+                 */
                 if (zoomMode == AxisConstraint.Both || zoomMode == AxisConstraint.Horizontal) {
+                 /**
                     double xZoomDelta = (xAxis.getUpperBound() - xAxis.getLowerBound()) * zoomAmount;
                     xAxis.setAutoRanging(false);
                     double newXLowerBound = xAxis.getLowerBound() - xZoomDelta * xZoomBalance;
                     double newXUpperBound = xAxis.getUpperBound() + xZoomDelta * (1 - xZoomBalance);
-                    if (newXLowerBound >= 0){
-                        xAxis.setLowerBound(newXLowerBound);
-                        xAxis.setUpperBound(newXUpperBound);
-                    }
+                  */
+
+                 byte tempZoomLevel = (byte)(zoomLevel + direction);
+                 if(tempZoomLevel >= 0 && tempZoomLevel <= 6){
+                     double XTickUnit;
+//                     double XTickUnit = 1 << tempZoomLevel;
+                     double halfInterval;
+                     double currentLowerBound = xAxis.getLowerBound();
+                     double currentUpperBound = xAxis.getUpperBound();
+                     double newLowerBound;
+                     double newUpperBound;
+                     if(direction < 0){
+                         halfInterval = ((1 << zoomLevel) - (1 << (zoomLevel - 1))) * 60 / 2;
+                         newLowerBound = currentLowerBound + halfInterval;
+                         newUpperBound = currentUpperBound - halfInterval;
+                     } else {
+                         double interval = ((1 << (zoomLevel + 1)) - (1 << zoomLevel)) * 60;
+//                       chartImpl.getDataSeries().getData().get(0) - при чистке истории может измениться
+                         if(chartImpl.getPrevX() - (double)chartImpl.getDataSeries().getData().get(0).getXValue() < interval) return;
+                         halfInterval =  interval / 2.0;
+                         newLowerBound = currentLowerBound - halfInterval;
+                         newUpperBound = currentUpperBound + halfInterval;
+                     }
+                     if(newLowerBound < AppConstants.TIME_MIN_LOWER_BOUND){
+                         xAxis.setLowerBound(AppConstants.TIME_MIN_LOWER_BOUND);
+                         newUpperBound = Math.abs(newLowerBound) + newUpperBound;
+                         if(newUpperBound > AppConstants.TIME_MAX_UPPER_BOUND){
+                             xAxis.setUpperBound(AppConstants.TIME_MAX_UPPER_BOUND);
+                         } else {
+                             xAxis.setUpperBound(newUpperBound);
+                         }
+//                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                         XTickUnit = (xAxis.getUpperBound() - xAxis.getLowerBound()) / 60;
+                         chartImpl.setXTick(XTickUnit);
+                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                         zoomLevel = tempZoomLevel;
+                         return;
+                     }
+                     if (newUpperBound > AppConstants.TIME_MAX_UPPER_BOUND){
+                         xAxis.setUpperBound(AppConstants.TIME_MAX_UPPER_BOUND);
+                         newLowerBound = newUpperBound - AppConstants.TIME_MAX_UPPER_BOUND + newLowerBound;
+                         if(newLowerBound < AppConstants.TIME_MIN_LOWER_BOUND){
+                             xAxis.setLowerBound(AppConstants.TIME_MIN_LOWER_BOUND);
+                         } else {
+                             xAxis.setLowerBound(newLowerBound);
+                         }
+//                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                         XTickUnit = (xAxis.getUpperBound() - xAxis.getLowerBound()) / 60;
+                         chartImpl.setXTick(XTickUnit);
+                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                         zoomLevel = tempZoomLevel;
+                         return;
+                     }
+
+                     xAxis.setLowerBound(newLowerBound);
+                     xAxis.setUpperBound(newUpperBound);
+//                     ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                     XTickUnit = (xAxis.getUpperBound() - xAxis.getLowerBound()) / 60;
+                     chartImpl.setXTick(XTickUnit);
+                     ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                     zoomLevel = tempZoomLevel;
+//
+
+//                     double halfInterval = Math.abs(XTickUnit * (1 - (1 << direction)))/2.0*60;
+//                     double newXLowerBound = xAxis.getLowerBound() - direction*halfInterval;
+//                     double newXUpperBound = xAxis.getUpperBound() + direction*halfInterval;
+//                     if(newXLowerBound < AppConstants.TIME_MIN_LOWER_BOUND){
+//                         xAxis.setLowerBound(AppConstants.TIME_MIN_LOWER_BOUND);
+//                         // ??
+//                         xAxis.setUpperBound(newXUpperBound + direction*halfInterval);
+//
+//                     } else if(newXUpperBound > AppConstants.TIME_MAX_UPPER_BOUND){
+//                         // ??
+//                         xAxis.setLowerBound(newXLowerBound - direction*halfInterval);
+//                         xAxis.setUpperBound(AppConstants.TIME_MAX_UPPER_BOUND);
+//                     } else {
+//                         xAxis.setLowerBound(newXLowerBound);
+//                         xAxis.setUpperBound(newXUpperBound);
+//                     }
+//                     ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+
+                 }
+//                    if (newXLowerBound >= 0){
+//                        xAxis.setLowerBound(newXLowerBound);
+//                        xAxis.setUpperBound(newXUpperBound);
+//                    }
                 }
 
+//                отключаем зумирование колёсиком по вертикальной оси
 //                if (zoomMode == AxisConstraint.Both || zoomMode == AxisConstraint.Vertical) {
 //                    double yZoomDelta = (yAxis.getUpperBound() - yAxis.getLowerBound()) * zoomAmount;
 //                    yAxis.setAutoRanging(false);

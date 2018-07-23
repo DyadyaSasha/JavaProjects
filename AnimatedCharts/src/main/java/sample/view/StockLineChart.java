@@ -5,6 +5,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.chart.AreaChart;
@@ -21,7 +22,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Font;
 import javafx.util.Duration;
 import javafx.util.StringConverter;
 import org.gillius.jfxutils.chart.AxisConstraintStrategies;
@@ -30,7 +30,7 @@ import sample.utils.MyChartPanManager;
 import sample.utils.MyChartZoomManager;
 
 
-public class StockLineChart extends HBox {
+public class StockLineChart extends HBox implements ChartInterface{
 
     private LineChart<Number, Number> chart;
     private Pane pane;
@@ -53,6 +53,9 @@ public class StockLineChart extends HBox {
     private double initialTimeLowerBound = 0;
     private double initialPriceUpperBound = 60;
     private double initialPriceLowerBound = 0;
+    private double xTick;
+    private double yTick;
+    private MyChartPanManager chartPanManager;
 
     public StockLineChart() {
 
@@ -75,8 +78,13 @@ public class StockLineChart extends HBox {
         /**
          * описываем оси графика и сам график
          */
-        xAxis = new NumberAxis(initialTimeLowerBound, initialTimeUpperBound, 10);
+        xTick = (initialTimeUpperBound - initialTimeLowerBound) / 60;
+        xAxis = new NumberAxis(initialTimeLowerBound, initialTimeUpperBound, xTick);
         yAxis = new NumberAxis(initialPriceLowerBound, initialPriceUpperBound, 10);
+//      в MyChartPanManager и MyChartZoomManager каждый раз вызываются данные методы(там они закомментированы)
+        xAxis.setAutoRanging(false);
+        yAxis.setAutoRanging(false);
+
 
 //        xAxis.setForceZeroInRange(false);
 
@@ -112,10 +120,10 @@ public class StockLineChart extends HBox {
 
 
         chart = new LineChart<Number, Number>(xAxis, yAxis);
+        chart.setAnimated(false);
         chart.getStyleClass().add(CSSStylesNames.STOCK_CHART.getStyleName());
         chart.getData().addAll(dataSeries, dotSeries);
 
-        chart.setAnimated(false);
 
 //        TODO: реализовать метод для покупки и продажи(ниже прелставлен пример реализации рисования индикатора-точки покупки/продажи)
 //        chart.setOnMouseClicked(event -> {
@@ -158,7 +166,7 @@ public class StockLineChart extends HBox {
             }
         });
 
-        MyChartPanManager chartPanManager = new MyChartPanManager(chart);
+        chartPanManager = new MyChartPanManager(this);
         chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         chartPanManager.setMouseFilter(mouseEvent -> {
             if (mouseEvent.getButton() != MouseButton.PRIMARY) mouseEvent.consume();
@@ -168,12 +176,10 @@ public class StockLineChart extends HBox {
         pane = new Pane();
         pane.getStyleClass().add(CSSStylesNames.STOCK_CHART_PANE.getStyleName());
 
-        chart.prefWidthProperty().bind(pane.widthProperty());
-        chart.prefHeightProperty().bind(pane.heightProperty());
 
         Rectangle zoomRectangle = new Rectangle(0, 0, Color.LIGHTSEAGREEN.deriveColor(0, 1, 1, 0.5));
         zoomRectangle.getStyleClass().add(CSSStylesNames.ZOOM_RECTANGLE.getStyleName());
-        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
+        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, this);
         zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
         zoomManager.setMouseFilter(mouseEvent -> {
@@ -214,9 +220,8 @@ public class StockLineChart extends HBox {
          * холст графика
          */
         chartBackground = chart.lookup(".chart-plot-background");
-        chartBackground.setOnMouseEntered(event -> ((Node) event.getSource()).setCursor(Cursor.CROSSHAIR));
-        chartBackground.setOnMouseExited(event -> ((Node) event.getSource()).setCursor(Cursor.DEFAULT));
-
+//        chartBackground.setOnMouseEntered(event -> ((Node) event.getSource()).setCursor(Cursor.CROSSHAIR));
+//        chartBackground.setOnMouseExited(event -> ((Node) event.getSource()).setCursor(Cursor.DEFAULT));
 //        VBox boxForAreaCharts = new VBox();
 //        boxForAreaCharts.getStyleClass().add(CSSStylesNames.AREA_CHARTS_BOX.getStyleName());
 
@@ -224,47 +229,47 @@ public class StockLineChart extends HBox {
         NumberAxis yAxisArea1 = new NumberAxis();
 
 
+        AreaChart<Number, Number> area = new AreaChart<Number, Number>(xAxisArea1, yAxisArea1);
+        area.getStyleClass().add(CSSStylesNames.AREA1.getStyleName());
 
 
-        AreaChart<Number, Number> area1 = new AreaChart<Number, Number>(xAxisArea1, yAxisArea1);
-        area1.getStyleClass().add(CSSStylesNames.AREA1.getStyleName());
+//        boxForAreaCharts.getChildren().addAll(area);
 
 
-//        boxForAreaCharts.getChildren().addAll(area1);
-
-
-        VBox.setVgrow(chart, Priority.ALWAYS);
-        HBox.setHgrow(chart, Priority.ALWAYS);
         VBox.setVgrow(pane, Priority.ALWAYS);
         HBox.setHgrow(pane, Priority.ALWAYS);
-        HBox.setHgrow(area1, Priority.ALWAYS);
-        VBox.setVgrow(area1, Priority.ALWAYS);
+        VBox.setVgrow(this, Priority.ALWAYS);
+        HBox.setHgrow(this, Priority.ALWAYS);
+        HBox.setHgrow(area, Priority.ALWAYS);
+        VBox.setVgrow(area, Priority.ALWAYS);
 
+//        chart.prefWidthProperty().bind(pane.widthProperty());
+//        chart.prefHeightProperty().bind(pane.heightProperty());
+//
+//        pane.prefHeightProperty().bind(this.prefHeightProperty());
+//        pane.prefWidthProperty().bind(this.prefWidthProperty());
 
-        pane.prefHeightProperty().bind(this.prefHeightProperty());
-        pane.prefWidthProperty().bind(this.prefWidthProperty().multiply(1));
-//        pane.setMinSize(500,200);
+//        area.prefWidthProperty().bind(this.prefWidthProperty().divide(1));
+//        area.prefHeightProperty().bind(this.prefHeightProperty());
 
-//        boxForAreaCharts.prefWidthProperty().bind(this.prefWidthProperty().divide(1.5));
-//        boxForAreaCharts.prefHeightProperty().bind(this.prefHeightProperty());
-
-        area1.prefWidthProperty().bind(this.prefWidthProperty().divide(1));
-        area1.prefHeightProperty().bind(this.prefHeightProperty());
-
-        this.getChildren().addAll(pane, area1);
+        this.getChildren().addAll(pane, area);
 
     }
 
 
     private void mouseActionInChartPlot(MouseEvent event) {
-        Bounds bounds = chartBackground.localToScene(chartBackground.getLayoutBounds());
-        if (event.getSceneX() >= bounds.getMinX() && event.getSceneX() <= bounds.getMaxX() && event.getSceneY() >= bounds.getMinY() && event.getSceneY() <= bounds.getMaxY()) {
+//        Bounds bounds = chartBackground.localToScene(chartBackground.getLayoutBounds());
+        if(chartInfo.getPlotArea().contains(new Point2D(event.getX(), event.getY()))){
+//        if (bounds.contains(event.getSceneX(), event.getSceneY())) {
+//        if (event.getSceneX() >= bounds.getMinX() && event.getSceneX() <= bounds.getMaxX() && event.getSceneY() >= bounds.getMinY() && event.getSceneY() <= bounds.getMaxY()) {
+            ((Node) event.getSource()).setCursor(Cursor.CROSSHAIR);
             updateLines(event);
             horizontalLine.setVisible(true);
             verticalLine.setVisible(true);
             horizontalLabel.setVisible(true);
             verticalLabel.setVisible(true);
         } else {
+            ((Node) event.getSource()).setCursor(Cursor.DEFAULT);
             horizontalLine.setVisible(false);
             verticalLine.setVisible(false);
             horizontalLabel.setVisible(false);
@@ -277,7 +282,8 @@ public class StockLineChart extends HBox {
         dataSeries.getData().add(new XYChart.Data<>(prevX, y));
         prevX += 0.3;
         lastY = y;
-        if (prevX > xAxis.getUpperBound()) {
+
+        if (prevX >= xAxis.getUpperBound() - 6*this.xTick && !chartPanManager.isPanning()) {
             xAxis.setUpperBound(xAxis.getUpperBound() + 0.3);
             xAxis.setLowerBound(xAxis.getLowerBound() + 0.3);
         }
@@ -294,18 +300,27 @@ public class StockLineChart extends HBox {
 
     private void updateLines(MouseEvent event) {
 
-        Bounds chartBounds = chart.localToScene(chart.getLayoutBounds());
+//        Bounds chartBounds = chart.localToScene(chart.getLayoutBounds());
 //        Bounds chartBounds = chart.getLayoutBounds();
-        Bounds chartAreaBounds = chartBackground.localToScene(chartBackground.getLayoutBounds());
+//        Bounds chartAreaBounds = chartBackground.localToScene(chartBackground.getLayoutBounds());
 //        Bounds chartAreaBounds = chartBackground.getLayoutBounds();
 
+        Rectangle2D plotArea = chartInfo.getPlotArea();
+        double xMouse = event.getX();
+        double yMouse = event.getY();
+        double plotMinX = plotArea.getMinX();
+        double plotMaxX = plotArea.getMaxX();
+        double plotMinY = plotArea.getMinY();
+        double plotMaxY = plotArea.getMaxY();
 
-        horizontalLine.setStartY(event.getY());
+
+
+        horizontalLine.setStartY(yMouse);
 //        horizontalLine.setStartX(chartAreaBounds.getMinX());
 //        horizontalLine.setStartX(chart.localToParent(chartBackground.localToParent(chartBackground.getLayoutBounds())).getMinX());
-        horizontalLine.setStartX(chartInfo.getPlotArea().getMinX());
-        horizontalLine.setEndX(chartInfo.getPlotArea().getMaxX());
-        horizontalLine.setEndY(event.getY());
+        horizontalLine.setStartX(plotMinX);
+        horizontalLine.setEndX(plotMaxX);
+        horizontalLine.setEndY(yMouse);
 //        horizontalLine.setEndX(chart.localToParent(chartBackground.localToParent(chartBackground.getLayoutBounds())).getMaxX());
 //        horizontalLine.setEndX(chartAreaBounds.getMaxX());
 
@@ -313,26 +328,26 @@ public class StockLineChart extends HBox {
 
 
 //        horizontalLabel.setLayoutX(chartAreaBounds.getMinX() - horizontalLabel.getWidth());
-        horizontalLabel.setLayoutX(chartInfo.getPlotArea().getMinX() - horizontalLabel.getWidth());
-        horizontalLabel.setLayoutY(event.getY() - horizontalLabel.getHeight() / 2);
+        horizontalLabel.setLayoutX(plotMinX - horizontalLabel.getWidth());
+        horizontalLabel.setLayoutY(yMouse - horizontalLabel.getHeight() / 2);
         double yPosInAxis = yAxis.sceneToLocal(new Point2D(0, pointInScene.getY())).getY();
         horizontalLabel.setText(String.format("%.2f", (double) yAxis.getValueForDisplay(yPosInAxis)));
 
 
 //        verticalLine.setStartY(chartAreaBounds.getMaxY() - (chartBounds.getMaxY() - chartAreaBounds.getMaxY()));
 //        verticalLine.setStartY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMaxY()-3);
-        verticalLine.setStartY(chartInfo.getPlotArea().getMinY());
-        verticalLine.setStartX(event.getX());
+        verticalLine.setStartY(plotMinY);
+        verticalLine.setStartX(xMouse);
 //        verticalLine.setEndY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMinY()-3);
-        verticalLine.setEndY(chartInfo.getPlotArea().getMaxY());
+        verticalLine.setEndY(plotMaxY);
 //        verticalLine.setEndY(chartAreaBounds.getMinY() - chartBounds.getMinY());
-        verticalLine.setEndX(event.getX());
+        verticalLine.setEndX(xMouse);
 
 
-        verticalLabel.setLayoutX(event.getSceneX() - verticalLabel.getWidth() / 2);
+        verticalLabel.setLayoutX(xMouse - verticalLabel.getWidth() / 2);
 
 //        verticalLabel.setLayoutY(chart.localToParent(chartBackground.localToParent(chartBackground.getBoundsInParent())).getMaxY());
-        verticalLabel.setLayoutY(chartInfo.getPlotArea().getMaxY()+0.9);
+        verticalLabel.setLayoutY(plotMaxY + 0.9);
 
 
 //        System.out.println(pane.localToParent(pane.getBoundsInLocal()));
@@ -378,6 +393,24 @@ public class StockLineChart extends HBox {
 
     public double getLastY() {
         return lastY;
+    }
+
+    public double getXTick() {
+        return xTick;
+    }
+
+    public XYChart.Series<Number, Number> getDataSeries() { return dataSeries; }
+
+    public void setXTick(double xTick) {
+        this.xTick = xTick;
+    }
+
+    public double getYTick() {
+        return yTick;
+    }
+
+    public void setYTick(double yTick) {
+        this.yTick = yTick;
     }
 }
 

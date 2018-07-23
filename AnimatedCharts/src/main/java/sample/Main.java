@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-
     @Override
     public void init() throws Exception {
 //  TODO: загрузка данных перед началом работы приложения
@@ -23,11 +22,13 @@ public class Main extends Application {
 //        loader.setLocation(getClass().getClassLoader().getResource("templates/test.fxml"));
         primaryStage.setTitle("Animated Charts");
         Parent root = loader.load();
+
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
 
     }
+
 
 
     public static void main(String[] args) {

@@ -9,11 +9,20 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+
         <dependency>
             <groupId>org.gillius</groupId>
             <artifactId>jfxutils</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart-fx</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

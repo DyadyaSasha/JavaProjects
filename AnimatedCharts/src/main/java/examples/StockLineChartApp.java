@@ -166,13 +166,13 @@ public class StockLineChartApp extends Application {
 //            }
 //
 //        });
-
-        MyChartPanManager chartPanManager = new MyChartPanManager(chart);
-        chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        chartPanManager.setMouseFilter(mouseEvent -> {
-            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
-        });
-        chartPanManager.start();
+//
+//        MyChartPanManager chartPanManager = new MyChartPanManager(chart);
+//        chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        chartPanManager.setMouseFilter(mouseEvent -> {
+//            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
+//        });
+//        chartPanManager.start();
 
 
 
@@ -200,10 +200,10 @@ public class StockLineChartApp extends Application {
         Rectangle zoomRectangle = new Rectangle(0,0, Color.LIGHTSEAGREEN.deriveColor(0, 1, 1, 0.5));
         pane.getChildren().addAll(chart, verticalLine, horizontalLine, verticalLabel, horizontalLabel, zoomRectangle);
 
-        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
-        zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        zoomManager.start();
+//        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
+//        zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        zoomManager.start();
 
         return pane;
     }

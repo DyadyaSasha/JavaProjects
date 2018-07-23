@@ -150,12 +150,12 @@ public class StockLineChartGrid  extends GridPane{
             }
         });
 
-        MyChartPanManager chartPanManager = new MyChartPanManager(chart);
-        chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        chartPanManager.setMouseFilter(mouseEvent -> {
-            if (mouseEvent.getButton() != MouseButton.PRIMARY) mouseEvent.consume();
-        });
-        chartPanManager.start();
+//        MyChartPanManager chartPanManager = new MyChartPanManager(chart);
+//        chartPanManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        chartPanManager.setMouseFilter(mouseEvent -> {
+//            if (mouseEvent.getButton() != MouseButton.PRIMARY) mouseEvent.consume();
+//        });
+//        chartPanManager.start();
 
         pane = new Pane();
         pane.getStyleClass().add(CSSStylesNames.STOCK_CHART_PANE.getStyleName());
@@ -165,14 +165,14 @@ public class StockLineChartGrid  extends GridPane{
 
         Rectangle zoomRectangle = new Rectangle(0, 0, Color.LIGHTSEAGREEN.deriveColor(0, 1, 1, 0.5));
         zoomRectangle.getStyleClass().add(CSSStylesNames.ZOOM_RECTANGLE.getStyleName());
-        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
-        zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
-        zoomManager.setMouseFilter(mouseEvent -> {
-            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
-        });
-        chartInfo = zoomManager.getChartInfo();
-        zoomManager.start();
+//        MyChartZoomManager zoomManager = new MyChartZoomManager(pane, zoomRectangle, chart);
+//        zoomManager.setAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        zoomManager.setMouseWheelAxisConstraintStrategy(AxisConstraintStrategies.getIgnoreOutsideChart());
+//        zoomManager.setMouseFilter(mouseEvent -> {
+//            if (mouseEvent.getButton() != MouseButton.SECONDARY) mouseEvent.consume();
+//        });
+//        chartInfo = zoomManager.getChartInfo();
+//        zoomManager.start();
 
 
         /**

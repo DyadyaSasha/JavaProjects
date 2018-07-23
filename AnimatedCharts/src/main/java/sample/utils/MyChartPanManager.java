@@ -3,12 +3,12 @@ package sample.utils;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Point2D;
-import javafx.geometry.Rectangle2D;
 import javafx.scene.chart.ValueAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.input.MouseEvent;
 import org.gillius.jfxutils.EventHandlerManager;
 import org.gillius.jfxutils.chart.*;
+import sample.view.ChartInterface;
 
 public class MyChartPanManager {
 
@@ -19,6 +19,7 @@ public class MyChartPanManager {
     private final ValueAxis<?> xAxis;
     private final ValueAxis<?> yAxis;
     private final XYChartInfo chartInfo;
+    private final ChartInterface chartImpl;
 
     private AxisConstraint panMode = AxisConstraint.None;
     private AxisConstraintStrategy axisConstraintStrategy = AxisConstraintStrategies.getDefault();
@@ -27,13 +28,18 @@ public class MyChartPanManager {
 
     private boolean dragging = false;
 
-    private boolean wasXAnimated;
-    private boolean wasYAnimated;
+//    private boolean wasXAnimated;
+//    private boolean wasYAnimated;
+
+    // флаг, позволяющий перетаскивать график к более ранним значениям
+    private boolean isPanning = false;
 
     private double lastX;
     private double lastY;
 
-    public MyChartPanManager(XYChart<?, ?> chart) {
+    public MyChartPanManager(ChartInterface chartImpl) {
+        this.chartImpl = chartImpl;
+        XYChart<?, ?> chart = chartImpl.getChart();
         handlerManager = new EventHandlerManager(chart);
         xAxis = (ValueAxis<?>) chart.getXAxis();
         yAxis = (ValueAxis<?>) chart.getYAxis();
@@ -122,16 +128,16 @@ public class MyChartPanManager {
     private void startDrag(MouseEvent event) {
         DefaultChartInputContext context = new DefaultChartInputContext(chartInfo, event.getX(), event.getY());
         panMode = axisConstraintStrategy.getConstraint(context);
-        if (!chartInfo.getPlotArea().contains(new Point2D(event.getX(), event.getY()))){
+        if (!chartInfo.getPlotArea().contains(new Point2D(event.getX(), event.getY()))) {
             dragging = false;
             return;
         }
         if (panMode != AxisConstraint.None) {
             lastX = event.getX();
             lastY = event.getY();
-
-            wasXAnimated = xAxis.getAnimated();
-            wasYAnimated = yAxis.getAnimated();
+//          сохраняем свойство анимации по осям перед тем как её выключить
+//            wasXAnimated = xAxis.getAnimated();
+//            wasYAnimated = yAxis.getAnimated();
 
             xAxis.setAnimated(false);
             xAxis.setAutoRanging(false);
@@ -144,7 +150,7 @@ public class MyChartPanManager {
 
 
     private void drag(MouseEvent event) {
-        if (!chartInfo.getPlotArea().contains(new Point2D(event.getX(), event.getY()))){
+        if (!chartInfo.getPlotArea().contains(new Point2D(event.getX(), event.getY()))) {
 //            dragging = false;
             return;
         }
@@ -156,9 +162,22 @@ public class MyChartPanManager {
             double dX = (event.getX() - lastX) / -xAxis.getScale();
             lastX = event.getX();
             xAxis.setAutoRanging(false);
-            if (xAxis.getLowerBound() +dX >= 0) {
-                xAxis.setLowerBound(xAxis.getLowerBound() + dX);
-                xAxis.setUpperBound(xAxis.getUpperBound() + dX);
+            double xLowerBound = xAxis.getLowerBound();
+            double xUpperBound = xAxis.getUpperBound();
+            if (xLowerBound + dX >= 0 && xUpperBound + dX <= chartImpl.getPrevX() + 6 * chartImpl.getXTick()) {
+                if (xUpperBound + dX >= chartImpl.getPrevX() + 3 * chartImpl.getXTick()) {
+                    isPanning = false;
+                    xAxis.setUpperBound(chartImpl.getPrevX() + 6 * chartImpl.getXTick());
+//                } else if (xUpperBound + dX < chartImpl.getPrevX() + 3 * chartImpl.getXTick()) {
+                } else {
+                    isPanning = true;
+                    xAxis.setLowerBound(xLowerBound + dX);
+                    xAxis.setUpperBound(xUpperBound + dX);
+                }
+//                } else{
+//                    xAxis.setLowerBound(xLowerBound + dX);
+//                    xAxis.setUpperBound(xUpperBound + dX);
+//                }
             }
         }
 
@@ -168,6 +187,7 @@ public class MyChartPanManager {
 
             lastY = event.getY();
             yAxis.setAutoRanging(false);
+
             if (yAxis.getLowerBound() + dY >= 0) {
                 yAxis.setLowerBound(yAxis.getLowerBound() + dY);
                 yAxis.setUpperBound(yAxis.getUpperBound() + dY);
@@ -182,7 +202,11 @@ public class MyChartPanManager {
 
         dragging = false;
 
-        xAxis.setAnimated(wasXAnimated);
-        yAxis.setAnimated(wasYAnimated);
+//        xAxis.setAnimated(wasXAnimated);
+//        yAxis.setAnimated(wasYAnimated);
+    }
+
+    public boolean isPanning() {
+        return isPanning;
     }
 }

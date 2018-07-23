@@ -7,14 +7,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.Controller">
+<VBox xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.Controller">
    <children>
-      <HBox alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="ALWAYS">
+      <HBox alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
          <children>
             <ToggleButton mnemonicParsing="false" onAction="#setMaxBounds" text="100%" HBox.hgrow="ALWAYS" />
             <ToggleButton mnemonicParsing="false" onAction="#setHalfBounds" text="50%" HBox.hgrow="ALWAYS" />
             <ToggleButton mnemonicParsing="false" onAction="#setTwentyBounds" text="20%" HBox.hgrow="ALWAYS" />
             <ToggleButton mnemonicParsing="false" onAction="#setTenBounds" text="10%" HBox.hgrow="ALWAYS" />
+            <Button fx:id="newWindow" mnemonicParsing="false" onAction="#openNewWindow" HBox.hgrow="ALWAYS" />
             <Button mnemonicParsing="false" onAction="#addNewChart" text="new Chart" HBox.hgrow="ALWAYS" />
             <ChoiceBox HBox.hgrow="ALWAYS" />
          </children>

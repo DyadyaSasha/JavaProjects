@@ -4,6 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.ValueAxis;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -19,7 +22,13 @@ public class Controller {
     @FXML
     private VBox chartsFlow;
 
+    @FXML
+    private Button newWindow;
+
     public void initialize() {
+
+        newWindow.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/static/newWindow.png"))));
+        chartsFlow.setStyle("-fx-border-color: blue");
         stockLineCharts = new ArrayList<>();
         addNewChart();
     }
@@ -149,4 +158,7 @@ public class Controller {
     }
 
 
+    @FXML
+    private void openNewWindow(ActionEvent actionEvent) {
+    }
 }

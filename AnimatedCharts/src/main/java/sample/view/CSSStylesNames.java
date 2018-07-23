@@ -8,7 +8,6 @@ public enum CSSStylesNames {
     ZOOM_RECTANGLE("zoomRectangle"),
     CROSS_LABELS("crossLabels"),
     STOCK_CHART_PANE("stockChartPane"),
-    AREA_CHARTS_BOX("areaChartsBox"),
     AREA1("area1");
 
     private String styleName;

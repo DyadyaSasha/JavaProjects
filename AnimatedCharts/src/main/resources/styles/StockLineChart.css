@@ -10,6 +10,7 @@
 }
 
 .stockChartPane{
+    -fx-border-color: red;
 }
 
 
@@ -45,9 +46,11 @@
 }
 
 .default-color1.chart-line-symbol {
+    -fx-shape: "";
     -fx-background-color:  green;
 }
 .default-color0.chart-line-symbol {
+    -fx-shape: "";
     -fx-background-color: transparent;
 }
 
