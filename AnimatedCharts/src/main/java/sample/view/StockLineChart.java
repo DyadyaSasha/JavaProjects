@@ -47,8 +47,8 @@ public class StockLineChart extends HBox implements ChartInterface{
     private Timeline chartStockAnimation;
     private double prevX = 0;
     private double lastY = 0;
-    private double minVal = 40;
-    private double maxVal = 50;
+    private double minVal = 44;
+    private double maxVal = 45;
     private double initialTimeUpperBound = 60;
     private double initialTimeLowerBound = 0;
     private double initialPriceUpperBound = 60;
@@ -69,7 +69,7 @@ public class StockLineChart extends HBox implements ChartInterface{
         /**
          * класс, предоставляющий анимацию
          */
-        final KeyFrame keyFrame = new KeyFrame(Duration.millis(AppConstants.CHART_REFRESH_DURATION), event -> plotTime());
+        final KeyFrame keyFrame = new KeyFrame(Duration.millis(1000), event -> plotTime());
         chartStockAnimation = new Timeline();
         chartStockAnimation.getKeyFrames().add(keyFrame);
         chartStockAnimation.setCycleCount(Animation.INDEFINITE);
@@ -243,9 +243,9 @@ public class StockLineChart extends HBox implements ChartInterface{
         HBox.setHgrow(area, Priority.ALWAYS);
         VBox.setVgrow(area, Priority.ALWAYS);
 
-//        chart.prefWidthProperty().bind(pane.widthProperty());
-//        chart.prefHeightProperty().bind(pane.heightProperty());
-//
+        chart.prefWidthProperty().bind(pane.widthProperty());
+        chart.prefHeightProperty().bind(pane.heightProperty());
+
 //        pane.prefHeightProperty().bind(this.prefHeightProperty());
 //        pane.prefWidthProperty().bind(this.prefWidthProperty());
 
@@ -280,12 +280,12 @@ public class StockLineChart extends HBox implements ChartInterface{
     private void plotTime() {
         double y = minVal + Math.random() * (maxVal - minVal + 1);
         dataSeries.getData().add(new XYChart.Data<>(prevX, y));
-        prevX += 0.3;
+        prevX += 1;
         lastY = y;
 
         if (prevX >= xAxis.getUpperBound() - 6*this.xTick && !chartPanManager.isPanning()) {
-            xAxis.setUpperBound(xAxis.getUpperBound() + 0.3);
-            xAxis.setLowerBound(xAxis.getLowerBound() + 0.3);
+            xAxis.setUpperBound(xAxis.getUpperBound() + 1);
+            xAxis.setLowerBound(xAxis.getLowerBound() + 1);
         }
 
 //        dataSeries.getNode().setOnMouseEntered(event -> {
