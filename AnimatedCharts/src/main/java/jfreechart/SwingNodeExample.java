@@ -1,30 +1,27 @@
 package jfreechart;
 
-import java.awt.BasicStroke;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.geom.Rectangle2D;
-import javax.swing.*;
-
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartMouseEvent;
-import org.jfree.chart.ChartMouseListener;
-import org.jfree.chart.ChartPanel;
-import org.jfree.chart.JFreeChart;
+import javafx.application.Application;
+import javafx.embed.swing.SwingNode;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import org.jfree.chart.*;
 import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.panel.CrosshairOverlay;
 import org.jfree.chart.plot.Crosshair;
 import org.jfree.chart.plot.XYPlot;
-import org.jfree.data.general.DatasetUtils;
+import org.jfree.chart.ui.RectangleEdge;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import org.jfree.chart.ui.RectangleEdge;
 
-/**
- * A demo showing crosshairs that follow the data points on an XYPlot.
- */
-public class CrosshairOverlayDemo1 extends JFrame {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.geom.Rectangle2D;
+
+public class SwingNodeExample extends Application {
+
 
     static class MyDemoPanel extends JPanel implements ChartMouseListener {
 
@@ -94,31 +91,27 @@ public class CrosshairOverlayDemo1 extends JFrame {
 
     }
 
-    public CrosshairOverlayDemo1(String title) {
-        super(title);
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setContentPane(createDemoPanel());
-    }
 
-    /**
-     * Creates a panel for the demo (used by SuperDemo.java).
-     *
-     * @return A panel.
-     */
-    public static JPanel createDemoPanel() {
-        return new MyDemoPanel();
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        SwingNode swingNode = new SwingNode();
+        MyDemoPanel myDemoPanel = new MyDemoPanel();
+        SwingUtilities.invokeLater(() -> swingNode.setContent(myDemoPanel));
+        Pane pane = new Pane();
+
+//        pane.prefHeightProperty().bind(primaryStage.heightProperty());
+//        pane.prefWidthProperty().bind(primaryStage.widthProperty());
+        pane.getChildren().add(swingNode);
+//        pane.setStyle("-fx-border-color: red");
+//        swingNode.setStyle("-fx-border-color: blue");
+//        pane.widthProperty().addListener((observable, oldValue, newValue) -> myDemoPanel.chartPanel.setSize(newValue.intValue(), (int)pane.getHeight()));
+//        pane.heightProperty().addListener((observable, oldValue, newValue) -> myDemoPanel.chartPanel.setSize((int)pane.getWidth(), newValue.intValue()));
+        Scene scene = new Scene(pane);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                CrosshairOverlayDemo1 app = new CrosshairOverlayDemo1(
-                        "JFreeChart: CrosshairOverlayDemo1.java");
-                app.pack();
-                app.setVisible(true);
-            }
-        });
+        launch(args);
     }
-
 }
