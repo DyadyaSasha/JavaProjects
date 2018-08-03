@@ -1,4 +1,4 @@
-package org.sjwimmer.tacharting.chart.view.jfreechart;
+package app.view.jfreechart;
 
 /* ================================================
  * JFreeChart-FX : JavaFX extensions for JFreeChart
@@ -43,17 +43,23 @@ package org.sjwimmer.tacharting.chart.view.jfreechart;
  *
  */
 
+import app.view.AppConstants;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Tooltip;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.text.FontSmoothingType;
 import org.jfree.chart.ChartMouseEvent;
 import org.jfree.chart.ChartRenderingInfo;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.axis.NumberTickUnit;
+import org.jfree.chart.axis.NumberTickUnitSource;
+import org.jfree.chart.axis.ValueAxis;
 import org.jfree.chart.event.ChartChangeEvent;
 import org.jfree.chart.event.ChartChangeListener;
 import org.jfree.chart.event.OverlayChangeEvent;
@@ -62,8 +68,13 @@ import org.jfree.chart.fx.ChartViewer;
 import org.jfree.chart.fx.interaction.ChartMouseListenerFX;
 import org.jfree.chart.fx.interaction.MouseHandlerFX;
 import org.jfree.chart.fx.interaction.TooltipHandlerFX;
+import org.jfree.chart.plot.CombinedRangeXYPlot;
 import org.jfree.chart.plot.PlotRenderingInfo;
+import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.util.Args;
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.fx.FXGraphics2D;
 
 import java.awt.*;
@@ -97,6 +108,15 @@ import java.util.List;
 public class TaChartCanvas extends Canvas implements ChartChangeListener,
         OverlayChangeListener {
 
+    // хранит текущий уровень зумирования zoomLevel = [0;6]
+    private byte zoomLevel = 0;
+    // хранит текущее состояние перетаскивания графика
+    private boolean dragging;
+    private boolean isPanning;
+    double lastX;
+    double lastY;
+    double xPanningSpeed = AppConstants.PANNING_SPEED;
+
     /** The org.sjwimmer.tacharting.chart being displayed in the canvas. */
     private JFreeChart chart;
 
@@ -126,7 +146,7 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
     private boolean tooltipEnabled;
 
     /** Storage for registered org.sjwimmer.tacharting.chart mouse listeners. */
-    private transient java.util.List<ChartMouseListenerFX> chartMouseListeners;
+    private transient List<ChartMouseListenerFX> chartMouseListeners;
 
     /** The current live handler (can be null). */
     private TaMouseHandlerFX liveHandler;
@@ -134,10 +154,10 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
     /**
      * The list colorOf available live mouse jfreechart (can be empty but not null).
      */
-    private java.util.List<TaMouseHandlerFX> availableMouseHandlers;
+    private List<TaMouseHandlerFX> availableMouseHandlers;
 
     /** The auxiliary mouse jfreechart (can be empty but not null). */
-    private java.util.List<TaMouseHandlerFX> auxiliaryMouseHandlers;
+    private List<TaMouseHandlerFX> auxiliaryMouseHandlers;
 
     private ObservableList<TaOverlayFX> overlays;
 
@@ -201,6 +221,7 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
         this.addEventHandler(MouseEvent.MOUSE_MOVED,mouseMovedHandler);
         setOnMouseClicked(e -> handleMouseClicked(e));
         setOnMousePressed(e -> handleMousePressed(e));
+        setOnDragDetected(e -> handleMouseDragDetected(e));
         setOnMouseDragged(e -> handleMouseDragged(e));
         setOnMouseReleased(e -> handleMouseReleased(e));
         setOnScroll(e -> handleScroll(e));
@@ -601,24 +622,24 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
      * @param e  the mouse event.
      */
     private void handleMousePressed(MouseEvent e) {
-        if (this.liveHandler == null) {
-            for (TaMouseHandlerFX handler: this.availableMouseHandlers) {
-                if (handler.isEnabled() && handler.hasMatchingModifiers(e)) {
-                    this.liveHandler = handler;
-                }
-            }
-        }
-
-        if (this.liveHandler != null) {
-            this.liveHandler.handleMousePressed(this, e);
-        }
-
-        // pass on the event to the auxiliary jfreechart
-        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
-            if (handler.isEnabled()) {
-                handler.handleMousePressed(this, e);
-            }
-        }
+//        if (this.liveHandler == null) {
+//            for (TaMouseHandlerFX handler: this.availableMouseHandlers) {
+//                if (handler.isEnabled() && handler.hasMatchingModifiers(e)) {
+//                    this.liveHandler = handler;
+//                }
+//            }
+//        }
+//
+//        if (this.liveHandler != null) {
+//            this.liveHandler.handleMousePressed(this, e);
+//        }
+//
+//        // pass on the event to the auxiliary jfreechart
+//        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
+//            if (handler.isEnabled()) {
+//                handler.handleMousePressed(this, e);
+//            }
+//        }
     }
 
     /**
@@ -638,6 +659,30 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
         }
     }
 
+
+
+    private void handleMouseDragDetected(MouseEvent e){
+
+        double x = e.getX();
+        double y = e.getY();
+
+        if(e.getButton().equals(MouseButton.PRIMARY)){
+            if(!getRenderingInfo().getPlotInfo().getSubplotInfo(0).getDataArea().contains(x, y)){
+                dragging = false;
+                return;
+            }
+
+            lastX = x;
+            lastY = y;
+            dragging = true;
+
+        } else if (e.getButton().equals(MouseButton.SECONDARY)){
+
+        }
+    }
+
+
+
     /**
      * Handles a mouse dragged event by passing it on to the registered
      * jfreechart.
@@ -645,16 +690,74 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
      * @param e  the mouse event.
      */
     private void handleMouseDragged(MouseEvent e) {
-        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
-            this.liveHandler.handleMouseDragged(this, e);
+
+        double x = e.getX();
+        double y = e.getY();
+
+        if(e.getButton().equals(MouseButton.PRIMARY)){
+
+            if(!getRenderingInfo().getPlotInfo().getSubplotInfo(0).getDataArea().contains(x,y)){
+                dragging = false;
+                return;
+            }
+
+            if(!dragging) {
+                return;
+            }
+
+            double dX = -xPanningSpeed*(x - lastX);
+            lastX = x;
+
+            List subplots = ((CombinedRangeXYPlot) getChart().getPlot()).getSubplots();
+            XYPlot stockPlot = (XYPlot) subplots.get(0);
+            NumberAxis domainAxis = (NumberAxis) stockPlot.getDomainAxis();
+            XYSeriesCollection stockDataset = (XYSeriesCollection) stockPlot.getDataset();
+            XYSeries stockSeries = stockDataset.getSeries(0);
+
+            double prevX = stockSeries.getMaxX();
+            double xTickSize = domainAxis.getTickUnit().getSize();
+            double xLowerBound = domainAxis.getLowerBound();
+            double xUpperBound = domainAxis.getUpperBound();
+
+            if(xLowerBound + dX >= 0 && (xUpperBound + dX <= prevX + 6 * xTickSize || xUpperBound > prevX + 6 * xTickSize && dX < 0)){
+                if(xUpperBound + dX >= prevX + 3*xTickSize){
+                    xPanningSpeed = 0.9;
+                    isPanning = false;
+                    double upper = prevX + 6*xTickSize;
+                    double interval = ((1 << zoomLevel) - (1 << (zoomLevel - 1))) * 60;
+                    domainAxis.setUpperBound(upper);
+                    domainAxis.setLowerBound(upper - interval);
+                } else {
+                    xPanningSpeed = AppConstants.PANNING_SPEED;
+                    isPanning = true;
+
+                    domainAxis.setLowerBound(xLowerBound + dX);
+                    domainAxis.setUpperBound(xUpperBound + dX);
+                }
+            }
+
+            double dY = AppConstants.PANNING_SPEED*(y - lastY);
+            lastY = y;
+            NumberAxis rangeAxis = (NumberAxis) stockPlot.getRangeAxis();
+            if(rangeAxis.getLowerBound() + dY >= 0){
+                rangeAxis.setLowerBound(rangeAxis.getLowerBound() + dY);
+                rangeAxis.setUpperBound(rangeAxis.getUpperBound() + dY);
+            }
+
+        } else if (e.getButton().equals(MouseButton.SECONDARY)){
+            System.out.println("Y-axis zooming");
         }
 
-        // pass on the event to the auxiliary jfreechart
-        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
-            if (handler.isEnabled()) {
-                handler.handleMouseDragged(this, e);
-            }
-        }
+//        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
+//            this.liveHandler.handleMouseDragged(this, e);
+//        }
+//
+//        // pass on the event to the auxiliary jfreechart
+//        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
+//            if (handler.isEnabled()) {
+//                handler.handleMouseDragged(this, e);
+//            }
+//        }
     }
 
     /**
@@ -664,16 +767,21 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
      * @param e  the mouse event.
      */
     private void handleMouseReleased(MouseEvent e) {
-        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
-            this.liveHandler.handleMouseReleased(this, e);
+        if(!dragging){
+            return;
         }
 
-        // pass on the event to the auxiliary jfreechart
-        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
-            if (handler.isEnabled()) {
-                handler.handleMouseReleased(this, e);
-            }
-        }
+        dragging = false;
+//        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
+//            this.liveHandler.handleMouseReleased(this, e);
+//        }
+//
+//        // pass on the event to the auxiliary jfreechart
+//        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
+//            if (handler.isEnabled()) {
+//                handler.handleMouseReleased(this, e);
+//            }
+//        }
     }
 
     /**
@@ -683,32 +791,117 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
      * @param e  the mouse event.
      */
     private void handleMouseClicked(MouseEvent e) {
-        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
-            this.liveHandler.handleMouseClicked(this, e);
-        }
-
-        // pass on the event to the auxiliary jfreechart
-        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
-            if (handler.isEnabled()) {
-                handler.handleMouseClicked(this, e);
-            }
-        }
+//        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
+//            this.liveHandler.handleMouseClicked(this, e);
+//        }
+//
+//        // pass on the event to the auxiliary jfreechart
+//        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
+//            if (handler.isEnabled()) {
+//                handler.handleMouseClicked(this, e);
+//            }
+//        }
     }
 
     /**
      * Handles a scroll event by passing it on to the registered jfreechart.
      *
-     * @param e  the scroll event.
+     * @param event  the scroll event.
      */
-    protected void handleScroll(ScrollEvent e) {
-        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
-            this.liveHandler.handleScroll(this, e);
-        }
-        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
-            if (handler.isEnabled()) {
-                handler.handleScroll(this, e);
+    protected void handleScroll(ScrollEvent event) {
+
+
+        if(getRenderingInfo().getPlotInfo().getDataArea().contains(event.getX(), event.getY())){
+
+
+            byte direction = (byte)-Math.signum(event.getDeltaY());
+
+            List subplots = ((CombinedRangeXYPlot) getChart().getPlot()).getSubplots();
+            XYPlot stockPlot = (XYPlot) subplots.get(0);
+            XYSeriesCollection stockDataset = (XYSeriesCollection) stockPlot.getDataset();
+            XYSeries stockSeries = stockDataset.getSeries(0);
+
+
+            ValueAxis domainStockAxis = stockPlot.getDomainAxis();
+            XYPlot marketDepthPlot = (XYPlot) subplots.get(1);
+
+            byte tempZoomLevel = (byte)(zoomLevel + direction);
+
+            if(tempZoomLevel >= 0 && tempZoomLevel <= 6) {
+                double XTickUnit;
+//                     double XTickUnit = 1 << tempZoomLevel;
+                double halfInterval;
+                double currentLowerBound = domainStockAxis.getLowerBound();
+
+                double currentUpperBound = domainStockAxis.getUpperBound();
+                double newLowerBound;
+                double newUpperBound;
+                if (direction < 0) {
+                    halfInterval = ((1 << zoomLevel) - (1 << (zoomLevel - 1))) * 60 / 2;
+                    newLowerBound = currentLowerBound + halfInterval;
+                    newUpperBound = currentUpperBound - halfInterval;
+                } else {
+                    double interval = ((1 << (zoomLevel + 1)) - (1 << zoomLevel)) * 60;
+//                       chartImpl.getDataSeries().getData().get(0) - при чистке истории может измениться
+
+                    if (stockSeries.getMaxX() - stockSeries.getMinX() + 1 < interval)
+                        return;
+                    halfInterval = interval / 2.0;
+                    newLowerBound = currentLowerBound - halfInterval;
+                    newUpperBound = currentUpperBound + halfInterval;
+                }
+                if (newLowerBound < AppConstants.TIME_MIN_LOWER_BOUND) {
+                    domainStockAxis.setLowerBound(AppConstants.TIME_MIN_LOWER_BOUND);
+                    newUpperBound = Math.abs(newLowerBound) + newUpperBound;
+                    if (newUpperBound > AppConstants.TIME_MAX_UPPER_BOUND) {
+                        domainStockAxis.setUpperBound(AppConstants.TIME_MAX_UPPER_BOUND);
+                    } else {
+                        domainStockAxis.setUpperBound(newUpperBound);
+                    }
+//                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                    XTickUnit = (domainStockAxis.getUpperBound() - domainStockAxis.getLowerBound()) / 60;
+//                    chartImpl.setXTick(XTickUnit);
+                    ((NumberAxis) domainStockAxis).setTickUnit(new NumberTickUnit(XTickUnit));
+                    zoomLevel = tempZoomLevel;
+                    return;
+                }
+                if (newUpperBound > AppConstants.TIME_MAX_UPPER_BOUND) {
+                    domainStockAxis.setUpperBound(AppConstants.TIME_MAX_UPPER_BOUND);
+                    newLowerBound = newUpperBound - AppConstants.TIME_MAX_UPPER_BOUND + newLowerBound;
+                    if (newLowerBound < AppConstants.TIME_MIN_LOWER_BOUND) {
+                        domainStockAxis.setLowerBound(AppConstants.TIME_MIN_LOWER_BOUND);
+                    } else {
+                        domainStockAxis.setLowerBound(newLowerBound);
+                    }
+//                         ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                    XTickUnit = (domainStockAxis.getUpperBound() - domainStockAxis.getLowerBound()) / 60;
+//                    chartImpl.setXTick(XTickUnit);
+                    ((NumberAxis) domainStockAxis).setTickUnit(new NumberTickUnit(XTickUnit));
+                    zoomLevel = tempZoomLevel;
+                    return;
+                }
+
+                domainStockAxis.setLowerBound(newLowerBound);
+                domainStockAxis.setUpperBound(newUpperBound);
+//                     ((NumberAxis)xAxis).setTickUnit(XTickUnit);
+                XTickUnit = (domainStockAxis.getUpperBound() - domainStockAxis.getLowerBound()) / 60;
+//                chartImpl.setXTick(XTickUnit);
+                ((NumberAxis) domainStockAxis).setTickUnit(new NumberTickUnit(XTickUnit));
+                zoomLevel = tempZoomLevel;
             }
+
+
         }
+
+
+//        if (this.liveHandler != null && this.liveHandler.isEnabled()) {
+//            this.liveHandler.handleScroll(this, e);
+//        }
+//        for (TaMouseHandlerFX handler: this.auxiliaryMouseHandlers) {
+//            if (handler.isEnabled()) {
+//                handler.handleScroll(this, e);
+//            }
+//        }
     }
 
     /**
@@ -726,5 +919,21 @@ public class TaChartCanvas extends Canvas implements ChartChangeListener,
     @Override
     public void overlayChanged(OverlayChangeEvent event) {
         draw();
+    }
+
+    public boolean isPanning() {
+        return isPanning;
+    }
+
+    public void setPanning(boolean panning) {
+        isPanning = panning;
+    }
+
+    public byte getZoomLevel() {
+        return zoomLevel;
+    }
+
+    public void setxPanningSpeed(double xPanningSpeed) {
+        this.xPanningSpeed = xPanningSpeed;
     }
 }

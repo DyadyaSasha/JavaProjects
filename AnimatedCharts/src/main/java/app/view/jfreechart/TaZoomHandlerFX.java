@@ -37,7 +37,7 @@
  * 25-Jun-2014 : Version 1 (DG);
  *
  */
-package org.sjwimmer.tacharting.chart.view.jfreechart;
+package app.view.jfreechart;
 
 import javafx.scene.input.MouseEvent;
 import org.jfree.chart.fx.ChartCanvas;

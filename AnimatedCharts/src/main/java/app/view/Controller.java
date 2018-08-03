@@ -1,4 +1,4 @@
-package sample.view;
+package app.view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,9 +7,9 @@ import javafx.scene.chart.ValueAxis;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import app.view.charts.StockLineChart;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ import java.util.List;
 public class Controller {
 
     public List<HBox> stockLineCharts;
-//    public List<GridPane> stockLineCharts;
 
     @FXML
     private VBox chartsFlow;
@@ -28,7 +27,6 @@ public class Controller {
     public void initialize() {
 
         newWindow.setGraphic(new ImageView(new Image(getClass().getResourceAsStream("/static/newWindow.png"))));
-        chartsFlow.setStyle("-fx-border-color: blue");
         stockLineCharts = new ArrayList<>();
         addNewChart();
     }

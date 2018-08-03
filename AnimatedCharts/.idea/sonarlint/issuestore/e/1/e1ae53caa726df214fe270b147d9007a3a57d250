@@ -1,51 +1,0 @@
-
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æû‚ƒùÿÿÿÿ
-Msquid:S1948"8Make "auxiliaryMouseHandlers" transient or serializable.(šûáÎ
-Vsquid:S2175"<A "List<TaMouseHandlerFX>" cannot contain a "MouseHandlerFX"(öÚ³şûÿÿÿÿ
-Msquid:S1948"8Make "availableMouseHandlers" transient or serializable.(ïÊÈì
-Nsquid:S1481"4Remove this unused "marketDepthPlot" local variable.(³‚ä‚úÿÿÿÿ
-Dsquid:S00108")Either remove or fill this block of code.(±¥Îòùÿÿÿÿ
-Vsquid:S2175"<A "List<TaMouseHandlerFX>" cannot contain a "MouseHandlerFX"(»·ÒÑıÿÿÿÿ
-]squid:S2184"HCast one of the operands of this multiplication operation to a "double".(¶ıÖ˜
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Íˆ—Üûÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æû‚ƒùÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Íˆ—Üûÿÿÿÿ
-L
-squid:S106"9Replace this use of System.out or System.err by a logger.(ŒŒ½t
-Usquid:S2184"@Cast one of the operands of this integer division to a "double".(ôÁ…÷
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úø‰Ëşÿÿÿÿ
-Gsquid:S1948"-Make "liveHandler" transient or serializable.(á›ö×øÿÿÿÿ
-Asquid:S1612",Replace this lambda with a method reference.(ŞºÖŠ
-=squid:S1172"(Remove this unused method parameter "e".(íıŸñ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Îï×àşÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£¯¡üüÿÿÿÿ
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ù­—³üÿÿÿÿ
-Fsquid:S1602",Remove useless curly braces around statement(¥™Øùùÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Íˆ—Üûÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£¯¡üüÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æû‚ƒùÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úø‰Ëşÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£¯¡üüÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ö«…Ù
-Bsquid:S1172"(Remove this unused method parameter "e".(³áÂîÿÿÿÿÿ
-Fsquid:S1612",Replace this lambda with a method reference.(¥™Øùùÿÿÿÿ
-Bsquid:S1172"(Remove this unused method parameter "e".(«Æõåúÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒ™–¼
-Zsquid:UselessImportCheck"8Remove this unused import 'org.jfree.data.xy.XYDataset'.(Øôã×
-Wsquid:S2184"BCast one of the operands of this division operation to a "double".(ôÁ…÷
-@squid:S1612",Replace this lambda with a method reference.(Ç±ƒ5
-bsquid:S2184"HCast one of the operands of this multiplication operation to a "double".(…®‡ùÿÿÿÿ
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(™Œ«èÿÿÿÿÿ
-Asquid:S1612",Replace this lambda with a method reference.(ì®¿¯
-Fsquid:S1612",Replace this lambda with a method reference.(µÈÇŞúÿÿÿÿ
-Asquid:S1612",Replace this lambda with a method reference.(íÌÄí
-9squid:S1948"$Make "g2" transient or serializable.(äñÕ
-hsquid:UselessImportCheck"FRemove this unused import 'org.jfree.chart.axis.NumberTickUnitSource'.(›°í
-]squid:S1854"CRemove this useless assignment to local variable "marketDepthPlot".(³‚ä‚úÿÿÿÿ
-Bsquid:S1948"(Make "anchor" transient or serializable.(«¯¼õÿÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(£¯¡üüÿÿÿÿ
-Asquid:S1612",Replace this lambda with a method reference.(Œâ¾
-lsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ÚÛüÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ù…Ùöüÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æû‚ƒùÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úø‰Ëşÿÿÿÿ

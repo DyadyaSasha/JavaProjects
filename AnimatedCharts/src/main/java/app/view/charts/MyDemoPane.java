@@ -1,16 +1,13 @@
-package sample.view;
+package app.view.charts;
 
-import javafx.application.Application;
-import javafx.scene.Scene;
+import app.view.jfreechart.TaChartViewer;
 import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.Crosshair;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import view.jfreechart.TaChartViewer;
 
 
     public class MyDemoPane extends StackPane {

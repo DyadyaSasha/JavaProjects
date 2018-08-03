@@ -1,4 +1,4 @@
-package sample.view;
+package app.view.charts;
 
 import javafx.scene.chart.XYChart;
 
@@ -9,4 +9,6 @@ public interface ChartInterface {
     void setXTick(double xTick);
     double getPrevX();
     XYChart.Series<Number, Number> getDataSeries();
+    byte getZoomLevel();
+    void setZoomLevel(byte zoomLevel);
 }

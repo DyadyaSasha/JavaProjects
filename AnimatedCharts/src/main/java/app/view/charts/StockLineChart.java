@@ -1,12 +1,8 @@
-package sample.view;
+package app.view.charts;
 
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.IntegerProperty;
-import javafx.concurrent.ScheduledService;
-import javafx.concurrent.Task;
 import javafx.geometry.Point2D;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Cursor;
@@ -29,13 +25,14 @@ import javafx.util.Duration;
 import javafx.util.StringConverter;
 import org.gillius.jfxutils.chart.AxisConstraintStrategies;
 import org.gillius.jfxutils.chart.XYChartInfo;
-import org.jfree.data.xy.XYSeriesCollection;
-import sample.myutils.MyChartPanManager;
-import sample.myutils.MyChartZoomManager;
+import app.utils.MyChartPanManager;
+import app.utils.MyChartZoomManager;
+import app.view.CSSStylesNames;
 
 
-public class StockLineChart extends HBox implements ChartInterface{
+public class StockLineChart extends HBox implements ChartInterface {
 
+    private byte zoomLevel = 0;
     private LineChart<Number, Number> chart;
     private Pane pane;
     private NumberAxis xAxis;
@@ -250,8 +247,8 @@ public class StockLineChart extends HBox implements ChartInterface{
         HBox.setHgrow(area, Priority.ALWAYS);
         VBox.setVgrow(area, Priority.ALWAYS);
 
-//        chart.prefWidthProperty().bind(pane.widthProperty());
-//        chart.prefHeightProperty().bind(pane.heightProperty());
+        chart.prefWidthProperty().bind(pane.widthProperty());
+        chart.prefHeightProperty().bind(pane.heightProperty());
 
 //        pane.prefHeightProperty().bind(this.prefHeightProperty());
 //        pane.prefWidthProperty().bind(this.prefWidthProperty());
@@ -419,6 +416,14 @@ public class StockLineChart extends HBox implements ChartInterface{
 
     public void setYTick(double yTick) {
         this.yTick = yTick;
+    }
+
+    public byte getZoomLevel() {
+        return zoomLevel;
+    }
+
+    public void setZoomLevel(byte zoomLevel) {
+        this.zoomLevel = zoomLevel;
     }
 }
 

@@ -1,4 +1,4 @@
-package org.sjwimmer.tacharting.chart.view.jfreechart;
+package app.view.jfreechart;
 
 import org.jfree.chart.panel.Overlay;
 

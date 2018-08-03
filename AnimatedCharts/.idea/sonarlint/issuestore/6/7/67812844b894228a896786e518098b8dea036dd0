@@ -1,24 +1,0 @@
-
-Ysquid:S1134"DTake the required action to fix the issue indicated by this comment.(«Ù¿ñ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÈÌÌÍ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ø²‹Áûÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Î€×éøÿÿÿÿ
-asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
-^squid:UnusedPrivateMethod"6Remove this unused private "createContextMenu" method.(×ûÃµÿÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢œõ¢
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•„÷•ûÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿¨“¿
-asquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
-_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(°‰	
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚàÑÙøÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ßþ³ßÿÿÿÿÿ
-@squid:S1602",Remove useless curly braces around statement(€ÿÅq
-@squid:S1612",Replace this lambda with a method reference.(€ÿÅq
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²Û²°
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( ¥›þ
-Asquid:S1602",Remove useless curly braces around statement(®½Àü
-Fsquid:S1612",Replace this lambda with a method reference.(£žýáþÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶æýïúÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õ¦‹üüÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”Íçí
-]squid:S2184"HCast one of the operands of this multiplication operation to a "double".(µêä

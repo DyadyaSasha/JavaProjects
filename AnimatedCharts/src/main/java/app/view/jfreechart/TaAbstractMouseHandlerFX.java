@@ -1,4 +1,4 @@
-package org.sjwimmer.tacharting.chart.view.jfreechart;
+package app.view.jfreechart;
 
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
