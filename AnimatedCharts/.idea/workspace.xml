@@ -5,11 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/CustomSwingNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/return-arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/models/Data.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/JfreeController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/charts/JfreeStockLineChart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/charts/MyDemoPane.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaAbstractMouseHandlerFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaAnchorHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartViewer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaDispatchHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaMouseHandlerFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaOverlayFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaPanHandlerFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaScrollHandlerFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaTooltipHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaZoomHandlerFX.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/examples/concurrent/FirstLineServiceApp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/examples/concurrent/ProgressBarService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/rootWindow.fxml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChartGrid.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/templates/test.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/test.fxml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/TimeSeriesChart.jpeg" afterPath="$PROJECT_DIR$/../JavaFXandAWT/TimeSeriesChart.jpeg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayDemo1.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayDemo1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnimatedCharts.iml" afterPath="$PROJECT_DIR$/AnimatedCharts.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/examples/StockLineChartApp.java" afterPath="$PROJECT_DIR$/src/main/java/examples/StockLineChartApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" afterPath="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/sample.fxml" afterPath="$PROJECT_DIR$/target/classes/templates/sample.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaFXandAWT/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/src/main/java/jfreechart/TimeSeriesChartDemo.java" afterPath="$PROJECT_DIR$/../JavaFXandAWT/src/main/java/jfreechart/TimeSeriesChartDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaFXandAWT/src/main/java/jfreechart/XYChart.java" afterPath="$PROJECT_DIR$/../JavaFXandAWT/src/main/java/jfreechart/XYChart.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/App.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/App.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/BarChartFXDemo1.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/BarChartFXDemo1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayDemo1.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/CrosshairOverlayDemo1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/CrosshairOverlayFXDemo1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/CustomSwingNode.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/CustomSwingNode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/LineChartExample.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/LineChartExample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/SwingNodeExample.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/jfreechart/Tmp.java" afterPath="$PROJECT_DIR$/src/main/java/jfreechartexamples/Tmp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/AppPreloader.java" afterPath="$PROJECT_DIR$/src/main/java/app/AppPreloader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/Main.java" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" afterPath="$PROJECT_DIR$/src/main/java/app/utils/MyChartPanManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/utils/MyChartZoomManager.java" afterPath="$PROJECT_DIR$/src/main/java/app/utils/MyChartZoomManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/AppConstants.java" afterPath="$PROJECT_DIR$/src/main/java/app/view/AppConstants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/CSSStylesNames.java" afterPath="$PROJECT_DIR$/src/main/java/app/view/CSSStylesNames.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/ChartInterface.java" afterPath="$PROJECT_DIR$/src/main/java/app/view/charts/ChartInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/app/view/Controller.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" afterPath="$PROJECT_DIR$/src/main/java/app/view/charts/StockLineChart.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,33 +112,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="TaChartViewer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartViewer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="230" column="53" lean-forward="true" selection-start-line="230" selection-start-column="53" selection-end-line="230" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="351">
+              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrosshairOverlayFXDemo1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java">
+      <file leaf-file-name="JfreeStockLineChart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/view/charts/JfreeStockLineChart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="135">
+              <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwingNodeExample.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java">
+      <file leaf-file-name="TaChartCanvas.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartCanvas.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="107" column="9" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
+            <state relative-caret-position="-4996">
+              <caret line="722" column="59" lean-forward="false" selection-start-line="722" selection-start-column="59" selection-end-line="722" selection-end-column="59" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#32770#32771#0" expanded="true" />
+                <element signature="e#32820#32821#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,44 +161,44 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Mouse</find>
-      <find>MouseFilter</find>
-      <find>MouseButton</find>
-      <find>ChartZoomManager</find>
-      <find>chart.set</find>
-      <find>zoom</find>
-      <find>Cursor</find>
-      <find>paint</find>
-      <find>plotTime</find>
-      <find>format</find>
-      <find>update</find>
-      <find>rect</find>
-      <find>ZoomMa</find>
-      <find>chartInfo</find>
-      <find>zoo</find>
-      <find>formatter</find>
-      <find>label</find>
-      <find>bind</find>
       <find>pane</find>
-      <find>setVis</find>
-      <find>autoRanging</find>
-      <find>trans</find>
-      <find>setVisible</find>
-      <find>xTick</find>
-      <find>chartStockAnimation</find>
-      <find>chartPanManager</find>
+      <find>CombinedDomainXYPlot</find>
       <find>chart</find>
-      <find>getupper</find>
-      <find>plotT</find>
-      <find>0.3</find>
+      <find>onmo</find>
+      <find>seton</find>
+      <find>yCrosshair</find>
+      <find>setChart</find>
+      <find>MouseW</find>
+      <find>handlerMana</find>
+      <find>set</find>
+      <find>getC</find>
+      <find>chartInfo</find>
+      <find>chart.</find>
+      <find>setCrosshairVisible</find>
+      <find>context</find>
+      <find>bind</find>
+      <find>startDrag</find>
+      <find>add</find>
+      <find>isPa</find>
+      <find>1 &lt;&lt;</find>
+      <find>getCursor</find>
+      <find>Ta</find>
+      <find>View</find>
+      <find>xPann</find>
+      <find>dragged</find>
+      <find>getChart</find>
+      <find>canvas</find>
+      <find>Export</find>
+      <find>createContextMenu</find>
+      <find>rec</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -162,39 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/bbb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/models/asd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/models/StockLineChartApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StackOverflow25383566.java" />
-        <option value="$PROJECT_DIR$/src/main/java/aaa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/qqq.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/JavaFX_ImageHistogram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JavaFX_ImageHistogram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/eeee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ghjkl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rrrr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/LineChartValueMarker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DraggingLineChartSample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/qqqqqqqqqq.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BarChartSample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jjjjjjjjjjj.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MyChartPanManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/MyChartZoomManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StockLineChartApp.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/frame.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/examples/ZoomableLineChart.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/test.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/AppPreloader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/examples/StageApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/view/CSSStylesNames.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/styles/StockLineChart.css" />
-        <option value="$PROJECT_DIR$/src/main/java/jfreechart/StockLineChart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jfreechart/LineChartExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/aa.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/Tmp.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/view/AppConstants.java" />
@@ -202,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/examples/StockLineChartApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/view/ChartInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/utils/MyChartZoomManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/qqq.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/utils/MyChartPanManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/qqqqqq.java" />
@@ -211,8 +232,42 @@
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayDemo1.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/CustomSwingNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java" />
         <option value="$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jfreechart/TaChartViewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jfreechartex/CrosshairOverlayFXDemo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/jfreechart/TaZoomHandlerFX.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/CrosshairOverlayFXDemo1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/MyDemoPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/InitUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/jfreechart/TaChartViewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/concurrent/aa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/concurrent/FirstLineServiceApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/concurrent/a.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/concurrent/CounterBarAppService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/examples/concurrent/ProgressBarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/StockLineChart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/charts/StockLineChart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/charts/ChartInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/view/charts/MyDemoPane.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaAbstractMouseHandlerFX.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/charts/MyDemoPane.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/rootWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/charts/StockLineChart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/charts/ChartInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/utils/MyChartZoomManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/utils/MyChartPanManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartCanvas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartViewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/AppConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/charts/JfreeStockLineChart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/view/JfreeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/models/Data.java" />
       </list>
     </option>
   </component>
@@ -242,10 +297,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="330" />
-    <option name="y" value="503" />
-    <option name="width" value="976" />
-    <option name="height" value="583" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -266,9 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,7 +352,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
@@ -308,6 +360,36 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="charts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="jfreechart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -315,14 +397,30 @@
               <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AnimatedCharts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AnimatedCharts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,19 +437,29 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="D:/Downloads/TAcharting-master/TAcharting-master" />
+    <property name="last_opened_file_path" value="D:/Downloads/TAcharting-master" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\resources\templates" />
-      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\java\examples" />
       <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\resources\static" />
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\java\app\view\jfreechart" />
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\java\app\view" />
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\java" />
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\java\examples" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sample.view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\resources\templates" />
+      <recent name="D:\Projects\Projects for github\JavaProjects\AnimatedCharts\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,53 +474,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SwingNodeExample">
-    <configuration name="AnimatedLineChart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="CounterBarAppService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="examples.*" />
+          <option name="PATTERN" value="examples.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="examples.AnimatedLineChart" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AnimatedCharts" />
-      <envs />
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="jfreechart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="jfreechart.App" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AnimatedCharts" />
-      <envs />
-    </configuration>
-    <configuration name="CrosshairOverlayDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="jfreechart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="jfreechart.CrosshairOverlayDemo1" />
+      <option name="MAIN_CLASS_NAME" value="examples.concurrent.CounterBarAppService" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -427,11 +497,30 @@
     <configuration name="CrosshairOverlayFXDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jfreechart.*" />
+          <option name="PATTERN" value="jfreechartexamples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="jfreechart.CrosshairOverlayFXDemo1" />
+      <option name="MAIN_CLASS_NAME" value="jfreechartexamples.CrosshairOverlayFXDemo1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AnimatedCharts" />
+      <envs />
+    </configuration>
+    <configuration name="FirstLineServiceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="examples.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="examples.concurrent.FirstLineServiceApp" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -446,11 +535,11 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="sample.view.*" />
+          <option name="PATTERN" value="app.view.charts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -464,14 +553,33 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
     </configuration>
-    <configuration name="SwingNodeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ProgressBarService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="jfreechart.*" />
+          <option name="PATTERN" value="examples.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="jfreechart.SwingNodeExample" />
+      <option name="MAIN_CLASS_NAME" value="examples.concurrent.ProgressBarService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AnimatedCharts" />
+      <envs />
+    </configuration>
+    <configuration name="SwingNodeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="jfreechartexamples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="jfreechartexamples.SwingNodeExample" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -579,19 +687,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CrosshairOverlayDemo1" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CrosshairOverlayFXDemo1" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AnimatedLineChart" />
-      <item index="4" class="java.lang.String" itemvalue="Application.App" />
-      <item index="5" class="java.lang.String" itemvalue="Application.SwingNodeExample" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CrosshairOverlayFXDemo1" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SwingNodeExample" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FirstLineServiceApp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CounterBarAppService" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ProgressBarService" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SwingNodeExample" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CrosshairOverlayFXDemo1" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CrosshairOverlayDemo1" />
-        <item index="3" class="java.lang.String" itemvalue="Application.App" />
-        <item index="4" class="java.lang.String" itemvalue="Application.AnimatedLineChart" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FirstLineServiceApp" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ProgressBarService" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CounterBarAppService" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CrosshairOverlayFXDemo1" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SwingNodeExample" />
       </list>
     </recent_temporary>
   </component>
@@ -689,7 +797,30 @@
       <workItem from="1532512937105" duration="4021000" />
       <workItem from="1532522213501" duration="2497000" />
       <workItem from="1532524939830" duration="187000" />
-      <workItem from="1532526291251" duration="251000" />
+      <workItem from="1532526291251" duration="3083000" />
+      <workItem from="1532531255965" duration="26000" />
+      <workItem from="1532548287995" duration="1107000" />
+      <workItem from="1532707753189" duration="113000" />
+      <workItem from="1532713753581" duration="64000" />
+      <workItem from="1532729791590" duration="10815000" />
+      <workItem from="1532854965332" duration="4814000" />
+      <workItem from="1532867345654" duration="11668000" />
+      <workItem from="1532890014500" duration="6960000" />
+      <workItem from="1532899803319" duration="4323000" />
+      <workItem from="1532935606236" duration="7185000" />
+      <workItem from="1532956116921" duration="1597000" />
+      <workItem from="1532959848644" duration="4153000" />
+      <workItem from="1533047155275" duration="2901000" />
+      <workItem from="1533072619560" duration="14585000" />
+      <workItem from="1533132549240" duration="12606000" />
+      <workItem from="1533159408055" duration="7173000" />
+      <workItem from="1533204083087" duration="5472000" />
+      <workItem from="1533219934515" duration="5034000" />
+      <workItem from="1533237060495" duration="8437000" />
+      <workItem from="1533247468037" duration="8654000" />
+      <workItem from="1533256589871" duration="3911000" />
+      <workItem from="1533287752161" duration="1071000" />
+      <workItem from="1533291335747" duration="5791000" />
     </task>
     <task id="LOCAL-00001" summary="add Application Preloader">
       <created>1531897170921</created>
@@ -740,11 +871,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532433738028</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="see jfreechart.SwingNodeExample.java">
+      <created>1532526575684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532526575685</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302279000" />
+    <option name="totallyTimeSpent" value="433571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -752,26 +890,26 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07783019" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07756563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10864865" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.095518865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02004717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16745283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28432432" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23297298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24162163" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4823113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3726415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -793,29 +931,29 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10864865" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12432432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06324324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32193395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1379717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4811321" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07783019" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18160377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22051887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16745283" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10864865" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12810811" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -840,11 +978,12 @@
     <MESSAGE value="update zooming on XAxis" />
     <MESSAGE value="see jfreechart.CrosshairOverlayDemo1.java" />
     <MESSAGE value="see jfreechart.CrosshairOverlayFXDemo1.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="see jfreechart.CrosshairOverlayFXDemo1.java" />
+    <MESSAGE value="see jfreechart.SwingNodeExample.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="see jfreechart.SwingNodeExample.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -853,155 +992,465 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/plot/CombinedDomainXYPlot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-8478">
+          <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayDemo1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="120" column="7" lean-forward="false" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/examples/StageApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/layout/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20225">
-          <caret line="1079" column="32" lean-forward="false" selection-start-line="1079" selection-start-column="32" selection-end-line="1079" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/awt/Dimension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-732">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/awt/Component.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/Axis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="2202" column="30" lean-forward="false" selection-start-line="2202" selection-start-column="30" selection-end-line="2202" selection-end-column="30" />
-          <folding>
-            <element signature="e#75718#75719#0" expanded="false" />
-            <element signature="e#75743#75744#0" expanded="false" />
-          </folding>
+          <caret line="1077" column="25" lean-forward="false" selection-start-line="1077" selection-start-column="25" selection-end-line="1077" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/embed/swing/SwingNode.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/renderer/xy/XYStepAreaRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="155" column="11" lean-forward="false" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="11" />
+        <state relative-caret-position="-13932">
+          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/awt/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/renderer/AbstractRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="1620" column="44" lean-forward="true" selection-start-line="1620" selection-start-column="44" selection-end-line="1620" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaAbstractMouseHandlerFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaScrollHandlerFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/awt/geom/Rectangle2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="661" column="19" lean-forward="false" selection-start-line="661" selection-start-column="19" selection-end-line="661" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/src.zip!/java/awt/geom/RectangularShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/shape/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="161" column="22" lean-forward="false" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/control/Label.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/util/Args.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart-fx/1.0.1/jfreechart-fx-1.0.1-sources.jar!/org/jfree/chart/fx/interaction/ZoomHandlerFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaZoomHandlerFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="79" column="11" lean-forward="false" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/plot/CombinedRangeXYPlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="298" column="16" lean-forward="false" selection-start-line="298" selection-start-column="16" selection-end-line="298" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/data/xy/XYDataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/chart/NumberAxis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="120" column="22" lean-forward="false" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/ValueAxis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="1426" column="16" lean-forward="false" selection-start-line="1426" selection-start-column="16" selection-end-line="1426" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/NumberTickUnitSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaMouseHandlerFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="124" column="9" lean-forward="false" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/plot/XYPlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="318" column="13" lean-forward="false" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/TickUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/NumberTickUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2026">
+          <caret line="58" column="40" lean-forward="false" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/axis/NumberAxis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="181" column="22" lean-forward="false" selection-start-line="181" selection-start-column="22" selection-end-line="181" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/charts/MyDemoPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gillius/jfxutils/1.0/jfxutils-1.0-sources.jar!/org/gillius/jfxutils/chart/XYChartInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gillius/jfxutils/1.0/jfxutils-1.0-sources.jar!/org/gillius/jfxutils/chart/ChartInputContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gillius/jfxutils/1.0/jfxutils-1.0-sources.jar!/org/gillius/jfxutils/chart/AxisConstraintStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/gillius/jfxutils/1.0/jfxutils-1.0-sources.jar!/org/gillius/jfxutils/EventHandlerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="100" column="42" lean-forward="false" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/charts/ChartInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/utils/MyChartPanManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="180" column="20" lean-forward="false" selection-start-line="180" selection-start-column="20" selection-end-line="180" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/return-arrow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/beans/value/WritableObjectValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="2882" column="22" lean-forward="false" selection-start-line="2882" selection-start-column="22" selection-end-line="2882" selection-end-column="22" />
+        <state relative-caret-position="423">
+          <caret line="5235" column="32" lean-forward="false" selection-start-line="5235" selection-start-column="32" selection-end-line="5235" selection-end-column="32" />
+          <folding>
+            <element signature="e#225741#225742#0" expanded="false" />
+            <element signature="e#225808#225809#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/utils/MyChartZoomManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1585">
+          <caret line="544" column="24" lean-forward="true" selection-start-line="544" selection-start-column="24" selection-end-line="544" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/charts/StockLineChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="198" column="91" lean-forward="true" selection-start-line="198" selection-start-column="91" selection-end-line="198" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/control/ScrollPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="809" column="38" lean-forward="false" selection-start-line="809" selection-start-column="23" selection-end-line="809" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="192" column="11" lean-forward="false" selection-start-line="192" selection-start-column="11" selection-end-line="192" selection-end-column="11" />
+          <folding>
+            <element signature="e#6631#6632#0" expanded="false" />
+            <element signature="e#6713#6714#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_152/javafx-src.zip!/javafx/scene/Parent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="939" column="28" lean-forward="false" selection-start-line="939" selection-start-column="28" selection-end-line="939" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/CustomSwingNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/rootWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/JfreeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/data/xy/XYSeries.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="509" column="19" lean-forward="false" selection-start-line="509" selection-start-column="19" selection-end-line="509" selection-end-column="19" />
+          <folding>
+            <element signature="e#14260#14261#0" expanded="false" />
+            <element signature="e#14315#14316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/AppConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/JFreeChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="240" column="13" lean-forward="false" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0-sources.jar!/org/jfree/chart/ChartPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8532">
-          <caret line="566" column="11" lean-forward="false" selection-start-line="566" selection-start-column="11" selection-end-line="566" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/CrosshairOverlayFXDemo1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/models/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="54">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jfreechart/SwingNodeExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartViewer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="107" column="9" lean-forward="true" selection-start-line="106" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="230" column="53" lean-forward="true" selection-start-line="230" selection-start-column="53" selection-end-line="230" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/charts/JfreeStockLineChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/jfreechart/TaChartCanvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4996">
+          <caret line="722" column="59" lean-forward="false" selection-start-line="722" selection-start-column="59" selection-end-line="722" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#32770#32771#0" expanded="true" />
+            <element signature="e#32820#32821#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>groovy-2.5.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AnimatedCharts</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.gillius:jfxutils:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

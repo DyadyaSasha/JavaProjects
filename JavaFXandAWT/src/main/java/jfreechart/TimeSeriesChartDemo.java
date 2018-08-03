@@ -21,6 +21,7 @@ public class TimeSeriesChartDemo extends ApplicationFrame {
     public TimeSeriesChartDemo(String title){
         super(title);
         ChartPanel panel = new ChartPanel(createChart(createDataset()));
+
         panel.setPreferredSize(new Dimension(560, 370));
         panel.setMouseZoomable(true, false);
         setContentPane(panel);

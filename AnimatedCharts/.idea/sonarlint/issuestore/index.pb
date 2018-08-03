@@ -3,3 +3,17 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 B
 AnimatedCharts.iml,f\0\f076f57a1ef0fa1a2441d67f537b33244bb86bcf
+[
++src\main\java\app\view\JfreeController.java,d\4\d4238f6a331091bee6275cef2c8ec465425f52c9
+X
+(src\main\java\app\view\AppConstants.java,9\d\9dac6d973508ef3823bad994234f84fb06b07ff8
+R
+"src\main\java\app\models\Data.java,7\9\799384f2f6b917e25f80e86b5d7d67b92df646f3
+d
+4src\main\java\app\view\jfreechart\TaChartViewer.java,6\7\67812844b894228a896786e518098b8dea036dd0
+f
+6src\main\java\app\view\charts\JfreeStockLineChart.java,c\f\cfba8a6c395dbd5c17f3b1b437d5e98148542fd4
+K
+src\main\java\app\Main.java,d\6\d6261fab454b54a7d6d7df5fbd93409320f04d6e
+d
+4src\main\java\app\view\jfreechart\TaChartCanvas.java,e\1\e1ae53caa726df214fe270b147d9007a3a57d250

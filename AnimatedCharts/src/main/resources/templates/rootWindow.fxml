@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="498.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.JfreeController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar prefHeight="12.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <top>
+                  <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <ToggleButton mnemonicParsing="false" text="100%">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="zoomButtonGroup" />
+                           </toggleGroup></ToggleButton>
+                        <ToggleButton mnemonicParsing="false" text="50%" toggleGroup="$zoomButtonGroup" />
+                        <ToggleButton mnemonicParsing="false" text="20%" toggleGroup="$zoomButtonGroup" />
+                        <ToggleButton mnemonicParsing="false" text="10%" toggleGroup="$zoomButtonGroup" />
+                        <Separator orientation="VERTICAL" />
+                      <Button mnemonicParsing="false" onAction="#addNewChart" text="addNewChart" />
+                    </items>
+                  </ToolBar>
+               </top>
+               <center>
+                  <ScrollPane fx:id="chartScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" BorderPane.alignment="CENTER">
+                     <content>
+                        <VBox fx:id="chartsArea" />
+                     </content>
+                  </ScrollPane>
+               </center>
+            </BorderPane>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button mnemonicParsing="false" text="Button" />
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

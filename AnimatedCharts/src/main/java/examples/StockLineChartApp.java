@@ -25,10 +25,7 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import org.gillius.jfxutils.chart.AxisConstraintStrategies;
-import sample.utils.MyChartPanManager;
-import sample.utils.MyChartZoomManager;
-import sample.view.CSSStylesNames;
+import app.view.CSSStylesNames;
 
 
 public class StockLineChartApp extends Application {
