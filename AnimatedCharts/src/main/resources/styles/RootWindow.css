@@ -1,0 +1,7 @@
+/* https://docs.oracle.com/javafx/2/charts/css-styles.htm */
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}

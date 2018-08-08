@@ -2,6 +2,7 @@ package app;
 
 import com.sun.javafx.application.LauncherImpl;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,21 +16,27 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
 //        loader.setLocation(getClass().getClassLoader().getResource("templates/sample.fxml"));
         loader.setLocation(getClass().getClassLoader().getResource("templates/rootWindow.fxml"));
         primaryStage.setTitle("Animated Charts");
         Parent root = loader.load();
+
+        final String stockLineChartCss = getClass().getResource("/styles/RootWindow.css").toExternalForm();
+        root.getStylesheets().add(stockLineChartCss);
+
         Scene scene = new Scene(root, 1100, 500);
         primaryStage.setMinHeight(550);
         primaryStage.setMinWidth(1300);
         primaryStage.setScene(scene);
+        primaryStage.setOnCloseRequest(windowEvent -> {
+            Platform.exit();
+        });
         primaryStage.show();
 
 
     }
-
 
 
     public static void main(String[] args) {
