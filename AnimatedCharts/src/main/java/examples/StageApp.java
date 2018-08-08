@@ -11,6 +11,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.controlsfx.control.CheckComboBox;
+import org.controlsfx.control.ToggleSwitch;
 
 public class StageApp extends Application {
 
@@ -49,6 +51,8 @@ public class StageApp extends Application {
 
             //add text to the main root group
             rootGroup.getChildren().add(text);
+            rootGroup.getChildren().add(new SwitchButton());
+            rootGroup.getChildren().add(new ToggleSwitch());
         });
         return button;
     }
