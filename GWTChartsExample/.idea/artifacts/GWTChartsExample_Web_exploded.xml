@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="GWTChartsExample:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/GWTChartsExample_Web_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="GWTChartsExample" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/Dev/gwt-2.8.2/gwt-servlet.jar" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="GWTChartsExample/gwt/GWT" />
+      <element id="javaee-facet-resources" facet="GWTChartsExample/web/Web" />
+    </root>
+  </artifact>
+</component>

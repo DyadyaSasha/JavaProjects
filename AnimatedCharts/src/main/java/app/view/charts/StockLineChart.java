@@ -63,7 +63,7 @@ public class StockLineChart extends HBox implements ChartInterface {
         /**
          * файл с стилями
          */
-        final String stockLineChartCss = getClass().getResource("/styles/StockLineChart.css").toExternalForm();
+        final String stockLineChartCss = getClass().getResource("/styles/RootWindow.css").toExternalForm();
         this.getStylesheets().add(stockLineChartCss);
         this.getStyleClass().add(CSSStylesNames.ALL_CHARTS_BOX.getStyleName());
 

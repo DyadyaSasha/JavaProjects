@@ -176,7 +176,7 @@ public class StockLineChartApp extends Application {
 
 
         final String stockLineChartCss =
-                getClass().getResource("styles/StockLineChart.css").toExternalForm();
+                getClass().getResource("styles/RootWindow.css").toExternalForm();
         chart.getStylesheets().add(stockLineChartCss);
         chart.getStyleClass().add(CSSStylesNames.STOCK_CHART.getStyleName());
         chart.setCreateSymbols(false);

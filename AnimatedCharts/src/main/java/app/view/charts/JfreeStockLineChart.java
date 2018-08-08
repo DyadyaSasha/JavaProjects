@@ -45,11 +45,13 @@ public class JfreeStockLineChart extends StackPane {
         yAxis.setLowerBound(0);
 //      TODO: доделать 10 ячеек
 //        ((NumberAxis)yAxis).setTickUnit();
+//        yAxis.setVisible(false);
         plot = new CombinedRangeXYPlot(yAxis);
         plot.setAxisOffset(new RectangleInsets(0, 0, 0, 0));
         plot.setGap(0);
 
         JFreeChart chart = new JFreeChart(null, null, plot, false);
+//        chart.setPadding(new RectangleInsets(0,0,0,-8.5));
 
 //       chart.setBackgroundPaint(Color.WHITE);
         chartViewer = new TaChartViewer(chart);
@@ -60,6 +62,7 @@ public class JfreeStockLineChart extends StackPane {
 
         plot.add(stockPlot, 6);
         plot.add(cupChart, 2);
+
 
 
         getChildren().add(chartViewer);
@@ -102,7 +105,7 @@ public class JfreeStockLineChart extends StackPane {
 
     private XYPlot createStockChart() {
         XYSeries series = new XYSeries("stock");
-        series.setMaximumItemCount(3600);
+        series.setMaximumItemCount(90);
         XYSeries series1 = new XYSeries("red");
         series1.add(10, 10);
 
@@ -112,6 +115,7 @@ public class JfreeStockLineChart extends StackPane {
         dataset.addSeries(series1);
         dataset.addSeries(series2);
         ValueAxis domainAxis = new NumberAxis();
+//        domainAxis.setVisible(false);
         domainAxis.setLowerBound(0);
         domainAxis.setUpperBound(60);
         domainAxis.setAutoRange(false);

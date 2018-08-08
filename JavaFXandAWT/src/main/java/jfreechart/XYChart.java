@@ -17,6 +17,7 @@ import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RectangleInsets;
 import org.jfree.ui.RefineryUtilities;
 
+import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class XYChart extends ApplicationFrame {
     public XYChart(String appTitle, String chartTitle) {
 
         super(appTitle);
-        JFreeChart chart = ChartFactory.createXYLineChart(chartTitle, "Category", "Score", createDataset(), PlotOrientation.VERTICAL, true, true, false);
+        JFreeChart chart = ChartFactory.createXYLineChart(chartTitle, "Category", "Score", createDataset(), PlotOrientation.VERTICAL, false, true, false);
         chart.setBackgroundPaint(Color.WHITE);
         ChartPanel panel = new ChartPanel(chart);
         panel.setPreferredSize(new Dimension(560, 367));
@@ -58,7 +59,18 @@ public class XYChart extends ApplicationFrame {
         renderer.setSeriesStroke(1, new BasicStroke(3.0f));
         renderer.setSeriesStroke(2, new BasicStroke(2.0f));
         plot.setRenderer(renderer);
-        setContentPane(panel);
+
+        XYPlot plot1 = new XYPlot();
+        NumberAxis rangeAxis = new NumberAxis();
+        plot1.setRangeAxis(rangeAxis);
+        plot1.setDomainAxis(domainAxis);
+        JFreeChart chart1 = new JFreeChart(null, null, plot1, false);
+        ChartPanel chartPanel = new ChartPanel(chart1);
+        JPanel jPanel = new JPanel();
+        jPanel.setLayout(new FlowLayout());
+        jPanel.add(panel);
+        jPanel.add(chartPanel);
+        setContentPane(jPanel);
     }
 
     public static XYDataset createDataset() {
